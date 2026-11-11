@@ -88,8 +88,11 @@ def _conta_facebook(token: str, ig_id: str | None) -> dict:
         for c in contas:
             if c["user_id"] == ig_id:
                 return c
-        dados = _get(ig_id, token, "facebook", fields="id")
-        return {"user_id": str(dados.get("id") or ig_id), "username": "", "tipo": "facebook"}
+        raise ErroInstagram(
+            f"O número {ig_id} não é de uma conta do Instagram (talvez seja o ID do app ou de "
+            "outra coisa). Use o número que aparece embaixo do seu @ no painel da Meta, que "
+            "geralmente começa com 1784."
+        )
     contas = _contas_das_paginas(token)
     if contas:
         return contas[0]

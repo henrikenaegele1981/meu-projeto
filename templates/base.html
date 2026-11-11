@@ -10,7 +10,7 @@
   <aside class="menu">
     <div class="marca">🎬 Meu Estúdio</div>
     <nav>
-      <a href="{{ url_for('agenda') }}" class="{{ 'ativo' if pagina == 'agenda' }}">📅 Agenda (Reels)</a>
+      <a href="{{ url_for('agenda') }}" class="{{ 'ativo' if pagina == 'agenda' }}">📅 Agenda</a>
       <a href="{{ url_for('em_breve', secao='carrosseis') }}" class="{{ 'ativo' if pagina == 'carrosseis' }}">🖼️ Carrosséis <small>em breve</small></a>
       <a href="{{ url_for('em_breve', secao='painel') }}" class="{{ 'ativo' if pagina == 'painel' }}">📈 Painel <small>em breve</small></a>
       <a href="{{ url_for('em_breve', secao='posts') }}" class="{{ 'ativo' if pagina == 'posts' }}">📋 Posts <small>em breve</small></a>

@@ -59,6 +59,7 @@ summary { cursor: pointer; color: var(--cor); margin-bottom: 10px; }
 .item { display: flex; gap: 14px; padding: 14px 0; border-top: 1px solid var(--borda); }
 .item:first-of-type { border-top: 0; padding-top: 0; }
 .item video { width: 90px; height: 160px; object-fit: cover; border-radius: 8px; background: #000; flex-shrink: 0; }
+.item img.miniatura { width: 128px; height: 160px; object-fit: cover; border-radius: 8px; background: #000; flex-shrink: 0; }
 .item .info { flex: 1; min-width: 0; }
 .item.compacto { align-items: center; }
 .topo { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 6px; }

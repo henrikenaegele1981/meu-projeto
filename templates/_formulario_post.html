@@ -1,7 +1,9 @@
 {# Campos usados tanto para agendar quanto para editar. Recebe `post` (ou None). #}
-<label>Vídeo (.mp4 ou .mov, vertical)
-  <input type="file" name="video" accept="video/mp4,video/quicktime,.mp4,.mov" {{ '' if post else 'required' }}>
+<label>Vídeo (Reel) ou foto (post estático)
+  <input type="file" name="arquivo" accept="video/mp4,video/quicktime,.mp4,.mov,image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" {{ '' if post else 'required' }}>
 </label>
+<p class="fraco">Vídeo: .mp4 ou .mov, vertical, de 3 s a 15 min. Foto: .jpg, .png ou .webp,
+  de 4:5 (vertical, 1080×1350) até 1,91:1 (horizontal); quadrada (1080×1080) também serve.</p>
 {% if post %}<p class="fraco">Atual: {{ post.nome_original }} — deixe em branco para manter.</p>{% endif %}
 
 <label>Legenda

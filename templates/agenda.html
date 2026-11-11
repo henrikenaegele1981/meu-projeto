@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block titulo %}Agenda{% endblock %}
 {% block conteudo %}
-<h1>Agenda de Reels</h1>
+<h1>Agenda</h1>
 
 {% if not ig %}
   <div class="aviso erro">O Instagram ainda não está conectado. <a href="{{ url_for('configuracoes') }}">Conectar agora</a></div>
 {% endif %}
 
 <section class="cartao">
-  <h2>Novo Reel</h2>
+  <h2>Novo post</h2>
   <form method="post" action="{{ url_for('agendar') }}" enctype="multipart/form-data" class="formulario"
-        onsubmit="this.querySelector('button').disabled=true; this.querySelector('button').textContent='Enviando o vídeo…'">
+        onsubmit="this.querySelector('button').disabled=true; this.querySelector('button').textContent='Enviando o arquivo…'">
     {% with post = None %}{% include "_formulario_post.html" %}{% endwith %}
     <button>Agendar</button>
   </form>
@@ -21,11 +21,16 @@
   {% if not abertos %}<p class="fraco">Nada agendado.</p>{% endif %}
   {% for p in abertos %}
     <article class="item">
+      {% if p.tipo == 'foto' %}
+      <img src="{{ url_for('midia', nome=p.arquivo) }}" alt="" class="miniatura">
+      {% else %}
       <video src="{{ url_for('midia', nome=p.arquivo) }}" preload="metadata" muted></video>
+      {% endif %}
       <div class="info">
         <div class="topo">
           <span class="status {{ p.status }}">{{ p.status }}</span>
           <strong>{{ p.quando | data }}</strong>
+          <span class="rede">{{ 'foto' if p.tipo == 'foto' else 'reel' }}</span>
           {% for r in p.redes %}<span class="rede">{{ r }}</span>{% endfor %}
           {% if p.collabs %}<span class="fraco">collab: @{{ p.collabs | join(', @') }}</span>{% endif %}
         </div>
@@ -74,7 +79,7 @@
   // Recarrega a fila a cada 15 s, mas só se você não estiver preenchendo o formulário.
   setInterval(() => {
     const f = document.querySelector('form.formulario');
-    const mexendo = f.contains(document.activeElement) || f.video.files.length || f.legenda.value;
+    const mexendo = f.contains(document.activeElement) || f.arquivo.files.length || f.legenda.value;
     if (!mexendo) location.reload();
   }, 15000);
 </script>

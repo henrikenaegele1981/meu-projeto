@@ -4,7 +4,7 @@ App que roda no seu computador para planejar, agendar e postar no Instagram (e, 
 
 **O que já funciona (Parte 1)**
 - **Configurações:** conectar o Instagram pela API oficial colando o token (funciona com apps novos da Meta, de login unificado, e com apps antigos). O app mostra o @ conectado.
-- **Agenda (Reels):** subir o vídeo, escrever a legenda, escolher dia e hora, marcar collab. A fila mostra o status de cada post (agendado, postando, publicado, erro) e a mensagem quando dá erro. Dá para editar, cancelar e tentar de novo.
+- **Agenda (Reels e fotos):** subir o vídeo (Reel) ou uma foto (post estático), escrever a legenda, escolher dia e hora, marcar collab. A fila mostra o status de cada post (agendado, postando, publicado, erro) e a mensagem quando dá erro. Dá para editar, cancelar e tentar de novo.
 - **Vigia:** confere a fila a cada 15 segundos e posta na hora marcada. Se o PC estava desligado na hora, ele posta assim que o app abrir.
 
 **Próximas partes:** TikTok, Carrosséis, Painel e Posts.
@@ -69,3 +69,5 @@ Tudo fica em `%LOCALAPPDATA%\MeuEstudio\` (cole esse endereço na barra do Explo
 A API do Instagram só aceita vídeo que esteja num link público. Por isso, na hora de postar, o app sobe o vídeo em **litterbox.catbox.moe**, que apaga o arquivo sozinho depois de 1 hora. O Instagram busca o vídeo nesse link, processa e publica. Durante essa 1 hora, quem tiver o link consegue ver o vídeo, mas ele já vai ser publicado no seu perfil de qualquer jeito.
 
 Requisitos do Instagram para Reels: arquivo MP4 ou MOV, de preferência vertical (9:16), com 3 segundos a 15 minutos.
+
+Requisitos para fotos (post estático): JPG, PNG ou WEBP (o app converte para JPG), com proporção entre 4:5 (vertical, 1080×1350) e 1,91:1 (horizontal). Quadrada (1080×1080) também serve. Foto de story (9:16) não é aceita no feed.

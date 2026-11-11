@@ -138,7 +138,7 @@ def renovar_token(token: str) -> dict:
 
 
 def hospedar_temporario(caminho: Path) -> str:
-    """Sobe o vídeo no litterbox (some sozinho em 1 hora) só para o Instagram buscar."""
+    """Sobe o arquivo no litterbox (some sozinho em 1 hora) só para o Instagram buscar."""
     try:
         with open(caminho, "rb") as arquivo:
             resp = requests.post(
@@ -148,36 +148,30 @@ def hospedar_temporario(caminho: Path) -> str:
                 timeout=900,
             )
     except requests.RequestException as e:
-        raise ErroInstagram(f"Não consegui subir o vídeo na hospedagem temporária: {e}")
+        raise ErroInstagram(f"Não consegui subir o arquivo na hospedagem temporária: {e}")
     url = resp.text.strip()
     if resp.status_code != 200 or not url.startswith("http"):
-        raise ErroInstagram(f"A hospedagem temporária recusou o vídeo: {url[:200]}")
+        raise ErroInstagram(f"A hospedagem temporária recusou o arquivo: {url[:200]}")
     return url
 
 
-def publicar_reel(token: str, user_id: str, video_url: str, legenda: str,
-                  collabs: list[str] | None = None, tipo: str | None = None) -> dict:
+def _publicar(token: str, user_id: str, campos: dict, tipo: str | None) -> dict:
     """Cria o container, espera ficar FINISHED e publica. Devolve {'id', 'link'}."""
-    campos = {"media_type": "REELS", "video_url": video_url, "caption": legenda,
-              "share_to_feed": "true"}
-    if collabs:
-        campos["collaborators"] = json.dumps(collabs)
     container = _post(f"{user_id}/media", token, tipo, **campos)["id"]
 
     prazo = time.time() + ESPERA_PROCESSAMENTO
     while True:
         estado = _get(container, token, tipo, fields="status_code,status")
         codigo = estado.get("status_code")
-        if codigo == "FINISHED":
+        if codigo in (None, "FINISHED"):
             break
         if codigo in ("ERROR", "EXPIRED"):
             raise ErroInstagram(
-                f"O Instagram recusou o vídeo ({codigo}): {estado.get('status') or 'sem detalhes'}. "
-                "Confira se é MP4/MOV, vertical, de 3 s a 15 min."
+                f"O Instagram recusou o arquivo ({codigo}): {estado.get('status') or 'sem detalhes'}."
             )
         if time.time() > prazo:
-            raise ErroInstagram("O Instagram demorou mais de 15 minutos para processar o vídeo.")
-        time.sleep(10)
+            raise ErroInstagram("O Instagram demorou mais de 15 minutos para processar o arquivo.")
+        time.sleep(5)
 
     media_id = _post(f"{user_id}/media_publish", token, tipo, creation_id=container)["id"]
     try:
@@ -185,3 +179,32 @@ def publicar_reel(token: str, user_id: str, video_url: str, legenda: str,
     except ErroInstagram:
         link = None
     return {"id": media_id, "link": link}
+
+
+def publicar_reel(token: str, user_id: str, video_url: str, legenda: str,
+                  collabs: list[str] | None = None, tipo: str | None = None) -> dict:
+    campos = {"media_type": "REELS", "video_url": video_url, "caption": legenda,
+              "share_to_feed": "true"}
+    if collabs:
+        campos["collaborators"] = json.dumps(collabs)
+    try:
+        return _publicar(token, user_id, campos, tipo)
+    except ErroInstagram as e:
+        if "recusou o arquivo" in str(e):
+            raise ErroInstagram(f"{e} Confira se é MP4/MOV, vertical, de 3 s a 15 min.") from e
+        raise
+
+
+def publicar_foto(token: str, user_id: str, imagem_url: str, legenda: str,
+                  collabs: list[str] | None = None, tipo: str | None = None) -> dict:
+    """Post estático de uma foto no feed (a imagem precisa ser JPEG)."""
+    campos = {"image_url": imagem_url, "caption": legenda}
+    if collabs:
+        campos["collaborators"] = json.dumps(collabs)
+    try:
+        return _publicar(token, user_id, campos, tipo)
+    except ErroInstagram as e:
+        if "recusou o arquivo" in str(e):
+            raise ErroInstagram(f"{e} Confira se é JPG e se o formato fica entre 4:5 (vertical) "
+                                "e 1,91:1 (horizontal).") from e
+        raise

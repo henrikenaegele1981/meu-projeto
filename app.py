@@ -21,6 +21,7 @@ import vigia
 PORTA = 5252
 ENDERECO = f"http://localhost:{PORTA}"
 VIDEOS_ACEITOS = {".mp4", ".mov"}
+FOTOS_ACEITAS = {".jpg", ".jpeg", ".png", ".webp"}
 DIAS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 
 app = Flask(__name__)
@@ -62,12 +63,13 @@ def _ler_formulario(post_existente: dict | None = None) -> dict:
     if len(legenda) > 2200:
         erros.append("A legenda passou de 2.200 caracteres (limite do Instagram).")
 
-    video = request.files.get("video")
-    tem_video_novo = bool(video and video.filename)
-    if tem_video_novo and Path(video.filename).suffix.lower() not in VIDEOS_ACEITOS:
-        erros.append("O vídeo precisa ser .mp4 ou .mov.")
-    if not tem_video_novo and not post_existente:
-        erros.append("Escolha o vídeo.")
+    arquivo = request.files.get("arquivo")
+    tem_arquivo_novo = bool(arquivo and arquivo.filename)
+    extensao = Path(arquivo.filename).suffix.lower() if tem_arquivo_novo else ""
+    if tem_arquivo_novo and extensao not in VIDEOS_ACEITOS | FOTOS_ACEITAS:
+        erros.append("O arquivo precisa ser vídeo (.mp4 ou .mov) ou foto (.jpg, .png ou .webp).")
+    if not tem_arquivo_novo and not post_existente:
+        erros.append("Escolha o vídeo ou a foto.")
 
     for e in erros:
         flash(e, "erro")
@@ -79,12 +81,55 @@ def _ler_formulario(post_existente: dict | None = None) -> dict:
         "redes": redes,
         "collabs": _ler_collabs(request.form.get("collabs", "")),
     }
-    if tem_video_novo:
-        nome = f"{uuid.uuid4().hex}{Path(video.filename).suffix.lower()}"
-        video.save(db.MIDIA / nome)
+    if tem_arquivo_novo:
+        if extensao in FOTOS_ACEITAS:
+            try:
+                nome = _salvar_foto(arquivo)
+            except ValueError as e:
+                flash(str(e), "erro")
+                return {}
+            dados["tipo"] = "foto"
+        else:
+            nome = f"{uuid.uuid4().hex}{extensao}"
+            arquivo.save(db.MIDIA / nome)
+            dados["tipo"] = "reel"
         dados["arquivo"] = nome
-        dados["nome_original"] = video.filename
+        dados["nome_original"] = arquivo.filename
     return dados
+
+
+def _salvar_foto(arquivo) -> str:
+    """Guarda a foto como JPEG (o Instagram só aceita JPEG) e confere o formato."""
+    nome = f"{uuid.uuid4().hex}.jpg"
+    destino = db.MIDIA / nome
+    try:
+        from PIL import Image
+    except ImportError:
+        if Path(arquivo.filename).suffix.lower() not in (".jpg", ".jpeg"):
+            raise ValueError("Para usar PNG ou WEBP, rode o instalar.bat de novo "
+                             "(ou salve a imagem como JPG).")
+        arquivo.save(destino)
+        return nome
+    try:
+        imagem = Image.open(arquivo.stream)
+        imagem.load()
+    except Exception:
+        raise ValueError("Não consegui abrir essa imagem. Tente salvar como JPG.")
+    largura, altura = imagem.size
+    proporcao = largura / altura
+    if proporcao < 0.8 - 0.01 or proporcao > 1.91 + 0.01:
+        raise ValueError(
+            f"A foto tem {largura}×{altura}. O Instagram só aceita de 4:5 (vertical, ex.: 1080×1350) "
+            "até 1,91:1 (horizontal, ex.: 1080×566). Recorte a imagem e tente de novo."
+        )
+    if imagem.mode != "RGB":
+        fundo = Image.new("RGB", imagem.size, (255, 255, 255))
+        fundo.paste(imagem, mask=imagem.convert("RGBA").split()[-1])
+        imagem = fundo
+    if largura > 1440:
+        imagem = imagem.resize((1440, round(1440 / proporcao)))
+    imagem.save(destino, "JPEG", quality=92)
+    return nome
 
 
 def _apagar_video(post: dict) -> None:
@@ -172,13 +217,14 @@ def agendar():
     dados = _ler_formulario()
     if not dados:
         return redirect(url_for("agenda"))
-    post = {"id": uuid.uuid4().hex[:10], "tipo": "reel", "status": "agendado", "erro": None,
+    post = {"id": uuid.uuid4().hex[:10], "status": "agendado", "erro": None,
             "resultados": {}, "criado_em": vigia.agora_texto(), **dados}
     with db.trava:
         fila = db.carregar_fila()
         fila.append(post)
         db.salvar_fila(fila)
-    flash(f"Reel agendado para {formatar_data(post['quando'])}.", "ok")
+    oque = "Foto" if post.get("tipo") == "foto" else "Reel"
+    flash(f"{oque} agendado para {formatar_data(post['quando'])}.", "ok")
     return redirect(url_for("agenda"))
 
 

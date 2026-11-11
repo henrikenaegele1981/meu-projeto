@@ -55,12 +55,13 @@ def _postar_instagram(post: dict) -> dict:
     ig = db.carregar_config().get("instagram") or {}
     if not ig.get("token"):
         raise instagram.ErroInstagram("Instagram não conectado. Vá em Configurações e cole o token.")
-    video = db.MIDIA / post["arquivo"]
-    if not video.exists():
-        raise instagram.ErroInstagram("O arquivo do vídeo sumiu da pasta de dados.")
-    url = instagram.hospedar_temporario(video)
-    return instagram.publicar_reel(ig["token"], ig["user_id"], url, post.get("legenda", ""),
-                                   post.get("collabs") or None, ig.get("tipo"))
+    arquivo = db.MIDIA / post["arquivo"]
+    if not arquivo.exists():
+        raise instagram.ErroInstagram("O arquivo do post sumiu da pasta de dados.")
+    url = instagram.hospedar_temporario(arquivo)
+    publicar = instagram.publicar_foto if post.get("tipo") == "foto" else instagram.publicar_reel
+    return publicar(ig["token"], ig["user_id"], url, post.get("legenda", ""),
+                    post.get("collabs") or None, ig.get("tipo"))
 
 
 def postar(post: dict) -> None:

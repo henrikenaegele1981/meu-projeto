@@ -121,7 +121,7 @@ def salvar_instagram():
         "token": token,
         "tipo": dados["tipo"],
         "user_id": str(dados["user_id"]),
-        "username": dados.get("username", ""),
+        "username": dados.get("username") or f"conta {dados['user_id']}",
         "renovado_em": agora.isoformat(timespec="seconds"),
         "expira_em": None,
     }
@@ -131,7 +131,7 @@ def salvar_instagram():
         cfg = db.carregar_config()
         cfg["instagram"] = conexao
         db.salvar_config(cfg)
-    flash(f"Instagram conectado: @{dados.get('username', '')}", "ok")
+    flash(f"Instagram conectado: @{conexao['username']}", "ok")
     return redirect(url_for("configuracoes"))
 
 

@@ -56,19 +56,43 @@ def _post(caminho: str, token: str, tipo: str | None = None, **dados) -> dict:
         raise ErroInstagram(f"Sem conexão com o Instagram: {e}")
 
 
-def _conta_facebook(token: str, ig_id: str | None) -> dict:
-    if ig_id:
-        dados = _get(ig_id, token, "facebook", fields="id,username")
-        return {"user_id": str(dados.get("id") or ig_id), "username": dados.get("username", ""),
-                "tipo": "facebook"}
-    # Sem o ID: procura uma conta do Instagram ligada as Paginas do token.
-    paginas = _get("me/accounts", token, "facebook",
-                   fields="instagram_business_account{id,username}").get("data") or []
+def _contas_das_paginas(token: str) -> list[dict]:
+    """Contas do Instagram ligadas as Paginas do Facebook que o token enxerga."""
+    try:
+        paginas = _get("me/accounts", token, "facebook",
+                       fields="instagram_business_account{id,username}").get("data") or []
+    except ErroInstagram:
+        return []
+    contas = []
     for pagina in paginas:
         conta_ig = pagina.get("instagram_business_account")
         if conta_ig and conta_ig.get("id"):
-            return {"user_id": str(conta_ig["id"]), "username": conta_ig.get("username", ""),
+            contas.append({"user_id": str(conta_ig["id"]), "username": conta_ig.get("username", ""),
+                           "tipo": "facebook"})
+    return contas
+
+
+def _conta_facebook(token: str, ig_id: str | None) -> dict:
+    if ig_id:
+        try:
+            dados = _get(ig_id, token, "facebook", fields="id,username")
+            return {"user_id": str(dados.get("id") or ig_id), "username": dados.get("username", ""),
                     "tipo": "facebook"}
+        except ErroInstagram as e:
+            if "nonexisting field" not in str(e):
+                raise
+        # A Meta nao deixou ler o @ por esse ID: tenta achar a conta pelas Paginas do token.
+        contas = _contas_das_paginas(token)
+        if len(contas) == 1:
+            return contas[0]
+        for c in contas:
+            if c["user_id"] == ig_id:
+                return c
+        dados = _get(ig_id, token, "facebook", fields="id")
+        return {"user_id": str(dados.get("id") or ig_id), "username": "", "tipo": "facebook"}
+    contas = _contas_das_paginas(token)
+    if contas:
+        return contas[0]
     raise ErroInstagram(
         "O token foi aceito, mas não achei a conta do Instagram. Preencha o campo "
         "“ID da conta do Instagram” (o número que aparece embaixo do seu @ no painel da Meta)."

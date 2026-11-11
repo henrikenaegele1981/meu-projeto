@@ -29,6 +29,11 @@ O essencial, para não esquecer:
   paráfrase.
 - Confira a notícia numa fonte antes; se não conseguir, avise e escreva "segundo a imprensa…".
 
+Modelos prontos em `assets/`: `modelo-legenda-longa.md` (padrão) e `modelo-card-urgente.md`
+(notícia quente / texto do card). Comece por eles.
+
+Depois de escrever, se puder chamar subagentes, passe a legenda ao agente **revisor-legendas**
+(definido em `.claude/agents/` do repositório) ou, sem ele, confira você mesmo o checklist do guia.
 Mostre a legenda com a contagem de caracteres. Quando o José corrigir, aplique sem rediscutir.
 
 ## 2. Agendar

@@ -22,7 +22,8 @@ Estas correções valem para todas as legendas, não só para a primeira:
    consequências, e a agenda woke cresce nesse vazio. A Igreja não aprova isso.
 2. **Não citar pessoas.** Nada de filósofos, papas como "autores", pensadores ou influenciadores
    (ele vetou Nietzsche e Bento XVI): o José pode não concordar com eles. A autoridade é a Igreja:
-   encíclicas, catecismos, magistério. Também não diga a confissão (católico/protestante) de quem
+   encíclicas, catecismos, magistério (nomear o Papa como autor de um documento pré-conciliar,
+   como "Pio XI, na Casti Connubii", é aceito). Também não diga a confissão (católico/protestante) de quem
    está na notícia: escreva "cristão", "grupo cristão".
 3. **Sem ressalva pastoral.** Ele mandou tirar a linha de acolhimento ("respeito, compaixão e
    delicadeza") e terminar o parágrafo doutrinário na afirmação firme; depois disso, passe direto

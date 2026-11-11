@@ -24,6 +24,24 @@ curl -s -o NUL -w "%{http_code}" -F "arquivo=@C:\caminho\imagem.jpg" -F "legenda
 - Antes de agendar, confira em `/configuracoes` se o Instagram está conectado.
 - Depois do horário, confira em `/agenda` se o status virou `publicado` (com link) ou `erro` (com a mensagem).
 
+## Agendar de fora do PC (caixa de entrada)
+
+Quando o Claude não está no PC (ex.: sessão na nuvem), ele agenda pela **caixa de entrada**: a branch
+`caixa` deste repositório tem `fila.json` e as mídias. O app (`caixa.py`) confere
+`https://raw.githubusercontent.com/henrikenaegele1981/meu-projeto/caixa/fila.json` a cada minuto e
+coloca na Agenda os itens novos (marcados "agendado pelo Claude"), que saem com o token do próprio app.
+
+```json
+[{"id": "nome-unico", "tipo": "foto", "quando": "2026-11-11T15:00", "legenda": "...",
+  "midia": "https://raw.githubusercontent.com/henrikenaegele1981/meu-projeto/caixa/arquivo.jpg",
+  "collabs": [], "cancelado": false}]
+```
+
+- `id` nunca se repete (o app guarda os já importados). Para mudar um post: marque o antigo com
+  `"cancelado": true` e crie outro `id`. Foto em JPEG 4:5 (1080×1350) ou quadrada; reel em MP4.
+- O repositório é público: o conteúdo fica visível até ser publicado. Depois de publicado, tire da caixa.
+- O app precisa estar aberto no PC. Post que chega mais de 2 h atrasado entra como "erro" (não sai sozinho).
+
 ## Regras
 
 - **Nunca** leia, mostre ou copie o token do Instagram. Ele fica em `%LOCALAPPDATA%\MeuEstudio\config.json`;

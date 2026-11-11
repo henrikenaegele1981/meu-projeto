@@ -31,6 +31,7 @@
           <span class="status {{ p.status }}">{{ p.status }}</span>
           <strong>{{ p.quando | data }}</strong>
           <span class="rede">{{ 'foto' if p.tipo == 'foto' else 'reel' }}</span>
+          {% if p.origem == 'caixa' %}<span class="rede">agendado pelo Claude</span>{% endif %}
           {% for r in p.redes %}<span class="rede">{{ r }}</span>{% endfor %}
           {% if p.collabs %}<span class="fraco">collab: @{{ p.collabs | join(', @') }}</span>{% endif %}
         </div>

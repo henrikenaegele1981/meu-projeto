@@ -7,6 +7,7 @@ import time
 from datetime import datetime, timedelta
 
 import armazenamento as db
+import caixa
 import instagram
 
 INTERVALO = 15
@@ -89,8 +90,16 @@ def postar(post: dict) -> None:
         db.atualizar_post(post["id"], status="publicado", erro=None, publicado_em=agora_texto())
 
 
+_ultima_caixa = 0.0
+CAIXA_A_CADA = 60  # segundos
+
+
 def ciclo() -> None:
+    global _ultima_caixa
     renovar_instagram()
+    if time.time() - _ultima_caixa >= CAIXA_A_CADA:
+        _ultima_caixa = time.time()
+        caixa.conferir()
     agora = datetime.now()
     pendentes = sorted(
         (p for p in db.carregar_fila() if p.get("status") == "agendado"),

@@ -1,0 +1,26 @@
+{# Campos usados tanto para agendar quanto para editar. Recebe `post` (ou None). #}
+<label>Vídeo (.mp4 ou .mov, vertical)
+  <input type="file" name="video" accept="video/mp4,video/quicktime,.mp4,.mov" {{ '' if post else 'required' }}>
+</label>
+{% if post %}<p class="fraco">Atual: {{ post.nome_original }} — deixe em branco para manter.</p>{% endif %}
+
+<label>Legenda
+  <textarea name="legenda" rows="6" maxlength="2200" placeholder="Escreva a legenda, hashtags…">{{ post.legenda if post else '' }}</textarea>
+</label>
+
+<div class="linha">
+  <label>Dia e hora
+    <input type="datetime-local" name="quando" value="{{ post.quando if post else sugestao }}" required>
+  </label>
+  <label>Collab com <span class="fraco">(opcional, até 3)</span>
+    <input type="text" name="collabs" placeholder="@amigo, @outra_conta"
+           value="{{ ('@' ~ post.collabs | join(', @')) if post and post.collabs else '' }}">
+  </label>
+</div>
+
+<fieldset class="redes">
+  <legend>Postar em</legend>
+  <label class="check"><input type="checkbox" name="redes" value="instagram"
+    {{ 'checked' if not post or 'instagram' in post.redes }}> Instagram</label>
+  <label class="check desligado" title="Vem na próxima parte"><input type="checkbox" disabled> TikTok <small>em breve</small></label>
+</fieldset>

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block titulo %}Agenda{% endblock %}
+{% block conteudo %}
+<h1>Agenda de Reels</h1>
+
+{% if not ig %}
+  <div class="aviso erro">O Instagram ainda não está conectado. <a href="{{ url_for('configuracoes') }}">Conectar agora</a></div>
+{% endif %}
+
+<section class="cartao">
+  <h2>Novo Reel</h2>
+  <form method="post" action="{{ url_for('agendar') }}" enctype="multipart/form-data" class="formulario"
+        onsubmit="this.querySelector('button').disabled=true; this.querySelector('button').textContent='Enviando o vídeo…'">
+    {% with post = None %}{% include "_formulario_post.html" %}{% endwith %}
+    <button>Agendar</button>
+  </form>
+</section>
+
+<section class="cartao">
+  <h2>Fila <small class="fraco">(atualiza sozinha)</small></h2>
+  {% if not abertos %}<p class="fraco">Nada agendado.</p>{% endif %}
+  {% for p in abertos %}
+    <article class="item">
+      <video src="{{ url_for('midia', nome=p.arquivo) }}" preload="metadata" muted></video>
+      <div class="info">
+        <div class="topo">
+          <span class="status {{ p.status }}">{{ p.status }}</span>
+          <strong>{{ p.quando | data }}</strong>
+          {% for r in p.redes %}<span class="rede">{{ r }}</span>{% endfor %}
+          {% if p.collabs %}<span class="fraco">collab: @{{ p.collabs | join(', @') }}</span>{% endif %}
+        </div>
+        <p class="legenda">{{ p.legenda or '(sem legenda)' }}</p>
+        {% if p.erro %}<div class="aviso erro">{{ p.erro }}</div>{% endif %}
+        {% if p.status != 'postando' %}
+        <div class="botoes">
+          {% if p.status == 'erro' %}
+            <form method="post" action="{{ url_for('tentar_de_novo', post_id=p.id) }}"><button>Tentar de novo</button></form>
+          {% endif %}
+          <a class="botao secundario" href="{{ url_for('editar', post_id=p.id) }}">Editar</a>
+          <form method="post" action="{{ url_for('cancelar', post_id=p.id) }}"
+                onsubmit="return confirm('Cancelar este post?')"><button class="perigo">Cancelar</button></form>
+        </div>
+        {% else %}
+          <p class="fraco">Enviando… pode levar alguns minutos.</p>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</section>
+
+{% if publicados %}
+<section class="cartao">
+  <h2>Publicados</h2>
+  {% for p in publicados %}
+    <article class="item compacto">
+      <div class="info">
+        <div class="topo">
+          <span class="status publicado">publicado</span>
+          <strong>{{ p.publicado_em | data }}</strong>
+          {% for rede, r in p.resultados.items() %}
+            {% if r.link %}<a href="{{ r.link }}" target="_blank" rel="noopener">ver no {{ rede }}</a>{% endif %}
+          {% endfor %}
+        </div>
+        <p class="legenda">{{ p.legenda or '(sem legenda)' }}</p>
+      </div>
+      <form method="post" action="{{ url_for('cancelar', post_id=p.id) }}"
+            onsubmit="return confirm('Tirar da lista? (não apaga do Instagram)')"><button class="secundario">Tirar da lista</button></form>
+    </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+<script>
+  // Recarrega a fila a cada 15 s, mas só se você não estiver preenchendo o formulário.
+  setInterval(() => {
+    const f = document.querySelector('form.formulario');
+    const mexendo = f.contains(document.activeElement) || f.video.files.length || f.legenda.value;
+    if (!mexendo) location.reload();
+  }, 15000);
+</script>
+{% endblock %}

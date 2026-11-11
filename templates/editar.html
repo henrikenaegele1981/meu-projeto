@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block titulo %}Editar post{% endblock %}
+{% block conteudo %}
+<h1>Editar post</h1>
+<section class="cartao">
+  <form method="post" enctype="multipart/form-data" class="formulario">
+    {% include "_formulario_post.html" %}
+    <div class="botoes">
+      <button>Salvar</button>
+      <a class="botao secundario" href="{{ url_for('agenda') }}">Voltar</a>
+    </div>
+  </form>
+</section>
+{% endblock %}

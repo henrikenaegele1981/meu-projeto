@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block titulo %}Configurações{% endblock %}
+{% block conteudo %}
+<h1>Configurações</h1>
+
+<section class="cartao">
+  <h2>Instagram</h2>
+  {% if ig %}
+    <p class="conectado">✅ Conectado como <strong>@{{ ig.username }}</strong></p>
+    <p class="fraco">Token renovado em {{ ig.renovado_em | data }} · vale até {{ ig.expira_em | data }}.
+      O app renova sozinho a cada 30 dias.</p>
+    {% if ig.aviso %}<div class="aviso erro">{{ ig.aviso }}</div>{% endif %}
+    <div class="botoes">
+      <form method="post" action="{{ url_for('renovar_instagram') }}"><button class="secundario">Renovar agora</button></form>
+      <form method="post" action="{{ url_for('desconectar_instagram') }}"
+            onsubmit="return confirm('Desconectar o Instagram?')"><button class="perigo">Desconectar</button></form>
+    </div>
+    <details><summary>Trocar o token</summary>
+  {% endif %}
+  <form method="post" action="{{ url_for('salvar_instagram') }}" class="formulario">
+    <label>Token de acesso do Instagram
+      <input type="password" name="token" placeholder="Cole aqui o token gerado no app da Meta" autocomplete="off" required>
+    </label>
+    <p class="fraco">Gere em developers.facebook.com → seu app → Casos de uso → Instagram →
+      Configuração da API com login do Instagram → Gerar tokens de acesso. Veja o README.</p>
+    <button>Salvar e conectar</button>
+  </form>
+  {% if ig %}</details>{% endif %}
+</section>
+
+<section class="cartao desligado">
+  <h2>TikTok <small>em breve</small></h2>
+  <p class="fraco">Vem na próxima parte: Client key, Client secret e o botão “Conectar TikTok”.</p>
+</section>
+{% endblock %}

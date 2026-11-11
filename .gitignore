@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Os dados (tokens, fila, videos) ficam em %LOCALAPPDATA%\MeuEstudio, nunca aqui.
+# Por garantia, nada disso entra no git:
+config.json
+fila.json
+*.log
+.env

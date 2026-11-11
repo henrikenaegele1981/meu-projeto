@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block titulo %}Meu Estúdio{% endblock %} · Meu Estúdio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+  <aside class="menu">
+    <div class="marca">🎬 Meu Estúdio</div>
+    <nav>
+      <a href="{{ url_for('agenda') }}" class="{{ 'ativo' if pagina == 'agenda' }}">📅 Agenda (Reels)</a>
+      <a href="{{ url_for('em_breve', secao='carrosseis') }}" class="{{ 'ativo' if pagina == 'carrosseis' }}">🖼️ Carrosséis <small>em breve</small></a>
+      <a href="{{ url_for('em_breve', secao='painel') }}" class="{{ 'ativo' if pagina == 'painel' }}">📈 Painel <small>em breve</small></a>
+      <a href="{{ url_for('em_breve', secao='posts') }}" class="{{ 'ativo' if pagina == 'posts' }}">📋 Posts <small>em breve</small></a>
+      <a href="{{ url_for('configuracoes') }}" class="{{ 'ativo' if pagina == 'config' }}">⚙️ Configurações</a>
+    </nav>
+    <div class="conta">
+      {% if ig %}Instagram: <strong>@{{ ig.username }}</strong>
+      {% else %}<a href="{{ url_for('configuracoes') }}">Conectar Instagram</a>{% endif %}
+    </div>
+  </aside>
+  <main>
+    {% with mensagens = get_flashed_messages(with_categories=true) %}
+      {% for tipo, msg in mensagens %}<div class="aviso {{ tipo }}">{{ msg }}</div>{% endfor %}
+    {% endwith %}
+    {% block conteudo %}{% endblock %}
+  </main>
+</body>
+</html>

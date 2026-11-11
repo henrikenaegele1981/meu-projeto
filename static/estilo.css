@@ -1,0 +1,79 @@
+:root {
+  --fundo: #f5f6f8; --cartao: #fff; --texto: #1d1f23; --fraco: #6b7280; --borda: #e3e5e9;
+  --cor: #6d4aff; --cor-escura: #5634e6; --ok: #0f9d58; --erro: #d93025; --alerta: #e8a200;
+}
+* { box-sizing: border-box; }
+body { margin: 0; display: flex; min-height: 100vh; font: 15px/1.5 "Segoe UI", system-ui, sans-serif;
+       background: var(--fundo); color: var(--texto); }
+
+.menu { width: 230px; flex-shrink: 0; background: #16171c; color: #cfd2d8; padding: 20px 12px;
+        display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; }
+.marca { font-size: 19px; font-weight: 700; color: #fff; padding: 0 10px 20px; }
+.menu nav { display: flex; flex-direction: column; gap: 2px; }
+.menu nav a { color: inherit; text-decoration: none; padding: 9px 10px; border-radius: 8px; }
+.menu nav a:hover { background: #24262d; }
+.menu nav a.ativo { background: var(--cor); color: #fff; }
+.menu small { font-size: 11px; opacity: .6; margin-left: 4px; }
+.conta { margin-top: auto; font-size: 13px; padding: 10px; border-top: 1px solid #2a2c33; }
+.conta a { color: #b9a8ff; }
+
+main { flex: 1; padding: 28px 36px; max-width: 980px; }
+h1 { margin: 0 0 18px; font-size: 26px; }
+h2 { margin: 0 0 14px; font-size: 18px; }
+h2 small { font-weight: 400; font-size: 13px; }
+
+.cartao { background: var(--cartao); border: 1px solid var(--borda); border-radius: 12px; padding: 20px; margin-bottom: 18px; }
+.cartao.desligado { opacity: .6; }
+.fraco { color: var(--fraco); font-size: 13px; }
+
+.formulario { display: flex; flex-direction: column; gap: 12px; }
+label { display: flex; flex-direction: column; gap: 4px; font-weight: 600; font-size: 14px; }
+input[type=text], input[type=password], input[type=datetime-local], textarea {
+  font: inherit; padding: 9px 11px; border: 1px solid var(--borda); border-radius: 8px; background: #fff; }
+textarea { resize: vertical; }
+input:focus, textarea:focus { outline: 2px solid var(--cor); border-color: transparent; }
+.linha { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.redes { border: 1px solid var(--borda); border-radius: 8px; display: flex; gap: 18px; padding: 8px 12px; }
+.redes legend { font-weight: 600; font-size: 14px; padding: 0 4px; }
+label.check { flex-direction: row; align-items: center; gap: 6px; font-weight: 400; }
+label.check.desligado { color: var(--fraco); }
+
+button, .botao { font: inherit; font-weight: 600; background: var(--cor); color: #fff; border: 0; border-radius: 8px;
+  padding: 9px 16px; cursor: pointer; text-decoration: none; display: inline-block; align-self: flex-start; }
+button:hover, .botao:hover { background: var(--cor-escura); }
+button:disabled { opacity: .6; cursor: wait; }
+.secundario { background: #eceef2; color: var(--texto); }
+.secundario:hover { background: #dfe2e8; }
+.perigo { background: #fdeceb; color: var(--erro); }
+.perigo:hover { background: #fadad7; }
+.botoes { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.botoes form { margin: 0; }
+
+.aviso { padding: 10px 14px; border-radius: 8px; margin-bottom: 12px; font-size: 14px; }
+.aviso.ok { background: #e6f4ea; color: #0b6b3a; }
+.aviso.erro { background: #fdeceb; color: #a5221b; }
+.conectado { margin: 0 0 4px; }
+details { margin-top: 14px; }
+summary { cursor: pointer; color: var(--cor); margin-bottom: 10px; }
+
+.item { display: flex; gap: 14px; padding: 14px 0; border-top: 1px solid var(--borda); }
+.item:first-of-type { border-top: 0; padding-top: 0; }
+.item video { width: 90px; height: 160px; object-fit: cover; border-radius: 8px; background: #000; flex-shrink: 0; }
+.item .info { flex: 1; min-width: 0; }
+.item.compacto { align-items: center; }
+.topo { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 6px; }
+.legenda { margin: 0 0 10px; white-space: pre-wrap; overflow: hidden; display: -webkit-box;
+           -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.status { font-size: 12px; font-weight: 700; text-transform: uppercase; padding: 2px 8px; border-radius: 99px; }
+.status.agendado { background: #e8f0fe; color: #1a56c4; }
+.status.postando { background: #fff4d6; color: #8a6100; }
+.status.publicado { background: #e6f4ea; color: #0b6b3a; }
+.status.erro { background: #fdeceb; color: #a5221b; }
+.rede { font-size: 12px; background: #f0ecff; color: var(--cor-escura); padding: 2px 8px; border-radius: 99px; text-transform: capitalize; }
+
+@media (max-width: 760px) {
+  body { flex-direction: column; }
+  .menu { width: 100%; height: auto; position: static; }
+  main { padding: 18px 16px; }
+  .linha { grid-template-columns: 1fr; }
+}

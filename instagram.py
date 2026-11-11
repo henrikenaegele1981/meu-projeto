@@ -1,4 +1,9 @@
-"""Conversa com a API oficial do Instagram (login do Instagram, graph.instagram.com)."""
+"""Conversa com a API oficial do Instagram.
+
+Aceita os dois tipos de token que a Meta gera:
+- "instagram": token do login do Instagram (apps antigos), servidor graph.instagram.com;
+- "facebook": token do login unificado / usuario do sistema (apps novos), servidor graph.facebook.com.
+"""
 from __future__ import annotations
 
 import json
@@ -8,6 +13,8 @@ from pathlib import Path
 import requests
 
 API = "https://graph.instagram.com/v21.0"
+API_FACEBOOK = "https://graph.facebook.com"  # sem versao: usa a versao padrao do app
+SERVIDORES = {"instagram": API, "facebook": API_FACEBOOK}
 HOSPEDAGEM = "https://litterbox.catbox.moe/resources/internals/api.php"
 TEMPO_LIMITE = 60
 ESPERA_PROCESSAMENTO = 15 * 60  # máximo que esperamos o Instagram processar o vídeo
@@ -29,28 +36,65 @@ def _resposta(resp: requests.Response) -> dict:
     return dados
 
 
-def _get(caminho: str, token: str, **params) -> dict:
+def _base(tipo: str | None) -> str:
+    return SERVIDORES.get(tipo or "instagram", API)
+
+
+def _get(caminho: str, token: str, tipo: str | None = None, **params) -> dict:
     params["access_token"] = token
     try:
-        return _resposta(requests.get(f"{API}/{caminho}", params=params, timeout=TEMPO_LIMITE))
+        return _resposta(requests.get(f"{_base(tipo)}/{caminho}", params=params, timeout=TEMPO_LIMITE))
     except requests.RequestException as e:
         raise ErroInstagram(f"Sem conexão com o Instagram: {e}")
 
 
-def _post(caminho: str, token: str, **dados) -> dict:
+def _post(caminho: str, token: str, tipo: str | None = None, **dados) -> dict:
     dados["access_token"] = token
     try:
-        return _resposta(requests.post(f"{API}/{caminho}", data=dados, timeout=TEMPO_LIMITE))
+        return _resposta(requests.post(f"{_base(tipo)}/{caminho}", data=dados, timeout=TEMPO_LIMITE))
     except requests.RequestException as e:
         raise ErroInstagram(f"Sem conexão com o Instagram: {e}")
 
 
-def conta(token: str) -> dict:
-    """Devolve {'user_id': ..., 'username': ...} da conta dona do token."""
-    dados = _get("me", token, fields="user_id,username")
-    if not dados.get("user_id"):
-        dados["user_id"] = dados.get("id")
-    return dados
+def _conta_facebook(token: str, ig_id: str | None) -> dict:
+    if ig_id:
+        dados = _get(ig_id, token, "facebook", fields="id,username")
+        return {"user_id": str(dados.get("id") or ig_id), "username": dados.get("username", ""),
+                "tipo": "facebook"}
+    # Sem o ID: procura uma conta do Instagram ligada as Paginas do token.
+    paginas = _get("me/accounts", token, "facebook",
+                   fields="instagram_business_account{id,username}").get("data") or []
+    for pagina in paginas:
+        conta_ig = pagina.get("instagram_business_account")
+        if conta_ig and conta_ig.get("id"):
+            return {"user_id": str(conta_ig["id"]), "username": conta_ig.get("username", ""),
+                    "tipo": "facebook"}
+    raise ErroInstagram(
+        "O token foi aceito, mas não achei a conta do Instagram. Preencha o campo "
+        "“ID da conta do Instagram” (o número que aparece embaixo do seu @ no painel da Meta)."
+    )
+
+
+def conta(token: str, ig_id: str | None = None) -> dict:
+    """Descobre de quem e o token. Devolve {'user_id', 'username', 'tipo'}.
+
+    Tenta primeiro como token do login do Instagram; se nao der, como token do Facebook
+    (login unificado / usuario do sistema).
+    """
+    ig_id = (ig_id or "").strip() or None
+    try:
+        dados = _get("me", token, "instagram", fields="user_id,username")
+        return {"user_id": str(dados.get("user_id") or dados.get("id")),
+                "username": dados.get("username", ""), "tipo": "instagram"}
+    except ErroInstagram as erro_instagram:
+        try:
+            return _conta_facebook(token, ig_id)
+        except ErroInstagram as erro_facebook:
+            if "não achei a conta" in str(erro_facebook):
+                raise
+            raise ErroInstagram(
+                f"{erro_facebook} (como token do Instagram: {erro_instagram})"
+            ) from erro_facebook
 
 
 def renovar_token(token: str) -> dict:
@@ -85,17 +129,17 @@ def hospedar_temporario(caminho: Path) -> str:
 
 
 def publicar_reel(token: str, user_id: str, video_url: str, legenda: str,
-                  collabs: list[str] | None = None) -> dict:
+                  collabs: list[str] | None = None, tipo: str | None = None) -> dict:
     """Cria o container, espera ficar FINISHED e publica. Devolve {'id', 'link'}."""
     campos = {"media_type": "REELS", "video_url": video_url, "caption": legenda,
               "share_to_feed": "true"}
     if collabs:
         campos["collaborators"] = json.dumps(collabs)
-    container = _post(f"{user_id}/media", token, **campos)["id"]
+    container = _post(f"{user_id}/media", token, tipo, **campos)["id"]
 
     prazo = time.time() + ESPERA_PROCESSAMENTO
     while True:
-        estado = _get(container, token, fields="status_code,status")
+        estado = _get(container, token, tipo, fields="status_code,status")
         codigo = estado.get("status_code")
         if codigo == "FINISHED":
             break
@@ -108,9 +152,9 @@ def publicar_reel(token: str, user_id: str, video_url: str, legenda: str,
             raise ErroInstagram("O Instagram demorou mais de 15 minutos para processar o vídeo.")
         time.sleep(10)
 
-    media_id = _post(f"{user_id}/media_publish", token, creation_id=container)["id"]
+    media_id = _post(f"{user_id}/media_publish", token, tipo, creation_id=container)["id"]
     try:
-        link = _get(media_id, token, fields="permalink").get("permalink")
+        link = _get(media_id, token, tipo, fields="permalink").get("permalink")
     except ErroInstagram:
         link = None
     return {"id": media_id, "link": link}

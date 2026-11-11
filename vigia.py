@@ -26,6 +26,8 @@ def renovar_instagram(forcar: bool = False) -> None:
     ig = cfg.get("instagram")
     if not ig or not ig.get("token"):
         return
+    if ig.get("tipo") == "facebook":
+        return  # token do Facebook/usuario do sistema: nao usa a renovacao do Instagram
     renovado = datetime.fromisoformat(ig.get("renovado_em", agora_texto()))
     if not forcar and datetime.now() - renovado < RENOVAR_A_CADA:
         return
@@ -58,7 +60,7 @@ def _postar_instagram(post: dict) -> dict:
         raise instagram.ErroInstagram("O arquivo do vídeo sumiu da pasta de dados.")
     url = instagram.hospedar_temporario(video)
     return instagram.publicar_reel(ig["token"], ig["user_id"], url, post.get("legenda", ""),
-                                   post.get("collabs") or None)
+                                   post.get("collabs") or None, ig.get("tipo"))
 
 
 def postar(post: dict) -> None:

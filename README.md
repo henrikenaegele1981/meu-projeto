@@ -3,7 +3,7 @@
 App que roda no seu computador para planejar, agendar e postar no Instagram (e, nas próximas partes, no TikTok).
 
 **O que já funciona (Parte 1)**
-- **Configurações:** conectar o Instagram pela API oficial colando o token. O app mostra o @ conectado e renova o token sozinho a cada 30 dias (ele vale 60).
+- **Configurações:** conectar o Instagram pela API oficial colando o token (funciona com apps novos da Meta, de login unificado, e com apps antigos). O app mostra o @ conectado.
 - **Agenda (Reels):** subir o vídeo, escrever a legenda, escolher dia e hora, marcar collab. A fila mostra o status de cada post (agendado, postando, publicado, erro) e a mensagem quando dá erro. Dá para editar, cancelar e tentar de novo.
 - **Vigia:** confere a fila a cada 15 segundos e posta na hora marcada. Se o PC estava desligado na hora, ele posta assim que o app abrir.
 
@@ -27,19 +27,33 @@ App que roda no seu computador para planejar, agendar e postar no Instagram (e, 
 
 ## 3. Conectar o Instagram
 
+Primeiro, nos dois casos:
 1. **Conta profissional:** no Instagram, vá em Configurações → Tipo de conta e ferramentas e mude para **Criador de conteúdo** ou **Comercial**.
 2. **Conta de desenvolvedor:** entre em https://developers.facebook.com com o seu Facebook e aceite o cadastro de desenvolvedor.
 3. **Criar o app:** Meus apps → Criar app → caso de uso **"Gerenciar mensagens e conteúdo no Instagram"** → dê um nome (ex.: Meu Estúdio) → Criar.
-4. **Gerar o token:** no painel do app, vá em Casos de uso → Instagram → **Configuração da API com login do Instagram** → Gerar tokens de acesso → Adicionar conta → entre no seu Instagram e autorize → **Gerar token**.
-5. **Permissões:** deixe marcadas:
-   - `instagram_business_basic`
-   - `instagram_business_content_publish` (para postar)
-   - `instagram_business_manage_insights` (para o Painel; sem ela o Painel fica vazio)
-6. Copie o token e cole em **Configurações → Instagram** no Meu Estúdio.
+
+Depois, veja qual tela o seu app mostra em Casos de uso → Instagram → Personalizar:
+
+### Apps novos ("login unificado")
+
+Se aparecer o aviso *"A configuração da API com login do Instagram não está disponível para apps mais recentes"*, o seu app usa o login unificado. O token vem de um **usuário do sistema** do seu portfólio empresarial:
+
+1. Em https://business.facebook.com, crie (ou abra) o seu **portfólio empresarial**.
+2. **Configurações do negócio → Contas → Contas do Instagram → Adicionar:** conecte o seu Instagram.
+3. **Configurações do negócio → Contas → Apps → Adicionar:** conecte o app que você criou (pelo ID do app).
+4. **Configurações do negócio → Usuários → Usuários do sistema → Adicionar:** crie um usuário com função **Administrador**.
+5. Nesse usuário, **Atribuir ativos:** dê **controle total** do app e da conta do Instagram.
+6. **Gerar token:** escolha o app, validade **Nunca** e marque as permissões do Instagram (as de publicar conteúdo, informações básicas e insights).
+7. No Meu Estúdio, em **Configurações → Instagram**, cole o token e preencha o **ID da conta do Instagram** (o número que aparece embaixo do seu @ na seção "Gerar tokens de acesso" do painel do app).
+
+### Apps antigos ("login do Instagram")
+
+1. No painel do app: Casos de uso → Instagram → **Configuração da API com login do Instagram** → Gerar tokens de acesso → Adicionar conta → entre no seu Instagram e autorize → **Gerar token**.
+2. Permissões: `instagram_business_basic`, `instagram_business_content_publish` e `instagram_business_manage_insights`.
+3. Cole o token em **Configurações → Instagram** (o ID não é necessário). O app renova esse token sozinho a cada 30 dias.
 
 Observações:
 - Não precisa publicar o app nem pedir revisão da Meta: postando na sua própria conta, ele funciona em modo de desenvolvimento.
-- Se o token vencer (por exemplo, se o app ficou mais de 60 dias sem abrir), gere outro no passo 4.
 - **Nunca mande o token para ninguém nem coloque no código.**
 
 ## Onde ficam os seus dados

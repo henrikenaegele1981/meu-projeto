@@ -107,24 +107,29 @@ def configuracoes():
 @app.post("/configuracoes/instagram")
 def salvar_instagram():
     token = request.form.get("token", "").strip()
+    ig_id = "".join(c for c in request.form.get("ig_id", "") if c.isdigit())
     if not token:
         flash("Cole o token do Instagram.", "erro")
         return redirect(url_for("configuracoes"))
     try:
-        dados = instagram.conta(token)
+        dados = instagram.conta(token, ig_id)
     except instagram.ErroInstagram as e:
-        flash(f"O Instagram não aceitou esse token: {e}", "erro")
+        flash(f"A Meta não aceitou esse token: {e}", "erro")
         return redirect(url_for("configuracoes"))
     agora = datetime.now()
+    conexao = {
+        "token": token,
+        "tipo": dados["tipo"],
+        "user_id": str(dados["user_id"]),
+        "username": dados.get("username", ""),
+        "renovado_em": agora.isoformat(timespec="seconds"),
+        "expira_em": None,
+    }
+    if dados["tipo"] == "instagram":
+        conexao["expira_em"] = (agora + timedelta(days=60)).isoformat(timespec="seconds")
     with db.trava:
         cfg = db.carregar_config()
-        cfg["instagram"] = {
-            "token": token,
-            "user_id": str(dados["user_id"]),
-            "username": dados.get("username", ""),
-            "renovado_em": agora.isoformat(timespec="seconds"),
-            "expira_em": (agora + timedelta(days=60)).isoformat(timespec="seconds"),
-        }
+        cfg["instagram"] = conexao
         db.salvar_config(cfg)
     flash(f"Instagram conectado: @{dados.get('username', '')}", "ok")
     return redirect(url_for("configuracoes"))

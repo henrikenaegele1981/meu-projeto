@@ -7,11 +7,18 @@
   <h2>Instagram</h2>
   {% if ig %}
     <p class="conectado">✅ Conectado como <strong>@{{ ig.username }}</strong></p>
+    {% if ig.tipo == 'facebook' %}
+    <p class="fraco">Token do usuário do sistema (login unificado), salvo em {{ ig.renovado_em | data }}.
+      Se você escolheu “Nunca” como validade ao gerar, ele não vence.</p>
+    {% else %}
     <p class="fraco">Token renovado em {{ ig.renovado_em | data }} · vale até {{ ig.expira_em | data }}.
       O app renova sozinho a cada 30 dias.</p>
+    {% endif %}
     {% if ig.aviso %}<div class="aviso erro">{{ ig.aviso }}</div>{% endif %}
     <div class="botoes">
+      {% if ig.tipo != 'facebook' %}
       <form method="post" action="{{ url_for('renovar_instagram') }}"><button class="secundario">Renovar agora</button></form>
+      {% endif %}
       <form method="post" action="{{ url_for('desconectar_instagram') }}"
             onsubmit="return confirm('Desconectar o Instagram?')"><button class="perigo">Desconectar</button></form>
     </div>
@@ -21,8 +28,13 @@
     <label>Token de acesso do Instagram
       <input type="password" name="token" placeholder="Cole aqui o token gerado no app da Meta" autocomplete="off" required>
     </label>
-    <p class="fraco">Gere em developers.facebook.com → seu app → Casos de uso → Instagram →
-      Configuração da API com login do Instagram → Gerar tokens de acesso. Veja o README.</p>
+    <label>ID da conta do Instagram <small class="fraco">(necessário para apps novos da Meta)</small>
+      <input type="text" name="ig_id" inputmode="numeric" placeholder="Ex.: 17841400000000000" autocomplete="off">
+    </label>
+    <p class="fraco">Apps novos da Meta: gere o token de um usuário do sistema em business.facebook.com
+      → Configurações do negócio → Usuários do sistema, e preencha o ID da conta do Instagram
+      (o número embaixo do seu @ no painel do app). Apps antigos: o token do login do Instagram
+      funciona sozinho. Veja o README.</p>
     <button>Salvar e conectar</button>
   </form>
   {% if ig %}</details>{% endif %}

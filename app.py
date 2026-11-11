@@ -3,9 +3,12 @@ from __future__ import annotations
 
 import logging
 import secrets
+import os
 import socket
+import subprocess
 import sys
 import threading
+import time
 import uuid
 import webbrowser
 from datetime import datetime, timedelta
@@ -15,6 +18,7 @@ from flask import (Flask, abort, flash, redirect, render_template, request,
                    send_from_directory, url_for)
 
 import armazenamento as db
+import atualizar
 import instagram
 import vigia
 
@@ -295,7 +299,78 @@ def _chave_secreta() -> str:
         return cfg["chave_secreta"]
 
 
+# ---------- atualizacao automatica ----------
+
+VERIFICAR_ATUALIZACAO_A_CADA = 6 * 3600  # segundos
+ESTE_ARQUIVO = str(Path(__file__).resolve())
+
+
+@app.post("/_sair")
+def sair():
+    """Fecha o app (usado pela versao nova para substituir a antiga). So aceita do proprio PC."""
+    if request.remote_addr != "127.0.0.1" or request.headers.get("X-Meu-Estudio") != "1":
+        abort(403)
+    if _alguem_postando():
+        return "postando", 409  # nunca fecha no meio de uma postagem
+    threading.Timer(0.5, os._exit, args=(0,)).start()
+    return "ok"
+
+
+def _esperar_porta_livre(segundos: float) -> bool:
+    fim = time.time() + segundos
+    while time.time() < fim:
+        if not _porta_ocupada():
+            return True
+        time.sleep(0.5)
+    return not _porta_ocupada()
+
+
+def _fechar_versao_aberta() -> None:
+    import urllib.request
+    try:
+        pedido = urllib.request.Request(f"{ENDERECO}/_sair", data=b"", method="POST",
+                                        headers={"X-Meu-Estudio": "1"})
+        urllib.request.urlopen(pedido, timeout=5).read()
+    except Exception:  # noqa: BLE001 - versao antiga nao tem /_sair
+        pass
+    _esperar_porta_livre(15)
+
+
+def _alguem_postando() -> bool:
+    return any(p.get("status") == "postando" for p in db.carregar_fila())
+
+
+def _reiniciar_em_nova_janela() -> None:
+    """Abre a versao nova e fecha esta (usado quando a atualizacao chega com o app aberto)."""
+    sem_console = Path(sys.executable).name.lower() == "pythonw.exe"
+    flags = 0
+    if os.name == "nt":
+        flags = subprocess.DETACHED_PROCESS if sem_console else subprocess.CREATE_NEW_CONSOLE
+    subprocess.Popen([sys.executable, ESTE_ARQUIVO, "--sem-navegador", "--sem-atualizar",
+                      "--reiniciando"], cwd=str(Path(ESTE_ARQUIVO).parent), creationflags=flags)
+    print("\nO Meu Estudio foi atualizado e reabriu em outra janela. Pode fechar esta.")
+    os._exit(0)
+
+
+def _vigiar_atualizacoes() -> None:
+    while True:
+        time.sleep(VERIFICAR_ATUALIZACAO_A_CADA)
+        if atualizar.verificar_e_aplicar():
+            while _alguem_postando():  # nunca reinicia no meio de uma postagem
+                time.sleep(60)
+            _reiniciar_em_nova_janela()
+
+
 def main() -> None:
+    if "--reiniciando" in sys.argv:
+        _esperar_porta_livre(20)
+    if "--sem-atualizar" not in sys.argv and atualizar.verificar_e_aplicar():
+        # Codigo novo baixado: fecha a versao antiga (se estiver aberta) e abre a nova.
+        if _porta_ocupada():
+            _fechar_versao_aberta()
+        args = [a for a in sys.argv[1:] if a != "--sem-atualizar"]
+        sys.exit(subprocess.call([sys.executable, ESTE_ARQUIVO, *args, "--sem-atualizar"]))
+
     abrir_navegador = "--sem-navegador" not in sys.argv
     if _porta_ocupada():  # já está aberto: só mostra a tela
         if abrir_navegador:
@@ -308,6 +383,7 @@ def main() -> None:
     )
     app.secret_key = _chave_secreta()
     vigia.iniciar()
+    threading.Thread(target=_vigiar_atualizacoes, name="atualizacoes", daemon=True).start()
     print(f"Meu Estúdio rodando em {ENDERECO} (dados em {db.DADOS})")
     if abrir_navegador:
         threading.Timer(1.5, webbrowser.open, args=(ENDERECO,)).start()

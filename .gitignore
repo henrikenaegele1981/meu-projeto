@@ -8,3 +8,6 @@ config.json
 fila.json
 *.log
 .env
+# versao instalada (controle do atualizador)
+.versao
+*.novo

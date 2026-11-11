@@ -25,6 +25,14 @@ App que roda no seu computador para planejar, agendar e postar no Instagram (e, 
 
 > O vigia só posta enquanto o app estiver aberto e o PC ligado. Se o PC estiver desligado na hora marcada, o post sai assim que o app abrir de novo.
 
+## Atualizações automáticas
+
+O Meu Estúdio se atualiza sozinho pelo GitHub (branch `meu-estudio`):
+- **Ao abrir** (`iniciar.bat` ou ao ligar o PC), ele confere se há versão nova, baixa, instala o que for preciso e abre já atualizado. Se uma versão antiga estiver aberta, ela é fechada e substituída.
+- **Com o app aberto**, ele confere a cada 6 horas. Se houver versão nova, atualiza e reabre sozinho (em outra janela), mas nunca no meio de uma postagem.
+- Sem internet, ele só abre a versão atual.
+- Seus dados (token, fila, vídeos e fotos) ficam em outra pasta e nunca são tocados.
+
 ## 3. Conectar o Instagram
 
 Primeiro, nos dois casos:

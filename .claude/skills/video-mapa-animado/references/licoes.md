@@ -36,6 +36,19 @@ O que o usuário corrigiu ou cobrou, e o que funcionou. Leia antes de começar u
 - Fotos de licença livre: Openverse (`scripts/buscar_fotos.py`). Fotos do Flickr baixam sem problema; Wikimedia limita (erro 429).
 - Na identidade do José, quase não se usa foto: prefira mapa, emoji, card e pílula.
 
+## Prompt mestre do perfil (recebido depois do 1º vídeo)
+- A skill `jose-paraguai-sem-filtro` traz o prompt mestre e **vale sobre estas lições quando houver conflito**.
+- Principais pontos para vídeo:
+  - curto ganha;
+  - de 1min30 a 2min50 no máximo para mapa narrado;
+  - primeira pessoa;
+  - fecho com o diagnóstico gratuito;
+  - área segura;
+  - flash branco na troca de cena;
+  - roteiro entregue só como copy corrida;
+  - legenda de 900 a 1.400 caracteres + 2 mensagens de WhatsApp.
+- O vídeo do Assaí (2min52, muitos dados) ficou **acima** do ideal do prompt mestre. No próximo, enxugue.
+
 ## Ainda a melhorar (o usuário disse que "é só o começo")
 - Mais movimento de câmera e transições entre as cenas.
 - Trilha sonora mixada em todo vídeo (o usuário mandou uma trilha; use `montar_audio.sh`).

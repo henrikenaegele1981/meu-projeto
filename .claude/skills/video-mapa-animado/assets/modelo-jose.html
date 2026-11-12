@@ -121,7 +121,7 @@ function cena(ci,t,lt,proj){ const k=x=>ease((lt-x)/.5); let h="";
   case 19: { h+=topo_("🌉 OS DOIS LADOS DA PONTE",k(0),"verde"); const [bx,by]=proj([-49,-11]), [px,py]=proj([-58,-23]); h+=emo(bx,by,"⛓️",k(1),140)+emo(px+40,py,"🌿",k(4.5),120); } break;
   case 20: h+=topo_("🇵🇾 O OUTRO LADO",k(0),"verde")+emo(330,720,"🏙️",k(.4),130)+emo(540,640,"🏡",k(.9),130)+emo(750,720,"💼",k(1.4),130); break;
   case 21: h+=card(110,520,860,`<div style="text-align:center;font-size:110px;line-height:1">🇵🇾</div><div style="text-align:center;font-weight:900;font-size:84px;letter-spacing:1px;margin-top:10px">PARAGUAI<br><span class="vd">SEM FILTRO</span></div><div style="text-align:center;font-weight:600;font-size:34px;color:#8b96a8;margin-top:12px">viver • trabalhar • empreender</div>`,k(0))
-       +pillC(1060,"👆 LINK NA BIO",k(1.2),"verde"); break; }
+       +pillC(1050,"🌐 paraguaisemfiltro.com",k(.8),"ouro")+pillC(1150,"👆 LINK NA BIO",k(1.2),"verde"); break; }
   return h; }
 let carregando=[];
 function abertura(t){ const f=Math.min(AB.total,Math.floor(t*30)+1); const q=ease(t/.5);

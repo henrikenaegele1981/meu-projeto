@@ -1,5 +1,17 @@
 # Guia de estilo das legendas do José
 
+> **Atualização (nov/2026): o "prompt mestre" do perfil, na skill `jose-paraguai-sem-filtro`, tem
+> prioridade sobre este guia.** O que mudou:
+> - **Legenda de 900 a 1.400 caracteres** (máximo 2.200).
+> - **Primeira pessoa** ("eu moro e empreendo aqui").
+> - A estrutura é: 1ª linha forte → fato → mecanismo → leitura católica (1 ou 2 frases) → paralelo curto com o Paraguai → **CTA do diagnóstico gratuito em paraguaisemfiltro.com (link na bio)**.
+> - Hashtags: até 5 (#paraguai #morarnoparaguai #paraguaisemfiltro + 2 do tema).
+> - **Pode criticar** a esquerda, o PT, o Lula, o STF e o comunismo (criticar atos e decisões, não a honra). Continua proibido usar políticos como autoridade ou pagar pau para a direita.
+> - Emojis só 🔸 ✠ ❓, com moderação. Fecho de fé opcional: "Viva Cristo Rei!".
+> - Junto de toda legenda, entregue **2 mensagens de WhatsApp** (comunidade e grupo), só redigidas.
+>
+> O resto deste guia (doutrina, citar documentos e não pessoas, nem liberal nem socialista) continua valendo.
+
 Leia inteiro antes de escrever qualquer legenda. Ele resume o que o José aprovou e corrigiu na prática.
 
 ## Quem escreve

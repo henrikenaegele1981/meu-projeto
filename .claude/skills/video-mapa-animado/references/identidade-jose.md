@@ -33,6 +33,33 @@ O `assets/modelo-jose.html` já implementa tudo isto. Use este arquivo para conf
 - Corte a parte de baixo do vídeo original, onde ficam as legendas queimadas (`preparar_abertura.sh`, `CORTE_ALTURA` em torno de 0.60).
 - Nunca tela cheia com faixa escura cobrindo legenda: o usuário preferiu o quadro.
 
+## Área segura do Reels (do prompt mestre; confira em toda prévia)
+- Nada importante nos **250 px do topo** (as etiquetas ficam a partir de y=250).
+- Margem esquerda de pelo menos 70 px.
+- **160 px da direita livres** da metade da tela para baixo (ícones do Instagram).
+- **480 px de baixo livres** (legenda do Instagram): nada importante abaixo de y≈1440.
+- A legenda karaokê fica em y≈1200–1350 e a marca d'água em y≈1575.
+
+## Efeitos que o Henrike pede ("deixar ilustrativo")
+- Chips que entram com pop.
+- Carimbos tortos com tremida ("LOJA FECHADA", "O ESTADO").
+- Chuva de 💸 ou moedas.
+- Bonequinhos 👷 enchendo a tela.
+- Barras crescendo.
+- Carrinho atravessando uma ponte.
+- Etiqueta balançando.
+- Pontos de interrogação flutuando.
+- **Flash branco curto (alpha 0,3, 0,15 s) na troca de cena.**
+- CTA pulsando com ondas.
+- Cada tela fica mais tempo: nada de pisca-pisca nem troca rápida demais.
+- Cards com foto ou vídeo de apoio (Pinterest), com borda branca arredondada, sombra e zoom leve, no miolo, sem cobrir a legenda. **Não use foto de pessoa pública baixada da internet:** peça ao Henrike.
+- Mapa: além do verde-oliva aprovado, o prompt mestre também prevê **mapa-múndi noturno com luzes de cidades** (#0c1630). Use **ida e volta no mapa** (ex.: Brasília → Lima → Assunção). Destaques em ciano #38e1ff, vermelho #ff4b4b ou amarelo #ffd23f.
+- **Mix de cores**, não tudo azul.
+
+## Tela final padrão (formato G)
+Fundo escuro, bandeira do Paraguai, **"PARAGUAI SEM FILTRO"** ("SEM FILTRO" em destaque), "viver • trabalhar •
+empreender", pílula com **paraguaisemfiltro.com** e **"LINK NA BIO"**.
+
 ## O que NÃO é da identidade do José (não usar)
 - Papel envelhecido, pergaminho, polaroides com fita, letra com serifa em itálico. Isso é do estilo "mapa antigo" do Felipe Dantas: serve de modelo de narrativa, não de visual.
 - Fotos de banco de imagens como elemento principal. No estilo do José, prefira mapa, emoji, card e pílula.

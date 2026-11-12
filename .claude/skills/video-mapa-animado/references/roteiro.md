@@ -1,5 +1,13 @@
 # Roteiro de vídeo de mapa animado
 
+> **Prioridade: o prompt mestre do perfil (skill `jose-paraguai-sem-filtro`).** Para o José:
+> - Vídeo de notícia de **1min30 a 2min50**. Os narrados de mais de 2 min com muitos dados performaram mal; prefira menos números e mais história.
+> - **Primeira pessoa** e começo pelo **pico da notícia**.
+> - Estrutura: **gancho → "Vamos por partes" → cronologia com nomes e números → "Percebe o desenho?" → Doutrina Social (1 ou 2 frases) → Paraguai em contraste de espelho → CTA**.
+> - **Fecho padrão:** "Quer saber se o Paraguai faz sentido pra você? Vai no link da bio e faça o diagnóstico gratuito. Lá você tem acesso à nossa comunidade, o Paraguai Sem Filtro."
+> - **Entregue ao Henrike só a copy corrida** (o texto falado). A lista de cenas é trabalho interno: não mande tabela.
+> - A fórmula "Imagine… / certo? / Mas como…?" abaixo continua valendo como alternativa quando o modelo de referência for esse.
+
 ## Fórmula (modelada no Reel do Felipe Dantas sobre a Bahia, 570 mil curtidas)
 
 1. **[Abertura opcional]** De 5 a 12 s de um vídeo de terceiro com a frase que vai ser rebatida (ex.: político). A narração começa logo depois.

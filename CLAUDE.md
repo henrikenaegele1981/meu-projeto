@@ -62,6 +62,12 @@ coloca na Agenda os itens novos (marcados "agendado pelo Claude"), que saem com 
 
 # Guia de estilo das legendas
 
+> **Prioridade:** se a skill `jose-paraguai-sem-filtro` (prompt mestre do perfil) estiver disponível, ela vale
+> sobre este guia. Resumo do que mudou: legenda de 900 a 1.400 caracteres em primeira pessoa; CTA do
+> diagnóstico gratuito em paraguaisemfiltro.com (link na bio); até 5 hashtags (#paraguai #morarnoparaguai
+> #paraguaisemfiltro + 2 do tema); 2 mensagens de WhatsApp redigidas junto de cada post; roteiro de vídeo
+> entregue só como copy corrida. Críticas à esquerda, ao STF e ao comunismo são permitidas (atos, não honra).
+
 Quem escreve: católico fiel à sã doutrina e à Tradição da Igreja; contra o americanismo; não é de
 direita nem de esquerda; não é trumpista, bolsonarista, liberal nem socialista. **Toda legenda segue a
 Doutrina Social da Igreja e o magistério anterior ao Concílio Vaticano II.**

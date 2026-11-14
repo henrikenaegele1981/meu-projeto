@@ -10,7 +10,8 @@
 <section class="cartao">
   <h2>Novo post</h2>
   <form method="post" action="{{ url_for('agendar') }}" enctype="multipart/form-data" class="formulario"
-        onsubmit="this.querySelector('button').disabled=true; this.querySelector('button').textContent='Enviando o arquivo…'">
+        {% if nuvem %}data-nuvem data-link-envio="{{ url_for('link_de_envio') }}"
+        {% else %}onsubmit="this.querySelector('button').disabled=true; this.querySelector('button').textContent='Enviando o arquivo…'"{% endif %}>
     {% with post = None %}{% include "_formulario_post.html" %}{% endwith %}
     <button>Agendar</button>
   </form>
@@ -37,7 +38,7 @@
         </div>
         <p class="legenda">{{ p.legenda or '(sem legenda)' }}</p>
         {% if p.erro %}<div class="aviso erro">{{ p.erro }}</div>{% endif %}
-        {% if p.status != 'postando' %}
+        {% if p.status not in ('postando', 'processando') %}
         <div class="botoes">
           {% if p.status == 'erro' %}
             <form method="post" action="{{ url_for('tentar_de_novo', post_id=p.id) }}"><button>Tentar de novo</button></form>
@@ -47,7 +48,7 @@
                 onsubmit="return confirm('Cancelar este post?')"><button class="perigo">Cancelar</button></form>
         </div>
         {% else %}
-          <p class="fraco">Enviando… pode levar alguns minutos.</p>
+          <p class="fraco">{{ 'O Instagram está processando o vídeo…' if p.status == 'processando' else 'Enviando…' }} pode levar alguns minutos.</p>
         {% endif %}
       </div>
     </article>
@@ -80,8 +81,10 @@
   // Recarrega a fila a cada 15 s, mas só se você não estiver preenchendo o formulário.
   setInterval(() => {
     const f = document.querySelector('form.formulario');
-    const mexendo = f.contains(document.activeElement) || f.arquivo.files.length || f.legenda.value;
+    const campo = f.querySelector('input[type=file]');
+    const mexendo = f.contains(document.activeElement) || (campo && campo.files.length) || f.legenda.value || f.dataset.pronto;
     if (!mexendo) location.reload();
   }, 15000);
 </script>
+{% if nuvem %}<script src="{{ url_for('static', filename='envio.js') }}"></script>{% endif %}
 {% endblock %}

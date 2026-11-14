@@ -19,6 +19,7 @@
     <div class="conta">
       {% if ig %}Instagram: <strong>@{{ ig.username }}</strong>
       {% else %}<a href="{{ url_for('configuracoes') }}">Conectar Instagram</a>{% endif %}
+      {% if nuvem %}<br><span class="fraco">☁️ Na nuvem: posta com o PC desligado</span> · <a href="{{ url_for('sair_da_conta') }}">Sair</a>{% endif %}
     </div>
   </aside>
   <main>

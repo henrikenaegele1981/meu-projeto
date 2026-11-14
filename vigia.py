@@ -16,8 +16,7 @@ RENOVAR_A_CADA = timedelta(days=30)  # o token vale 60 dias; renovamos com folga
 log = logging.getLogger("vigia")
 
 
-def agora_texto() -> str:
-    return datetime.now().isoformat(timespec="seconds")
+agora_texto = db.agora_texto
 
 
 # ---------- token do Instagram ----------
@@ -30,7 +29,7 @@ def renovar_instagram(forcar: bool = False) -> None:
     if ig.get("tipo") == "facebook":
         return  # token do Facebook/usuario do sistema: nao usa a renovacao do Instagram
     renovado = datetime.fromisoformat(ig.get("renovado_em", agora_texto()))
-    if not forcar and datetime.now() - renovado < RENOVAR_A_CADA:
+    if not forcar and db.agora() - renovado < RENOVAR_A_CADA:
         return
     try:
         novo = instagram.renovar_token(ig["token"])
@@ -41,7 +40,7 @@ def renovar_instagram(forcar: bool = False) -> None:
         ig["token"] = novo["access_token"]
         ig["renovado_em"] = agora_texto()
         segundos = int(novo.get("expires_in") or 60 * 24 * 3600)
-        ig["expira_em"] = (datetime.now() + timedelta(seconds=segundos)).isoformat(timespec="seconds")
+        ig["expira_em"] = (db.agora() + timedelta(seconds=segundos)).isoformat(timespec="seconds")
         ig.pop("aviso", None)
         log.info("Token do Instagram renovado.")
     with db.trava:
@@ -100,7 +99,7 @@ def ciclo() -> None:
     if time.time() - _ultima_caixa >= CAIXA_A_CADA:
         _ultima_caixa = time.time()
         caixa.conferir()
-    agora = datetime.now()
+    agora = db.agora()
     pendentes = sorted(
         (p for p in db.carregar_fila() if p.get("status") == "agendado"),
         key=lambda p: p["quando"],

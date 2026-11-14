@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar · Meu Estúdio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body class="tela-login">
+  <main>
+    <section class="cartao">
+      <h1>🎬 Meu Estúdio</h1>
+      {% with mensagens = get_flashed_messages(with_categories=true) %}
+        {% for tipo, msg in mensagens %}<div class="aviso {{ tipo }}">{{ msg }}</div>{% endfor %}
+      {% endwith %}
+      <form method="post" class="formulario">
+        <label>Senha
+          <input type="password" name="senha" autofocus required autocomplete="current-password">
+        </label>
+        <button>Entrar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

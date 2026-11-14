@@ -69,8 +69,12 @@ summary { cursor: pointer; color: var(--cor); margin-bottom: 10px; }
 .status.agendado { background: #e8f0fe; color: #1a56c4; }
 .status.postando { background: #fff4d6; color: #8a6100; }
 .status.publicado { background: #e6f4ea; color: #0b6b3a; }
+.status.processando { background: #fff4d6; color: #8a6100; }
 .status.erro { background: #fdeceb; color: #a5221b; }
 .rede { font-size: 12px; background: #f0ecff; color: var(--cor-escura); padding: 2px 8px; border-radius: 99px; text-transform: capitalize; }
+
+.tela-login { justify-content: center; align-items: center; }
+.tela-login main { max-width: 380px; width: 100%; padding: 16px; flex: 0 1 auto; }
 
 @media (max-width: 760px) {
   body { flex-direction: column; }

@@ -3,7 +3,8 @@
 {% block conteudo %}
 <h1>Editar post</h1>
 <section class="cartao">
-  <form method="post" enctype="multipart/form-data" class="formulario">
+  <form method="post" enctype="multipart/form-data" class="formulario"
+        {% if nuvem %}data-nuvem data-link-envio="{{ url_for('link_de_envio') }}"{% endif %}>
     {% include "_formulario_post.html" %}
     <div class="botoes">
       <button>Salvar</button>
@@ -11,4 +12,5 @@
     </div>
   </form>
 </section>
+{% if nuvem %}<script src="{{ url_for('static', filename='envio.js') }}"></script>{% endif %}
 {% endblock %}

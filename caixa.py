@@ -40,7 +40,7 @@ def _importados(cfg: dict) -> list[str]:
 def conferir() -> int:
     """Traz para a Agenda os posts novos da caixa. Devolve quantos entraram."""
     try:
-        itens = json.loads(_baixar(f"{URL_CAIXA}?t={int(datetime.now().timestamp())}"))
+        itens = json.loads(_baixar(f"{URL_CAIXA}?t={int(db.agora().timestamp())}"))
     except Exception as e:  # noqa: BLE001 - sem internet ou caixa vazia: tenta depois
         log.debug("Caixa indisponível: %s", e)
         return 0
@@ -65,9 +65,7 @@ def conferir() -> int:
             log.warning("Não consegui importar %s da caixa: %s", chave, e)
             continue
         with db.trava:
-            fila = db.carregar_fila()
-            fila.append(post)
-            db.salvar_fila(fila)
+            db.adicionar_post(post)
             cfg = db.carregar_config()
             cfg["caixa_importados"] = (_importados(cfg) + [chave])[-500:]
             db.salvar_config(cfg)
@@ -80,10 +78,9 @@ def conferir() -> int:
 def _montar_post(item: dict) -> dict:
     tipo = "reel" if item.get("tipo") == "reel" else "foto"
     quando = datetime.fromisoformat(item["quando"])
-    db.preparar_pastas()
     nome = f"{uuid.uuid4().hex}{'.mp4' if tipo == 'reel' else '.jpg'}"
-    (db.MIDIA / nome).write_bytes(_baixar(item["midia"]))
-    agora = datetime.now()
+    db.salvar_midia(nome, _baixar(item["midia"]), "video/mp4" if tipo == "reel" else "image/jpeg")
+    agora = db.agora()
     atrasado = quando < agora - ATRASO_MAXIMO
     return {
         "id": uuid.uuid4().hex[:10],
@@ -108,6 +105,5 @@ def _cancelar(chave: str) -> None:
     for post in db.carregar_fila():
         if post.get("caixa_id") == chave and post.get("status") in ("agendado", "erro"):
             db.remover_post(post["id"])
-            if post.get("arquivo"):
-                (db.MIDIA / post["arquivo"]).unlink(missing_ok=True)
+            db.apagar_midia(post.get("arquivo"))
             log.info("Post %s cancelado pela caixa.", chave)

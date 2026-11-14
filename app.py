@@ -14,12 +14,13 @@ import webbrowser
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from flask import (Flask, abort, flash, redirect, render_template, request,
-                   send_from_directory, url_for)
+from flask import (Flask, abort, flash, jsonify, redirect, render_template, request,
+                   send_from_directory, session, url_for)
 
 import armazenamento as db
 import atualizar
 import instagram
+import nuvem
 import vigia
 
 PORTA = 5252
@@ -30,6 +31,42 @@ DIAS = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 1024 * 1024 * 1024  # vídeos de até 1 GB
+
+if db.NUVEM:
+    # Na nuvem (Vercel): a chave vem das variáveis de ambiente e o site pede senha.
+    app.secret_key = os.environ.get("FLASK_SECRET") or secrets.token_hex(32)
+    app.config.update(SESSION_COOKIE_SECURE=True, SESSION_COOKIE_SAMESITE="Lax",
+                      PERMANENT_SESSION_LIFETIME=timedelta(days=30))
+    SENHA = os.environ.get("SENHA_ESTUDIO") or ""
+    LIVRES = {"login", "static", "saude"}
+
+    @app.before_request
+    def pedir_senha():
+        if request.endpoint in LIVRES or session.get("entrou"):
+            return None
+        if request.path.startswith("/api/"):
+            return jsonify(erro="faça login"), 401
+        return redirect(url_for("login", proxima=request.path))
+
+    @app.route("/login", methods=["GET", "POST"])
+    def login():
+        if request.method == "POST":
+            if SENHA and secrets.compare_digest(request.form.get("senha", ""), SENHA):
+                session.permanent = True
+                session["entrou"] = True
+                destino = request.args.get("proxima") or "/"
+                return redirect(destino if destino.startswith("/") else "/")
+            flash("Senha errada.", "erro")
+        return render_template("login.html", pagina="login")
+
+    @app.route("/sair")
+    def sair_da_conta():
+        session.clear()
+        return redirect(url_for("login"))
+
+    @app.route("/saude")
+    def saude():
+        return "ok"
 
 
 # ---------- ajudantes ----------
@@ -44,7 +81,9 @@ def formatar_data(texto: str | None) -> str:
 
 @app.context_processor
 def variaveis_globais():
-    return {"ig": db.carregar_config().get("instagram")}
+    if db.NUVEM and not session.get("entrou"):
+        return {"ig": None, "nuvem": True}
+    return {"ig": db.carregar_config().get("instagram"), "nuvem": db.NUVEM}
 
 
 def _ler_collabs(texto: str) -> list[str]:
@@ -68,8 +107,13 @@ def _ler_formulario(post_existente: dict | None = None) -> dict:
         erros.append("A legenda passou de 2.200 caracteres (limite do Instagram).")
 
     arquivo = request.files.get("arquivo")
-    tem_arquivo_novo = bool(arquivo and arquivo.filename)
-    extensao = Path(arquivo.filename).suffix.lower() if tem_arquivo_novo else ""
+    enviado = request.form.get("enviado", "").strip()  # nuvem: o navegador já mandou ao Supabase
+    nome_enviado = request.form.get("nome_original", "").strip()
+    if enviado and not _nome_seguro(enviado):
+        enviado = ""
+    tem_arquivo_novo = bool(enviado or (arquivo and arquivo.filename))
+    nome_original = (nome_enviado or enviado) if enviado else (arquivo.filename if tem_arquivo_novo else "")
+    extensao = Path(nome_original).suffix.lower() if tem_arquivo_novo else ""
     if tem_arquivo_novo and extensao not in VIDEOS_ACEITOS | FOTOS_ACEITAS:
         erros.append("O arquivo precisa ser vídeo (.mp4 ou .mov) ou foto (.jpg, .png ou .webp).")
     if not tem_arquivo_novo and not post_existente:
@@ -88,34 +132,52 @@ def _ler_formulario(post_existente: dict | None = None) -> dict:
     if tem_arquivo_novo:
         if extensao in FOTOS_ACEITAS:
             try:
-                nome = _salvar_foto(arquivo)
-            except ValueError as e:
+                if enviado:
+                    import io
+                    origem = io.BytesIO(nuvem.baixar(enviado))
+                    nome = _salvar_foto(origem, nome_original)
+                    db.apagar_midia(enviado)
+                else:
+                    nome = _salvar_foto(arquivo.stream, arquivo.filename)
+            except (ValueError, nuvem.ErroNuvem) as e:
+                if enviado:
+                    db.apagar_midia(enviado)
                 flash(str(e), "erro")
                 return {}
             dados["tipo"] = "foto"
         else:
-            nome = f"{uuid.uuid4().hex}{extensao}"
-            arquivo.save(db.MIDIA / nome)
+            if enviado:
+                nome = enviado
+            else:
+                nome = f"{uuid.uuid4().hex}{extensao}"
+                db.preparar_pastas()
+                arquivo.save(db.MIDIA / nome)
             dados["tipo"] = "reel"
         dados["arquivo"] = nome
-        dados["nome_original"] = arquivo.filename
+        dados["nome_original"] = nome_original
     return dados
 
 
-def _salvar_foto(arquivo) -> str:
+def _nome_seguro(nome: str) -> bool:
+    base, ext = os.path.splitext(nome)
+    return (len(base) == 32 and all(c in "0123456789abcdef" for c in base)
+            and ext.lower() in VIDEOS_ACEITOS | FOTOS_ACEITAS)
+
+
+def _salvar_foto(fluxo, nome_original: str) -> str:
     """Guarda a foto como JPEG (o Instagram só aceita JPEG) e confere o formato."""
+    import io
     nome = f"{uuid.uuid4().hex}.jpg"
-    destino = db.MIDIA / nome
     try:
         from PIL import Image
     except ImportError:
-        if Path(arquivo.filename).suffix.lower() not in (".jpg", ".jpeg"):
+        if Path(nome_original).suffix.lower() not in (".jpg", ".jpeg"):
             raise ValueError("Para usar PNG ou WEBP, rode o instalar.bat de novo "
                              "(ou salve a imagem como JPG).")
-        arquivo.save(destino)
+        db.salvar_midia(nome, fluxo.read(), "image/jpeg")
         return nome
     try:
-        imagem = Image.open(arquivo.stream)
+        imagem = Image.open(fluxo)
         imagem.load()
     except Exception:
         raise ValueError("Não consegui abrir essa imagem. Tente salvar como JPG.")
@@ -132,13 +194,14 @@ def _salvar_foto(arquivo) -> str:
         imagem = fundo
     if largura > 1440:
         imagem = imagem.resize((1440, round(1440 / proporcao)))
-    imagem.save(destino, "JPEG", quality=92)
+    saida = io.BytesIO()
+    imagem.save(saida, "JPEG", quality=92)
+    db.salvar_midia(nome, saida.getvalue(), "image/jpeg")
     return nome
 
 
 def _apagar_video(post: dict) -> None:
-    if post.get("arquivo"):
-        (db.MIDIA / post["arquivo"]).unlink(missing_ok=True)
+    db.apagar_midia(post.get("arquivo"))
 
 
 # ---------- telas ----------
@@ -165,7 +228,7 @@ def salvar_instagram():
     except instagram.ErroInstagram as e:
         flash(f"A Meta não aceitou esse token: {e}", "erro")
         return redirect(url_for("configuracoes"))
-    agora = datetime.now()
+    agora = db.agora()
     conexao = {
         "token": token,
         "tipo": dados["tipo"],
@@ -211,7 +274,7 @@ def agenda():
     abertos = [p for p in fila if p["status"] != "publicado"]
     publicados = sorted((p for p in fila if p["status"] == "publicado"),
                         key=lambda p: p.get("publicado_em") or p["quando"], reverse=True)
-    sugestao = (datetime.now() + timedelta(hours=1)).replace(minute=0).isoformat(timespec="minutes")
+    sugestao = (db.agora() + timedelta(hours=1)).replace(minute=0).isoformat(timespec="minutes")
     return render_template("agenda.html", pagina="agenda", abertos=abertos,
                            publicados=publicados[:20], sugestao=sugestao)
 
@@ -222,11 +285,8 @@ def agendar():
     if not dados:
         return redirect(url_for("agenda"))
     post = {"id": uuid.uuid4().hex[:10], "status": "agendado", "erro": None,
-            "resultados": {}, "criado_em": vigia.agora_texto(), **dados}
-    with db.trava:
-        fila = db.carregar_fila()
-        fila.append(post)
-        db.salvar_fila(fila)
+            "resultados": {}, "criado_em": db.agora_texto(), **dados}
+    db.adicionar_post(post)
     oque = "Foto" if post.get("tipo") == "foto" else "Reel"
     flash(f"{oque} agendado para {formatar_data(post['quando'])}.", "ok")
     return redirect(url_for("agenda"))
@@ -235,7 +295,7 @@ def agendar():
 @app.route("/agenda/<post_id>/editar", methods=["GET", "POST"])
 def editar(post_id):
     post = db.buscar_post(post_id) or abort(404)
-    if post["status"] in ("postando", "publicado"):
+    if post["status"] in ("postando", "processando", "publicando", "publicado"):
         flash("Esse post não pode mais ser editado.", "erro")
         return redirect(url_for("agenda"))
     if request.method == "POST":
@@ -254,7 +314,7 @@ def editar(post_id):
 @app.post("/agenda/<post_id>/cancelar")
 def cancelar(post_id):
     post = db.buscar_post(post_id) or abort(404)
-    if post["status"] == "postando":
+    if post["status"] in ("postando", "processando", "publicando"):
         flash("Esse post está sendo enviado agora; espere terminar.", "erro")
         return redirect(url_for("agenda"))
     db.remover_post(post_id)
@@ -267,7 +327,7 @@ def cancelar(post_id):
 def tentar_de_novo(post_id):
     post = db.buscar_post(post_id) or abort(404)
     if post["status"] == "erro":
-        agora = datetime.now().isoformat(timespec="minutes")
+        agora = db.agora().isoformat(timespec="minutes")
         db.atualizar_post(post_id, status="agendado", erro=None, quando=min(post["quando"], agora))
         flash("Vai tentar de novo em alguns segundos.", "ok")
     return redirect(url_for("agenda"))
@@ -275,7 +335,24 @@ def tentar_de_novo(post_id):
 
 @app.route("/midia/<nome>")
 def midia(nome):
+    if db.NUVEM:
+        return redirect(nuvem.url_publica(nome))
     return send_from_directory(db.MIDIA, nome)
+
+
+@app.post("/api/link-de-envio")
+def link_de_envio():
+    """Nuvem: devolve um link para o navegador mandar o vídeo/foto direto ao Supabase."""
+    if not db.NUVEM:
+        abort(404)
+    extensao = Path(request.form.get("nome", "")).suffix.lower()
+    if extensao not in VIDEOS_ACEITOS | FOTOS_ACEITAS:
+        return jsonify(erro="O arquivo precisa ser vídeo (.mp4 ou .mov) ou foto (.jpg, .png ou .webp)."), 400
+    nome = f"{uuid.uuid4().hex}{extensao}"
+    try:
+        return jsonify(nome=nome, url=nuvem.link_de_envio(nome))
+    except nuvem.ErroNuvem as e:
+        return jsonify(erro=str(e)), 502
 
 
 @app.route("/em-breve/<secao>")

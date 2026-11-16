@@ -429,6 +429,14 @@ Quero entender como funciona o acompanhamento.`;
     e.target.value = d.length > 6 ? `(${d.slice(0, 2)}) ${d.slice(2, d.length - 4)}-${d.slice(-4)}` : d.length > 2 ? `(${d.slice(0, 2)}) ${d.slice(2)}` : d;
   });
 
+  // botão da abertura: rola até o diagnóstico e já começa
+  $('#ab-comecar').addEventListener('click', (e) => {
+    e.preventDefault();
+    atual = 0; renderPergunta();
+    telas.forEach((t) => ($(t).hidden = t !== '#q-perguntas'));
+    $('#quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
   renderPlanos();
   iniciarRecursos();
   iniciarRevela();

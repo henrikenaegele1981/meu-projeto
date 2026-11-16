@@ -1,26 +1,33 @@
-# Diagnóstico do Shape — Fred Real Nutricionista
+# Página do Fred Real Nutricionista
 
-Página de captação em formato de diagnóstico (quiz de 9 perguntas → dados → resultado → WhatsApp do Fred).
-Estática (HTML + CSS + JS, sem build). Para ver, basta abrir `index.html` no navegador.
+Site estático (HTML + CSS + JS, sem build), publicado pelo GitHub Pages.
 
-As perguntas e os textos do resultado ficam em `script.js` (`PERGUNTAS`, `PERFIS`, `PONTOS`) e podem ser editados sem mexer no resto.
+| Endereço | O que é |
+|---|---|
+| `/` (`index.html`) | Página de vendas completa: história, método, acompanhamento, **diagnóstico que indica o plano**, planos, presencial x online, FAQ |
+| `/diagnostico/` | Versão anterior: só o diagnóstico, em tela cheia (fundo escuro) |
 
-## O que preencher antes de publicar
+Formatação inspirada na página de lançamento do Mapa da Fé Católica, com as cores do Fred (preto, vermelho e branco).
 
-1. **`script.js` → bloco `CONFIG`**: WhatsApp do Fred e número do CRN.
-2. **(Opcional) `CONFIG.webhook`**: endereço que recebe nome, WhatsApp e respostas de quem conclui o
-   diagnóstico (Google Planilhas via Apps Script, Make, Zapier, n8n). Sem ele, o contato só chega
-   quando a pessoa aperta "Mandar meu diagnóstico para o Fred" — o WhatsApp abre com as respostas já escritas.
-3. **`assets/og-image.jpg`** — imagem 1200×630 que aparece quando o link é compartilhado.
+## O que editar (tudo no `script.js`, bloco `CONFIG` e logo abaixo)
+
+- **`CONFIG.whatsapp`**: WhatsApp do Fred (já preenchido).
+- **`CONFIG.crn`**: número do CRN (ainda `00000`).
+- **`CONFIG.mostrarPrecos`**: `false` por padrão (o briefing pede valores só na conversa). Trocando para `true`,
+  os preços aparecem nos cartões dos planos e no resultado do diagnóstico.
+- **`CONFIG.webhook`** (opcional): endereço que recebe nome, WhatsApp, respostas e plano indicado.
+- **`PLANOS`**: nome, duração, preço e itens de cada plano.
+- **`PERGUNTAS`, `PERFIS`, `PONTOS`**: perguntas e textos do resultado do diagnóstico.
+- A regra que escolhe o plano fica na função `indicarPlano`.
+
+## Imagens (opcionais) em `assets/`
+
+- `fred-sobre.jpg`: foto vertical (4:5) do Fred para a seção "Quem é o Fred".
+- `og-image.jpg`: imagem 1200×630 que aparece quando o link é compartilhado.
 
 ## Decisões seguindo o briefing
 
-- Sem preços na página: valores só na conversa privada.
-- O resultado leva ao WhatsApp **do Fred** (ele conduz a venda; a secretária só agenda depois).
-- Sem menção ao serviço integrado de treino até a regularização no CREF.
-- Sem promessas de resultado; aviso de que os resultados variam no rodapé.
-
-## Publicar
-
-Qualquer hospedagem estática serve (GitHub Pages, Netlify, Vercel). No GitHub Pages:
-Settings → Pages → Deploy from a branch → escolher a branch e a pasta `/ (root)`.
+- Preços escondidos por padrão; valores e condições na conversa com o Fred.
+- Todos os botões levam ao WhatsApp **do Fred** (ele conduz a venda; a secretária agenda depois).
+- Planos integrados com treino ficam de fora até a regularização no CREF.
+- Sem depoimentos, números ou resultados inventados; aviso de que os resultados variam no rodapé.

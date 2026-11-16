@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diagnóstico do Shape · Fred Nutricionista</title>
+  <meta name="description" content="Nove perguntas rápidas para entender o que está travando o seu shape. No fim, você recebe os pontos que mais pesam no seu caso.">
+  <meta property="og:title" content="Diagnóstico do Shape · Fred Nutricionista">
+  <meta property="og:description" content="Antes de começar outra dieta, entenda o que está travando o seu resultado. Leva cerca de 3 minutos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Figtree:wght@400;500;600;700&family=Red+Hat+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="diag">
+    <header class="moldura topo">
+      <span class="marca">Fred <em>Nutricionista</em> · Diagnóstico do Shape</span>
+    </header>
+
+    <!-- ============ 1. ABERTURA ============ -->
+    <section class="moldura tela intro entra" id="tela-intro">
+      <div class="intro-texto">
+        <h1 class="titulo-grande">Antes de começar outra dieta, entenda o que está travando o seu shape</h1>
+        <p class="apoio">
+          Nove perguntas sobre o seu objetivo, a sua rotina e o seu histórico. No fim, você recebe os pontos
+          que mais pesam no seu caso, sem dieta milagrosa.
+        </p>
+        <button class="cta" type="button" id="btn-comecar">
+          Começar o diagnóstico
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="nota">Leva cerca de 3 minutos.</p>
+      </div>
+
+      <figure class="palco" aria-hidden="true">
+        <div class="pilha">
+          <div class="doc ficha-fundo">
+            <span class="ff-topo">Avaliação nutricional</span>
+            <span class="ff-selo">FRED</span>
+            <span class="ff-base">CRN-4 · Nutrição esportiva</span>
+          </div>
+          <div class="doc bilhete">
+            <div class="bl-faixa"></div>
+            <div class="bl-corpo">
+              <div class="bl-rota">
+                <div><small>De</small><b>Hoje</b></div>
+                <svg viewBox="0 0 60 16"><path d="M2 8h50m-8-6 8 6-8 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                <div><small>Para</small><b>Shape</b></div>
+              </div>
+              <div class="bl-dados"><span>Diagnóstico</span><span>9 perguntas</span><span>3 min</span></div>
+            </div>
+            <div class="bl-canhoto"><small>Consulta</small><b>01</b></div>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ============ 2. PERGUNTAS ============ -->
+    <section class="moldura tela passo" id="tela-quiz" hidden>
+      <div class="rota" role="progressbar" aria-label="Progresso do diagnóstico" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span class="rota-ponta" aria-hidden="true">Hoje</span>
+        <div class="rota-trilho" aria-hidden="true">
+          <div class="rota-feito" id="rota-feito"></div>
+          <div class="rota-marcador" id="rota-marcador"></div>
+        </div>
+        <span class="rota-ponta" aria-hidden="true">Shape</span>
+      </div>
+      <div class="pergunta" id="pergunta" aria-live="polite"></div>
+    </section>
+
+    <!-- ============ 3. DADOS ============ -->
+    <section class="moldura tela passo" id="tela-dados" hidden>
+      <div class="rota" aria-hidden="true">
+        <span class="rota-ponta">Hoje</span>
+        <div class="rota-trilho"><div class="rota-feito" style="width:92%"></div><div class="rota-marcador" style="left:92%"></div></div>
+        <span class="rota-ponta">Shape</span>
+      </div>
+      <form class="ficha entra" id="form-dados" novalidate>
+        <h2 class="titulo-pergunta">Para quem é esse diagnóstico?</h2>
+        <p class="ficha-apoio">Você vê o resultado na hora e pode receber a explicação completa do Fred pelo WhatsApp.</p>
+        <label class="campo">
+          <span>Nome</span>
+          <input name="nome" required autocomplete="name">
+        </label>
+        <label class="campo">
+          <span>WhatsApp com DDD</span>
+          <input name="whatsapp" required inputmode="tel" autocomplete="tel" placeholder="(22) 99999-9999" type="tel">
+        </label>
+        <p class="erro" id="erro-dados" role="alert" hidden></p>
+        <p class="privacidade">Seus dados ficam só com o Fred e a equipe dele e não são vendidos nem repassados a mais ninguém.</p>
+        <button class="cta cta-cheio" type="submit">
+          Ver meu diagnóstico
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="voltar" type="button" id="voltar-dados">Voltar</button>
+      </form>
+    </section>
+
+    <!-- ============ 4. RESULTADO ============ -->
+    <section class="moldura tela resultado" id="tela-resultado" hidden>
+      <div class="entra">
+        <p class="rotulo">Seu diagnóstico</p>
+        <h2 class="titulo-grande" id="res-titulo"></h2>
+        <p class="apoio" id="res-resumo"></p>
+
+        <div class="bloco">
+          <h3 class="bloco-titulo">O que mais pesa no seu caso</h3>
+          <ol class="pontos" id="res-pontos"></ol>
+        </div>
+
+        <div class="bloco bloco-claro">
+          <h3 class="bloco-titulo">Por que dieta pronta não resolve isso</h3>
+          <p>
+            Nenhum desses pontos se resolve com um cardápio copiado da internet. Eles pedem um plano montado
+            <strong>com você</strong>, em cima da sua rotina, e alguém para ajustar o caminho quando a vida real acontecer.
+            É assim que o Fred trabalha:
+          </p>
+          <ul class="metodo">
+            <li><b>Consulta de 45 a 90 min</b> para entender sua rotina, seu treino e o que você gosta de comer.</li>
+            <li><b>Dieta montada durante a consulta</b>, com a sua participação, e explicada em linguagem simples.</li>
+            <li><b>Retornos a cada 30 a 40 dias</b> e ajustes também entre as consultas.</li>
+            <li><b>WhatsApp direto com o Fred</b> para tirar dúvidas do acompanhamento.</li>
+          </ul>
+          <p class="modalidade" id="res-modalidade"></p>
+        </div>
+
+        <div class="bloco">
+          <h3 class="bloco-titulo">Próximo passo</h3>
+          <ol class="proximos">
+            <li>Você manda o seu diagnóstico para o Fred no WhatsApp.</li>
+            <li>Ele mesmo responde, entende o seu caso e explica como funciona o acompanhamento e os planos.</li>
+            <li>Se fizer sentido para você, a secretária agenda a sua consulta.</li>
+          </ol>
+          <a class="cta cta-largo" id="res-whats" href="#" target="_blank" rel="noopener">
+            Mandar meu diagnóstico para o Fred
+            <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <p class="nota">Abre o WhatsApp com as suas respostas já escritas. Você só aperta enviar.</p>
+        </div>
+
+        <p class="aviso">
+          Este diagnóstico é uma orientação inicial a partir das suas respostas e não substitui uma avaliação nutricional individualizada.
+          Resultados variam de pessoa para pessoa. Fred · Nutricionista · CRN-4 <span class="js-crn"></span>
+        </p>
+        <button class="voltar" type="button" id="refazer">Refazer o diagnóstico</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

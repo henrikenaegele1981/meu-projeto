@@ -17,6 +17,15 @@ const CONFIG = {
 };
 
 /* =========================================================
+   RESULTADOS DE PACIENTES (com autorização por escrito)
+   Coloque a imagem em assets/resultados/ e acrescente uma linha:
+   { foto: 'assets/resultados/arquivo.jpg', nome: 'J. S.', texto: 'Frase curta do paciente ou do objetivo' },
+   Enquanto a lista estiver vazia, a seção fica escondida.
+   ========================================================= */
+const RESULTADOS = [
+];
+
+/* =========================================================
    PLANOS
    ========================================================= */
 const PLANOS = {
@@ -437,6 +446,17 @@ Quero entender como funciona o acompanhamento.`;
     $('#quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
+  function renderResultados() {
+    if (!RESULTADOS.length) return;
+    $('#resultados-grade').innerHTML = RESULTADOS.map((r) => `
+      <figure class="resultado-card">
+        <img src="${r.foto}" alt="Evolução de ${r.nome}, paciente do Fred" loading="lazy">
+        <figcaption><b>${r.nome}</b>${r.texto ? `<span>${r.texto}</span>` : ''}</figcaption>
+      </figure>`).join('');
+    $('#resultados').hidden = false;
+  }
+
+  renderResultados();
   renderPlanos();
   iniciarRecursos();
   iniciarRevela();

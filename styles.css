@@ -484,3 +484,15 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 @media (max-width: 420px) { .ab-card { max-width: 260px; } }
 /* balão da chamada final: no alto do card, longe da frase */
 .balao-final { bottom: auto; top: 28px; left: -16px; }
+
+/* ============ Resultados de pacientes ============ */
+.resultados-grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+.resultado-card { background: #fff; border: 1px solid var(--linha); border-radius: 18px; overflow: hidden; box-shadow: 0 5px 0 var(--sombra); }
+.resultado-card:nth-child(odd) { transform: rotate(-.6deg); }
+.resultado-card:nth-child(even) { transform: rotate(.6deg); }
+.resultado-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
+.resultado-card figcaption { padding: 14px 18px 18px; }
+.resultado-card b { display: block; font-size: 18px; letter-spacing: -0.02em; }
+.resultado-card span { font-family: var(--serif); font-size: 16px; color: #4a4a4a; }
+@media (max-width: 980px) { .resultados-grade { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .resultados-grade { grid-template-columns: 1fr; } }

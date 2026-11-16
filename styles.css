@@ -482,3 +482,5 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
   .ab-card { max-width: 300px; transform: rotate(1.5deg); margin: 10px 0 18px; }
 }
 @media (max-width: 420px) { .ab-card { max-width: 260px; } }
+/* balão da chamada final: no alto do card, longe da frase */
+.balao-final { bottom: auto; top: 28px; left: -16px; }

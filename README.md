@@ -4,12 +4,17 @@ Site estático (HTML + CSS + JS, sem build), publicado pelo GitHub Pages.
 
 | Endereço | O que é |
 |---|---|
-| `/` (`index.html`) | Página de vendas completa: história, método, acompanhamento, **diagnóstico que indica o plano**, planos, presencial x online, FAQ |
-| `/diagnostico/` | Versão anterior: só o diagnóstico, em tela cheia (fundo escuro) |
+| `/` (`index.html`) | Página de vendas no formato da referência lp.pysemfronteiras.com: abertura com objetivos, quem cuida, "o que ninguém te conta", planos com abas por objetivo, etapas, resultados, perguntas e chamada final |
+| `/diagnostico/` | Diagnóstico de 9 perguntas que indica o plano (Semestral, Trimestral ou Avulsa). Aceita `?objetivo=emagrecer\|massa\|definicao\|saude` para pular a 1ª pergunta |
 
-Formatação inspirada na página de lançamento do Mapa da Fé Católica, com as cores do Fred (preto, vermelho e branco).
+Cores do Fred (preto, vermelho e branco). Fotos do Fred em `assets/`, tiradas dos posts públicos do Instagram.
 
-## O que editar (tudo no `script.js`, bloco `CONFIG` e logo abaixo)
+## O que editar
+
+WhatsApp, CRN, preços, planos e resultados ficam em **`config.js`**, usado pelas duas páginas.
+Os textos das abas de objetivo ficam em `script.js` (`OBJETIVOS`); perguntas e textos do diagnóstico em `diagnostico/script.js`.
+
+### Detalhes
 
 - **`CONFIG.whatsapp`**: WhatsApp do Fred (já preenchido).
 - **`CONFIG.crn`**: número do CRN (ainda `00000`).

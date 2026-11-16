@@ -1,17 +1,7 @@
 /* =========================================================
    CONFIGURAÇÃO: edite só este bloco
    ========================================================= */
-const CONFIG = {
-  // WhatsApp do Fred (quem conduz a conversa), só números, com 55 + DDD
-  whatsapp: '5522981173962',
-
-  // Número do registro no CRN
-  crn: '00000',
-
-  // OPCIONAL: endereço que recebe os contatos (Google Planilhas via Apps Script, Make, Zapier, n8n...).
-  // Se ficar vazio, nada é enviado: o contato só chega quando a pessoa manda a mensagem no WhatsApp.
-  webhook: '',
-};
+// CONFIG, PLANOS e waLink vêm de ../config.js (compartilhado com a página principal).
 
 /* =========================================================
    PERGUNTAS
@@ -75,12 +65,13 @@ const PERGUNTAS = [
     ],
   },
   {
-    id: 'cozinha',
-    titulo: 'Quanto tempo você tem para preparar comida?',
+    id: 'acompanhamento',
+    titulo: 'Que tipo de acompanhamento você procura?',
     opcoes: [
-      ['nada', 'Quase nenhum'],
-      ['marmita', 'Dá para fazer marmita alguns dias'],
-      ['todo', 'Cozinho todo dia'],
+      ['continuo', 'Quero alguém comigo até o resultado aparecer'],
+      ['meses', 'Quero um empurrão de alguns meses'],
+      ['pontual', 'Só quero uma orientação pontual'],
+      ['naosei', 'Ainda não sei, quero entender melhor'],
     ],
   },
   {
@@ -261,6 +252,35 @@ const PONTOS = {
     return Array.isArray(v) ? v.map(pega).join(', ') : pega(v);
   };
 
+  function indicarPlano(r) {
+    const precisaTempo = ['larga', 'tentou', 'semresultado'].includes(r.historico);
+    const objetivoLongo = ['emagrecer', 'massa', 'definicao'].includes(r.objetivo);
+    let plano; const porque = [];
+    if (r.acompanhamento === 'continuo') {
+      plano = 'semestral';
+      porque.push('Você quer alguém do seu lado até o resultado aparecer, e é para isso que o semestral existe.');
+    } else if (r.acompanhamento === 'meses') {
+      plano = precisaTempo ? 'semestral' : 'trimestral';
+      porque.push(plano === 'trimestral'
+        ? 'Três meses dão tempo de organizar a alimentação, ajustar o plano duas vezes e pegar o ritmo.'
+        : 'Você pediu alguns meses, mas pelo seu histórico três meses costumam ser pouco para o hábito firmar.');
+    } else if (r.acompanhamento === 'pontual') {
+      plano = 'avulsa';
+      porque.push('Você quer uma orientação pontual: a consulta avulsa entrega a avaliação completa e a dieta montada com você.');
+    } else {
+      plano = (precisaTempo || objetivoLongo) ? 'semestral' : 'trimestral';
+      porque.push('Pelo seu objetivo e pelo seu histórico, faz sentido um acompanhamento com retornos e ajustes ao longo do caminho.');
+    }
+    if (plano === 'semestral') {
+      if (precisaTempo) porque.push('O que te trava hoje é manter, e não começar. Seis retornos e WhatsApp direto deixam bem mais difícil largar no meio.');
+      if (objetivoLongo) porque.push('O seu objetivo é resultado de meses, e não de semanas. Seis meses dão tempo de ajustar o plano a cada fase.');
+      porque.push('É o plano em que cada consulta sai mais em conta.');
+    }
+    if (plano === 'trimestral') porque.push('Se depois de três meses você quiser seguir, dá para continuar o acompanhamento.');
+    if (plano === 'avulsa' && precisaTempo) porque.push('Pelo seu histórico, um plano com retornos costuma funcionar melhor. Vale conversar com o Fred sobre isso.');
+    return { plano, porque: porque.slice(0, 3) };
+  }
+
   function renderResultado() {
     const r = respostas;
     const perfil = PERFIS[r.historico] || PERFIS.semresultado;
@@ -268,6 +288,12 @@ const PONTOS = {
 
     $('#res-titulo').textContent = perfil.titulo;
     $('#res-resumo').textContent = `${primeiro}, ${perfil.resumo.charAt(0).toLowerCase()}${perfil.resumo.slice(1)}`;
+
+    const { plano, porque } = indicarPlano(r);
+    const P = PLANOS[plano];
+    $('#res-plano-nome').textContent = P.nome;
+    $('#res-plano-info').textContent = CONFIG.mostrarPrecos ? `${P.duracao} · ${P.consultas} · ${P.preco}` : `${P.duracao} · ${P.consultas} · valor direto com o Fred`;
+    $('#res-porque').innerHTML = porque.map((t) => `<li>${t}</li>`).join('');
 
     const pontos = montarPontos(r);
     $('#res-pontos').innerHTML = pontos
@@ -286,6 +312,7 @@ const PONTOS = {
 `Oi Fred! Fiz o Diagnóstico do Shape.
 Nome: ${dados.nome.trim()}
 Resultado: ${perfil.titulo.replace('Perfil: ', '')}
+Plano indicado: ${P.nome}
 Objetivo: ${textoDe('objetivo', r.objetivo)}
 Treino: ${textoDe('treino', r.treino)}
 O que me atrapalha: ${textoDe('trava', r.trava || [])}
@@ -293,7 +320,7 @@ Atendimento: ${textoDe('modalidade', r.modalidade)}
 Quero começar: ${textoDe('quando', r.quando)}
 
 Quero entender como funciona o acompanhamento.`;
-    $('#res-whats').href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+    $('#res-whats').href = waLink(msg);
 
     mostrar('#tela-resultado');
   }
@@ -313,6 +340,12 @@ Quero entender como funciona o acompanhamento.`;
   }
 
   // ---------- eventos ----------
+  const objUrl = new URLSearchParams(location.search).get('objetivo');
+  if (objUrl && PERGUNTAS[0].opcoes.some(([v]) => v === objUrl)) {
+    respostas.objetivo = objUrl;
+    atual = 1; renderPergunta(); mostrar('#tela-quiz');
+  }
+
   $('#btn-comecar').addEventListener('click', () => { atual = 0; renderPergunta(); mostrar('#tela-quiz'); });
   $('#voltar-dados').addEventListener('click', () => { atual = PERGUNTAS.length - 1; renderPergunta(); mostrar('#tela-quiz'); });
   $('#refazer').addEventListener('click', () => {

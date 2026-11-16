@@ -4,422 +4,236 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fred Real Nutricionista · Conquiste o shape dos seus sonhos</title>
-  <meta name="description" content="Acompanhamento nutricional individualizado com o Fred. Presencial em Cordeiro e Nova Friburgo (RJ) e online para todo o Brasil. Faça o diagnóstico e descubra o plano indicado para você.">
+  <meta name="description" content="Acompanhamento nutricional individualizado com o Fred, nutricionista esportivo. Presencial em Cordeiro e Nova Friburgo (RJ) e online para todo o Brasil. Faça o diagnóstico grátis.">
   <meta property="og:title" content="Fred Real Nutricionista · Conquiste o shape dos seus sonhos">
-  <meta property="og:description" content="Não é uma dieta pronta. É um acompanhamento. Faça o diagnóstico grátis e descubra o plano indicado para você.">
+  <meta property="og:description" content="Dieta montada com você, retornos e WhatsApp direto com o Fred. Faça o diagnóstico grátis e descubra o plano indicado para o seu caso.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image" content="assets/fred-hero.jpg">
   <meta name="theme-color" content="#0b0b0c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Red+Hat+Mono:wght@500;700&family=Figtree:wght@400;500;700&family=Instrument+Sans:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=202611161516">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Figtree:wght@400;500;600;700&family=Red+Hat+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1">
 </head>
 <body>
 
-<main id="topo">
+<header class="topo moldura">
+  <a href="#" class="marca"><span class="marca-selo">F</span>Fred Real <em>Nutricionista</em></a>
+  <a href="#" class="btn-whats js-whats" data-msg="geral">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+    Falar no WhatsApp
+  </a>
+</header>
 
-  <!-- ================= ABERTURA (igual ao diagnóstico) ================= -->
-  <section class="abertura">
-    <header class="ab-topo ab-wrap">
-      <span class="ab-marca">Fred <em>Nutricionista</em> · Diagnóstico do Shape</span>
-      <a href="#" class="ab-link js-whats" data-msg="paciente">Já sou paciente</a>
-    </header>
-    <div class="ab-wrap ab-grid">
-      <div class="ab-texto">
-        <h1 class="ab-titulo">Antes de começar outra dieta, entenda o que está travando o seu shape</h1>
-        <p class="ab-apoio">
-          Nove perguntas sobre o seu objetivo, a sua rotina e o seu histórico. No fim, você recebe os pontos
-          que mais pesam no seu caso e o plano indicado pra você, sem dieta milagrosa.
-        </p>
-        <a href="#diagnostico" class="ab-cta" id="ab-comecar">
-          Começar o diagnóstico
-          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5"/></svg>
-        </a>
-        <p class="ab-nota">Leva cerca de 3 minutos.</p>
+<main>
+  <!-- ================= ABERTURA ================= -->
+  <section class="hero moldura">
+    <div class="hero-texto">
+      <h1 class="titulo-mega">Conquiste o shape dos seus sonhos<span class="vermelho">.</span></h1>
+      <p class="apoio">
+        Acompanhamento nutricional individualizado com o Fred, nutricionista esportivo e mais de 15 anos de musculação.
+        Dieta montada com você, retornos e WhatsApp direto. Presencial em Cordeiro e Nova Friburgo ou online para todo o Brasil.
+      </p>
+      <ul class="selos">
+        <li>Dieta montada com você</li>
+        <li>Retornos a cada 30 a 40 dias</li>
+        <li>WhatsApp direto com o Fred</li>
+        <li>Bioimpedância no presencial</li>
+      </ul>
+      <p class="pergunta-caso">Qual é o seu objetivo?</p>
+      <div class="casos">
+        <a href="diagnostico/?objetivo=emagrecer" class="caso">Emagrecer<i>→</i></a>
+        <a href="diagnostico/?objetivo=massa" class="caso">Ganhar massa muscular<i>→</i></a>
+        <a href="diagnostico/?objetivo=definicao" class="caso">Definição e desempenho<i>→</i></a>
+        <a href="diagnostico/?objetivo=saude" class="caso">Saúde e autoestima<i>→</i></a>
       </div>
-
-      <figure class="ab-palco">
-        <div class="ab-card">
-          <img src="assets/fred-hero.jpg" alt="Fred, nutricionista">
-          <figcaption class="ab-card-legenda"><b>Fred Real</b><small>Nutricionista esportivo</small></figcaption>
-        </div>
-      </figure>
+      <a href="diagnostico/" class="cta">Fazer meu diagnóstico grátis <i>→</i></a>
+      <p class="nota">Diagnóstico grátis, uns 3 minutos.</p>
     </div>
-    <p class="ab-wrap ab-prova">Nutricionista desde 2019 · +15 anos de musculação · Presencial em Cordeiro e Nova Friburgo · Online para todo o Brasil</p>
+
+    <figure class="hero-visual" aria-hidden="true">
+      <div class="card-foto">
+        <img src="assets/fred-hero.jpg" alt="">
+      </div>
+      <div class="cartao-plano">
+        <span class="cp-topo">Plano alimentar · Fred</span>
+        <b class="cp-nome">SEU NOME AQUI</b>
+        <ul>
+          <li><span>07h30</span>Café da manhã</li>
+          <li><span>12h00</span>Almoço</li>
+          <li class="atual"><span>16h00</span>Pré-treino</li>
+          <li><span>20h00</span>Jantar</li>
+        </ul>
+        <span class="cp-mrz">PLANO&lt;&lt;FEITO&lt;COM&lt;VOCE&lt;&lt;&lt;&lt;&lt;&lt;</span>
+      </div>
+      <span class="carimbo carimbo-hero">Dieta<br><b>Aprovada</b></span>
+    </figure>
   </section>
 
-  <!-- ================= GALERIA DE PRINTS ================= -->
-  <section class="secao wrap centro">
-    <h2 class="h-grande">Chega de dieta guardada<br>na galeria de prints.</h2>
-    <p class="texto-centro">
-      Você printa a dieta da blogueira, salva o vídeo do "shape em 30 dias" e aquela lista de alimentos proibidos.
-      Um mês depois, nada disso saiu da galeria.
+  <!-- trilha tracejada -->
+  <div class="trilha" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 90 C 360 40, 720 30, 1080 70 S 1440 60, 1440 30"/></svg>
+    <span class="carimbo carimbo-trilha c-amarelo">Desde<br><b>2019</b><small>CRN-4</small></span>
+  </div>
+
+  <!-- ================= QUEM CUIDA ================= -->
+  <section class="quem moldura">
+    <div class="quem-texto">
+      <h2 class="titulo-grande">Quem cuida do seu shape</h2>
+      <p class="citacao">“Eu não virei nutricionista porque achava bonito. Virei porque precisei.”</p>
+      <p class="apoio">
+        <b>Fred Real</b> já brigou com a balança, com o espelho e com dieta que não conseguia manter. Hoje é nutricionista
+        desde 2019, especializado na prática em nutrição esportiva, treina há mais de 15 anos e mostra para 23,6 mil pessoas
+        no Instagram como comer melhor sem neura. Atende em Cordeiro e Nova Friburgo (RJ) e online para todo o Brasil.
+      </p>
+      <a href="https://www.instagram.com/fredrealnutricionista/" target="_blank" rel="noopener" class="arroba">@ fredrealnutricionista</a>
+    </div>
+    <div class="quem-visual">
+      <div class="doc-foto">
+        <div class="doc-img">
+          <img src="assets/fred-antes-depois.jpg" alt="O próprio Fred, antes e depois">
+          <span class="tag-antes">Antes</span><span class="tag-hoje">Hoje</span>
+        </div>
+        <span class="doc-mrz">N&lt;BRA&lt;&lt;REAL&lt;&lt;FRED&lt;&lt;NUTRICIONISTA&lt;&lt;&lt;&lt;</span>
+      </div>
+      <span class="carimbo carimbo-doc">Shape<br><b>OK</b><small>Verificado</small></span>
+    </div>
+  </section>
+
+  <!-- ================= O QUE NINGUÉM CONTA ================= -->
+  <section class="faixa">
+    <div class="moldura faixa-grid">
+      <h2 class="titulo-grande">O que ninguém te conta antes de começar uma dieta</h2>
+      <div class="verdades">
+        <div class="verdade">
+          <h3>Dieta pronta sai caro.</h3>
+          <p>Parece de graça, mas você paga com semanas de fome, efeito sanfona e a sensação de que "dieta não é pra você". E começa tudo de novo na segunda.</p>
+        </div>
+        <div class="verdade">
+          <h3>Não é falta de força de vontade.</h3>
+          <p>Na maioria das vezes é um plano que não cabe na sua rotina. Quem não entende o porquê de cada escolha larga no primeiro fim de semana.</p>
+        </div>
+        <div class="verdade">
+          <h3>Nem todo caso precisa do plano mais longo.</h3>
+          <p>Se o diagnóstico mostrar que uma consulta resolve o seu caso agora, o Fred fala. Melhor perder a venda do que ganhar um paciente frustrado.</p>
+        </div>
+      </div>
+    </div>
+    <span class="carimbo carimbo-faixa c-vermelho">Fim do<br><b>efeito</b><small>sanfona</small></span>
+  </section>
+
+  <!-- ================= PLANOS ================= -->
+  <section class="planos moldura" id="planos">
+    <h2 class="titulo-grande">Plano certo, sem enrolação</h2>
+    <p class="apoio">Três formatos. A maioria dos pacientes fica com o Semestral. Os valores e as condições o Fred passa direto na conversa pelo WhatsApp.</p>
+
+    <p class="pergunta-caso">Qual plano é pro seu objetivo</p>
+    <div class="abas" role="tablist">
+      <button role="tab" class="aba" data-aba="emagrecer" aria-selected="true">Emagrecer</button>
+      <button role="tab" class="aba" data-aba="massa">Ganhar massa</button>
+      <button role="tab" class="aba" data-aba="definicao">Definição e desempenho</button>
+      <button role="tab" class="aba" data-aba="saude">Saúde e autoestima</button>
+    </div>
+    <div class="aba-painel">
+      <div class="ap-texto">
+        <p class="ap-frase" id="ap-frase"></p>
+        <p class="ap-indica">Normalmente indicamos: <b id="ap-indica"></b></p>
+        <p class="ap-obs" id="ap-obs"></p>
+      </div>
+      <div class="ap-lado">
+        <span class="ap-rot">Acompanhamento</span>
+        <b class="ap-tempo" id="ap-tempo"></b>
+        <span class="ap-sub" id="ap-sub"></span>
+        <p class="ap-nota">Plano fechado depois do diagnóstico e da conversa com o Fred. Sem compromisso até você decidir.</p>
+        <a href="diagnostico/" class="cta" id="ap-cta">Fazer o diagnóstico <i>→</i></a>
+      </div>
+    </div>
+
+    <div class="formatos" id="formatos"></div>
+
+    <p class="formatos-rodape">
+      Quer só uma orientação pontual? <a href="#" class="js-whats" data-msg="avulsa">Consulta avulsa com o Fred</a>.
+      Ainda pesquisando? <a href="#" class="js-whats" data-msg="geral">Me chama no WhatsApp</a>.
     </p>
-    <p class="texto-centro">
-      O acompanhamento com o Fred junta tudo num lugar só: um plano feito para você, explicado em linguagem simples,
-      e alguém do seu lado para ajustar o caminho.
-    </p>
-
-    <div class="prints-mapa">
-      <div class="galeria">
-        <div class="galeria-abas"><span>▦</span><span class="ativa">🔖</span></div>
-        <div class="galeria-grid">
-          <div class="print p1"><span class="play">▶</span><b>Shape em 30 dias</b></div>
-          <div class="print p2"><b>Dieta da blogueira</b></div>
-          <div class="print p3"><span class="play">▶</span><b>Detox de 3 dias</b></div>
-          <div class="print p4"><b>Lista de proibidos</b></div>
-          <div class="print p5"><span class="play">▶</span><b>Jejum milagroso</b></div>
-          <div class="print p6"><b>Cardápio do famoso</b></div>
-        </div>
-      </div>
-      <div class="seta-pontos" aria-hidden="true"></div>
-      <div class="caminho pontilhado">
-        <div class="no n1"><span>1</span><b>Rotina</b></div>
-        <div class="no n2"><span>2</span><b>Avaliação</b></div>
-        <div class="no n3"><span>3</span><b>Objetivo</b></div>
-        <div class="no n4"><span>4</span><b>Dieta com você</b></div>
-        <div class="no n5"><span>5</span><b>Ajustes</b></div>
-        <div class="no n6"><span>6</span><b>Resultado</b></div>
-      </div>
-    </div>
   </section>
 
-  <!-- ================= DORES ================= -->
-  <section class="secao wrap dores">
-    <h2 class="h-grande dores-titulo">Informação você já tem de sobra. O que falta é saber o que fazer.</h2>
-    <div class="dores-lista">
-      <blockquote class="aspas a1">Você treina, faz dieta e não vê resultado nenhum no espelho.</blockquote>
-      <blockquote class="aspas a2">Começa a dieta na segunda e na quarta já largou.</blockquote>
-      <blockquote class="aspas a3">Você não quer passar fome nem parar de comer o que gosta.</blockquote>
-      <blockquote class="aspas a4">Cada vídeo da internet fala uma coisa, e você não sabe em quem acreditar.</blockquote>
-      <blockquote class="aspas a5">Já tentou de tudo e dá um desânimo só de pensar em começar de novo.</blockquote>
-      <div class="linha-pontos" aria-hidden="true"></div>
-      <div class="ordem pontilhado">
-        <div class="ordem-ics">
-          <span class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
-          <span class="ic ic-vermelho"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/></svg></span>
-          <span class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
+  <!-- ================= ETAPAS ================= -->
+  <section class="etapas-sec">
+    <div class="trilha trilha-topo" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 40 C 400 20, 800 10, 1100 50 S 1440 80, 1440 80"/></svg>
+      <span class="carimbo carimbo-etapas c-branco">Bio<br><b>imp</b><small>Presencial</small></span>
+    </div>
+    <div class="moldura">
+      <h2 class="titulo-grande">Do primeiro passo ao shape no espelho</h2>
+      <p class="apoio">Cada etapa tem retorno marcado e alguém do seu lado para ajustar o caminho.</p>
+      <div class="etapas-grid">
+        <div class="etapas-visual">
+          <div class="card-foto card-foto-largo">
+            <img src="assets/fred-treino.jpg" alt="Fred treinando">
+          </div>
         </div>
-        <h3 class="h-media">Você precisa de um método:</h3>
-        <p>um plano feito para a sua rotina, alguém que explique o porquê de cada escolha e acompanhamento para não largar no meio.</p>
+        <ol class="linha">
+          <li class="ponta"><i class="pt pt-verde"></i><span>Hoje</span></li>
+          <li><b class="n n-ativo">1</b><div><h3>Diagnóstico</h3><p>Você conta o seu caso em 3 minutos e vê o plano indicado para o seu objetivo.</p></div></li>
+          <li><b class="n n-ativo">2</b><div><h3>Conversa com o Fred</h3><p>Ele mesmo responde no WhatsApp, entende o seu caso e explica os planos. Decidiu? A secretária agenda.</p></div></li>
+          <li><b class="n n-branco">3</b><div><h3>Primeira consulta</h3><p>De 45 a 90 minutos: rotina, objetivo, avaliação corporal e a dieta montada ali, com você participando.</p></div></li>
+          <li><b class="n">4</b><div><h3>Retornos e ajustes</h3><p>A cada 30 a 40 dias, com ajuste do plano. Entre as consultas, o WhatsApp do Fred para as dúvidas.</p></div></li>
+          <li><b class="n">5</b><div><h3>Shape e autonomia</h3><p>Você evolui no espelho e aprende o porquê de cada escolha, para não depender de dieta pronta nunca mais.</p></div></li>
+          <li class="ponta"><i class="pt pt-vermelho"></i><span>Shape</span></li>
+        </ol>
       </div>
-    </div>
-  </section>
-
-  <!-- ================= HISTÓRIA ================= -->
-  <section class="faixa-escura">
-    <div class="wrap historia">
-      <div class="historia-texto">
-        <span class="pill pill-escura">Quem é o Fred</span>
-        <h2 class="h-grande">Eu não virei nutricionista porque achava bonito. <span class="vermelho">Virei porque precisei.</span></h2>
-        <p>
-          Já briguei com a balança, com o espelho e com dieta que eu não conseguia manter. Sei bem como é se esforçar,
-          não ver resultado e não entender o porquê. Foi isso que me levou a estudar Nutrição.
-        </p>
-        <p>
-          Sou nutricionista desde 2019, especializado na prática em nutrição esportiva, e treino musculação há mais de
-          15 anos. Também estou concluindo a graduação em Educação Física.
-        </p>
-        <p>
-          Meu atendimento é direto, descontraído e sem complicação. Você vai rir, vai entender e vai sair sabendo
-          exatamente o que fazer.
-        </p>
-        <p class="assinatura">"Meu papel não é lhe entregar um cardápio, e sim transformar sua vida."</p>
-      </div>
-      <div class="historia-foto">
-        <img src="assets/fred-antes-depois.jpg" alt="O próprio Fred, antes e depois da mudança na alimentação e no treino" onerror="this.parentElement.classList.add('sem-foto'); this.remove()">
-        <span class="foto-antes">Antes</span><span class="foto-depois">Hoje</span>
-        <div class="foto-etiqueta"><b>Eu mesmo.</b><small>Fred · Nutricionista · CRN-4 <span class="js-crn"></span></small></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= O QUE TEM NO ACOMPANHAMENTO ================= -->
-  <section class="secao wrap recursos">
-    <div class="recursos-visual">
-      <div class="visual-card pontilhado">
-        <span class="pill visual-contador"><i></i><span id="vc-n">1</span> de 7</span>
-        <div class="visual-centro">
-          <span class="visual-num" id="vc-num">01</span>
-          <b class="visual-tit" id="vc-tit">Consulta sem pressa</b>
-        </div>
-      </div>
-    </div>
-    <div class="recursos-lista">
-      <h2 class="h-grande">Veja o que tem dentro do acompanhamento.</h2>
-      <article class="recurso" data-tit="Consulta sem pressa">
-        <h3><i></i>Consulta sem pressa</h3>
-        <p>A primeira consulta dura de 45 a 90 minutos. O Fred quer saber da sua rotina, do seu treino, do que você gosta (e não gosta) de comer e de onde você costuma travar.</p>
-      </article>
-      <article class="recurso" data-tit="Avaliação corporal">
-        <h3><i></i>Avaliação corporal</h3>
-        <p>No presencial, avaliação de composição corporal por bioimpedância. No online, a evolução é acompanhada por fotos e informações que você envia, respeitando os limites desse método.</p>
-      </article>
-      <article class="recurso" data-tit="Dieta montada com você">
-        <h3><i></i>Dieta montada com você</h3>
-        <p>Nada de papel pronto. O plano é construído durante a consulta, com a sua participação, em cima da sua rotina e das suas preferências. Se não cabe na sua vida, não serve.</p>
-      </article>
-      <article class="recurso" data-tit="Tudo explicado">
-        <h3><i></i>Tudo explicado</h3>
-        <p>Linguagem simples, sem termo técnico desnecessário. "Meu objetivo é fazer você compreender, e não impressionar." Você sai sabendo o que fazer e por quê.</p>
-      </article>
-      <article class="recurso" data-tit="Suplementação, se fizer sentido">
-        <h3><i class="r"></i>Suplementação, se fizer sentido</h3>
-        <p>O Fred avalia se você precisa de algum suplemento. Se precisar, explica qual e por quê. Se não precisar, não precisa. Suplemento é complemento, e não atalho.</p>
-      </article>
-      <article class="recurso" data-tit="Retornos e ajustes">
-        <h3><i class="r"></i>Retornos e ajustes</h3>
-        <p>Retornos geralmente a cada 30 a 40 dias, com reavaliação e ajuste do plano. E se precisar mudar algo antes, a dieta também pode ser ajustada entre as consultas.</p>
-      </article>
-      <article class="recurso" data-tit="WhatsApp direto com o Fred">
-        <h3><i></i>WhatsApp direto com o Fred</h3>
-        <p>Bateu a dúvida no mercado, no restaurante ou no fim de semana? Você tem contato direto com o Fred para tirar dúvidas do acompanhamento. Você não fica sozinho depois da consulta.</p>
-      </article>
-      <p class="recursos-extra">E no presencial, a primeira consulta ainda vem com uma garrafa de água de cortesia. 💧</p>
-      <a href="#diagnostico" class="btn">Fazer meu diagnóstico</a>
     </div>
   </section>
 
   <!-- ================= RESULTADOS (aparece só quando houver fotos em RESULTADOS no script.js) ================= -->
-  <section class="secao wrap" id="resultados" hidden>
-    <div class="centro">
-      <span class="pill">Pacientes do Fred</span>
-      <h2 class="h-grande">Quem já fez o caminho.</h2>
-      <p class="texto-centro">Pacientes reais, que autorizaram mostrar a sua evolução. Cada corpo responde de um jeito: o resultado depende de fatores individuais e da adesão ao plano.</p>
-    </div>
+  <section class="resultados moldura" id="resultados" hidden>
+    <h2 class="titulo-grande">Quem já fez o caminho</h2>
+    <p class="apoio">Pacientes do Fred que autorizaram mostrar a sua evolução. Cada corpo responde de um jeito.</p>
     <div class="resultados-grade" id="resultados-grade"></div>
   </section>
 
-  <!-- ================= FUNCIONA ASSIM ================= -->
-  <section class="secao wrap">
-    <h2 class="h-grande">Funciona assim:</h2>
-    <div class="passos pontilhado">
-      <div class="passo">
-        <div class="passo-topo"><span class="bola">1</span><span class="tracejado"></span></div>
-        <h3>Você faz o diagnóstico.</h3>
-        <p>Nove perguntas rápidas e você descobre o que mais pesa no seu caso e qual plano é o mais indicado.</p>
-      </div>
-      <div class="passo">
-        <div class="passo-topo"><span class="bola">2</span><span class="tracejado"></span></div>
-        <h3>Você conversa com o Fred.</h3>
-        <p>Ele mesmo responde no WhatsApp, entende o seu objetivo e explica como funciona o acompanhamento e os planos.</p>
-      </div>
-      <div class="passo">
-        <div class="passo-topo"><span class="bola">3</span></div>
-        <h3>Você começa.</h3>
-        <p>Decidiu? A secretária agenda a sua consulta e te orienta sobre o pagamento. A partir daí, é você e o Fred no mesmo time.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= HÁBITO ================= -->
-  <section class="wrap">
-    <div class="habito">
-      <div class="habito-texto">
-        <h2 class="h-grande">Shape também<br>é hábito.</h2>
-        <p>
-          Resultado não vem de uma semana perfeita. Vem de meses fazendo o possível com constância. Por isso o
-          acompanhamento tem retorno marcado, ajuste quando a vida muda e alguém cobrando (com carinho) do outro lado.
-        </p>
-      </div>
-      <div class="cartao-semestre">
-        <div class="cs-topo"><span class="ic ic-vermelho"><svg viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg></span><b>Plano semestral</b></div>
-        <div class="cs-num">6<small>consultas</small></div>
-        <div class="cs-meses">
-          <div><i class="on"></i><span>mês 1</span></div>
-          <div><i class="on"></i><span>mês 2</span></div>
-          <div><i class="on"></i><span>mês 3</span></div>
-          <div><i></i><span>mês 4</span></div>
-          <div><i></i><span>mês 5</span></div>
-          <div><i class="atual"></i><span>mês 6</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= DIAGNÓSTICO ================= -->
-  <section class="secao wrap" id="diagnostico">
-    <div class="centro">
-      <span class="pill">Diagnóstico do Shape · grátis</span>
-      <h2 class="h-grande">Descubra o plano<br>indicado pra você.</h2>
-      <p class="texto-centro">Nove perguntas sobre o seu objetivo, a sua rotina e o seu histórico. No fim, você vê os pontos que mais pesam no seu caso e o plano que faz mais sentido, sem dieta milagrosa.</p>
-    </div>
-
-    <div class="quiz" id="quiz">
-      <!-- início -->
-      <div class="q-tela" id="q-inicio">
-        <div class="q-bilhete">
-          <div class="qb-rota"><div><small>De</small><b>Hoje</b></div><svg viewBox="0 0 60 16"><path d="M2 8h50m-8-6 8 6-8 6" fill="none" stroke="currentColor" stroke-width="2"/></svg><div><small>Para</small><b>Shape</b></div></div>
-          <div class="qb-dados"><span>9 perguntas</span><span>3 min</span><span>Resultado na hora</span></div>
-        </div>
-        <button class="btn btn-largo" type="button" id="q-comecar">Começar o diagnóstico →</button>
-      </div>
-
-      <!-- perguntas -->
-      <div class="q-tela" id="q-perguntas" hidden>
-        <div class="q-rota" aria-hidden="true">
-          <span>Hoje</span><div class="q-trilho"><div class="q-feito" id="q-feito"></div><div class="q-marcador" id="q-marcador"></div></div><span>Shape</span>
-        </div>
-        <div id="q-pergunta" aria-live="polite"></div>
-      </div>
-
-      <!-- dados -->
-      <form class="q-tela" id="q-dados" novalidate hidden>
-        <p class="q-contador">QUASE LÁ</p>
-        <h3 class="q-titulo">Para quem é esse diagnóstico?</h3>
-        <p class="q-apoio">Você vê o resultado na hora e pode receber a explicação completa do Fred pelo WhatsApp.</p>
-        <label class="campo"><span>Nome</span><input name="nome" autocomplete="name" required></label>
-        <label class="campo"><span>WhatsApp com DDD</span><input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(22) 99999-9999" required></label>
-        <p class="erro" id="q-erro" role="alert" hidden></p>
-        <p class="privacidade">Seus dados ficam só com o Fred e a equipe dele e não são vendidos nem repassados a mais ninguém.</p>
-        <button class="btn btn-largo" type="submit">Ver meu diagnóstico →</button>
-        <button class="link-voltar" type="button" id="q-voltar-dados">Voltar</button>
-      </form>
-
-      <!-- resultado -->
-      <div class="q-tela" id="q-resultado" hidden>
-        <p class="q-contador">SEU DIAGNÓSTICO</p>
-        <h3 class="q-titulo" id="r-titulo"></h3>
-        <p class="q-apoio" id="r-resumo"></p>
-
-        <div class="r-plano">
-          <span class="r-tag">Plano indicado para você</span>
-          <b class="r-plano-nome" id="r-plano-nome"></b>
-          <span class="r-plano-preco" id="r-plano-preco"></span>
-          <ul class="r-porque" id="r-porque"></ul>
-        </div>
-
-        <h4 class="r-sub">O que mais pesa no seu caso</h4>
-        <ol class="r-pontos" id="r-pontos"></ol>
-        <p class="r-modalidade" id="r-modalidade"></p>
-
-        <a class="btn btn-largo" id="r-whats" href="#" target="_blank" rel="noopener">Mandar meu diagnóstico para o Fred →</a>
-        <p class="mini">Abre o WhatsApp com as suas respostas já escritas. Você só aperta enviar.</p>
-        <div class="r-links">
-          <a href="#planos" id="r-ver-planos">Comparar todos os planos</a>
-          <button type="button" class="link-voltar" id="q-refazer">Refazer o diagnóstico</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PLANOS ================= -->
-  <section class="secao wrap" id="planos">
-    <div class="centro">
-      <h2 class="h-grande">Escolha o seu plano.</h2>
-      <p class="texto-centro">Todos os planos têm a mesma consulta completa e o mesmo cuidado. A diferença é por quanto tempo o Fred caminha junto com você.</p>
-    </div>
-    <div class="planos" id="planos-lista"></div>
-    <p class="planos-nota" id="planos-nota"></p>
-
-    <div class="conta">
-      <div class="recibo">
-        <div class="recibo-cab"><span>No plano semestral</span><span>Incluso</span></div>
-        <ul>
-          <li><span>Consultas individuais (inicial + 5 retornos)</span><b>6</b></li>
-          <li><span>Dieta montada com você e ajustada a cada retorno</span><b>✓</b></li>
-          <li><span>Ajustes também entre as consultas, quando necessário</span><b>✓</b></li>
-          <li><span>WhatsApp direto com o Fred para dúvidas</span><b>6 meses</b></li>
-          <li><span>Avaliação de composição corporal (bioimpedância, no presencial)</span><b>✓</b></li>
-          <li><span>Avaliação de suplementação, quando pertinente</span><b>✓</b></li>
-          <li><span>Explicação de cada escolha, em linguagem simples</span><b>✓</b></li>
-        </ul>
-        <div class="recibo-total"><span>Acompanhamento</span><b>6 meses</b></div>
-        <span class="carimbo carimbo-recibo" id="carimbo-recibo">Mais indicado</span>
-      </div>
-      <div class="conta-texto">
-        <p class="h-media">Uma dieta pronta te entrega um papel. O acompanhamento te entrega um caminho.</p>
-        <p>No semestral, você tem tempo para construir hábito, passar pelos fins de semana, pelas festas e pelas semanas difíceis com alguém ajustando o plano do seu lado.</p>
-        <p class="h-media h-pequena" id="conta-destaque">E é o plano em que cada consulta sai mais em conta.</p>
-        <p class="mini esquerda">Formas de pagamento: PIX, cartão de crédito, cartão de débito e dinheiro. Condições de parcelamento confirmadas no fechamento.</p>
-        <a href="#" class="btn js-whats" data-msg="semestral">Quero o plano semestral</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ONDE ================= -->
-  <section class="secao wrap">
-    <h2 class="h-grande centro">Presencial ou online.<br>Você escolhe.</h2>
-    <div class="modos">
-      <article class="modo">
-        <span class="pill pill-vermelha">Presencial</span>
-        <h3 class="h-media">Cordeiro e Nova Friburgo (RJ)</h3>
-        <p>Para quem é de Cordeiro, Nova Friburgo e cidades próximas e quer a consulta olho no olho.</p>
-        <ul class="lista-check">
-          <li>Bioimpedância na consulta</li>
-          <li>Dieta montada durante a consulta, com você</li>
-          <li>Retornos e WhatsApp direto</li>
-          <li>Garrafa de água de cortesia na primeira consulta</li>
-        </ul>
-        <a href="#" class="btn btn-largo js-whats" data-msg="presencial">Quero atendimento presencial</a>
-      </article>
-      <article class="modo">
-        <span class="pill pill-preta">Online</span>
-        <h3 class="h-media">Para todo o Brasil</h3>
-        <p>Consulta por vídeo, ao vivo, de onde você estiver. O mesmo cuidado, sem sair de casa.</p>
-        <ul class="lista-check">
-          <li>Consulta por chamada de vídeo</li>
-          <li>Dieta montada ao vivo, com a sua participação</li>
-          <li>Evolução acompanhada por fotos e informações</li>
-          <li>WhatsApp direto entre as consultas</li>
-        </ul>
-        <a href="#" class="btn btn-largo btn-preto js-whats" data-msg="online">Quero atendimento online</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- ================= FAQ ================= -->
-  <section class="secao wrap faq-wrap">
-    <h2 class="h-grande centro">Perguntas frequentes</h2>
-    <div class="faq">
-      <details><summary><span class="faq-n">01</span>Tem dieta de graça na internet. Por que pagar?<i></i></summary>
-        <p>Quando o chuveiro queima, você chama alguém que entende do assunto, né? Com o seu corpo é a mesma lógica. Informação tem de sobra; o problema é que ela é genérica, e você não é. No acompanhamento, a informação vira estratégia para a sua rotina, o seu treino e o seu histórico, e alguém ajusta o caminho quando a vida muda.</p></details>
-      <details><summary><span class="faq-n">02</span>Tá caro, não tenho dinheiro agora.<i></i></summary>
-        <p>Entendo. Mas compare o que está incluso: consultas periódicas, um plano feito para você, ajustes ao longo do processo e contato direto com o Fred. Tem plano semestral, trimestral e consulta avulsa, com pagamento no PIX, cartão de crédito, débito ou dinheiro. Chama o Fred que vocês veem juntos o que faz sentido para o seu momento.</p></details>
-      <details><summary><span class="faq-n">03</span>Vou ter que parar de comer o que eu gosto?<i></i></summary>
-        <p>Não. A dieta é construída junto com você e leva em conta as suas preferências. Restrição desnecessária é o caminho mais rápido para desistir, e o objetivo aqui é você conseguir manter.</p></details>
-      <details><summary><span class="faq-n">04</span>Não tenho tempo para fazer dieta.<i></i></summary>
-        <p>Por isso mesmo a dieta tem que se adaptar à sua rotina, e não o contrário. O plano é montado em cima do seu horário de trabalho, de treino e do que é viável no seu dia a dia.</p></details>
-      <details><summary><span class="faq-n">05</span>Já desisti de outras dietas. Por que agora seria diferente?<i></i></summary>
-        <p>Porque você não vai receber um papel e ser deixado sozinho. A dieta é feita com você, cabe na sua vida, é explicada para você entender e tem retorno marcado, ajuste entre as consultas e WhatsApp direto. O primeiro passo não precisa ser perfeito, precisa ser possível.</p></details>
-      <details><summary><span class="faq-n">06</span>Consulta online funciona mesmo?<i></i></summary>
-        <p>Funciona. A consulta é ao vivo, por vídeo, e a dieta é montada com você durante a chamada. A evolução é acompanhada por fotos e informações que você envia (a bioimpedância é exclusiva do presencial), e as dúvidas são resolvidas pelo WhatsApp.</p></details>
-      <details><summary><span class="faq-n">07</span>Vou precisar tomar suplemento?<i></i></summary>
+  <!-- ================= PERGUNTAS ================= -->
+  <section class="faq moldura">
+    <h2 class="titulo-grande">Perguntas que todo mundo faz</h2>
+    <div class="faq-lista">
+      <details><summary>Tem dieta de graça na internet. Por que pagar?</summary>
+        <p>Quando o chuveiro queima, você chama alguém que entende, né? Informação tem de sobra; o problema é que ela é genérica, e você não é. No acompanhamento, ela vira estratégia para a sua rotina, o seu treino e o seu histórico, com alguém ajustando o caminho.</p></details>
+      <details><summary>Vou ter que parar de comer o que eu gosto?</summary>
+        <p>Não. A dieta é montada com você e leva em conta as suas preferências. Restrição desnecessária é o caminho mais rápido para desistir.</p></details>
+      <details><summary>Não tenho tempo para fazer dieta.</summary>
+        <p>Por isso mesmo o plano é feito em cima do seu horário de trabalho, de treino e do que é viável no seu dia a dia. A dieta se adapta à sua rotina, e não o contrário.</p></details>
+      <details><summary>Consulta online funciona mesmo?</summary>
+        <p>Funciona. É ao vivo, por vídeo, com a dieta montada durante a chamada. A evolução é acompanhada por fotos e informações que você envia (a bioimpedância é só no presencial), e as dúvidas vão pelo WhatsApp.</p></details>
+      <details><summary>Como é o pagamento?</summary>
+        <p>PIX, cartão de crédito, cartão de débito ou dinheiro. As condições de parcelamento são confirmadas no fechamento, depois da conversa com o Fred.</p></details>
+      <details><summary>Vou precisar tomar suplemento?</summary>
         <p>Só se fizer sentido para o seu caso. A suplementação é avaliada individualmente na consulta, quando pertinente.</p></details>
-      <details><summary><span class="faq-n">08</span>Atende quem nunca treinou?<i></i></summary>
-        <p>Atende. O acompanhamento vai de quem está saindo do sedentarismo até quem treina pesado há anos. O plano parte de onde você está hoje.</p></details>
-      <details><summary><span class="faq-n">09</span>Como faço para agendar?<i></i></summary>
-        <p>Você conversa com o Fred pelo WhatsApp: ele explica o acompanhamento e os planos. Decidiu começar? A secretária agenda a sua consulta e te orienta sobre o pagamento.</p></details>
+      <details><summary>Atende quem nunca treinou?</summary>
+        <p>Atende. Do sedentário ao marombeiro experiente: o plano parte de onde você está hoje.</p></details>
     </div>
   </section>
 
-  <!-- ================= CTA FINAL ================= -->
-  <section class="wrap final">
-    <div class="final-texto">
-      <h2 class="h-grande">Tire o shape<br>da galeria<br>de prints.</h2>
-      <p>Um plano feito para você, explicado em linguagem simples, com retorno, ajuste e WhatsApp direto. Do seu lado até o resultado aparecer.</p>
-      <p class="final-forte">Comece pelo diagnóstico grátis.<br>Em 3 minutos você sabe qual plano é o seu.</p>
-      <p class="pill pill-esquerda">📍 Cordeiro e Friburgo · 💻 Online pro Brasil</p>
-      <a href="#diagnostico" class="btn">Fazer meu diagnóstico</a>
-    </div>
-    <div class="final-visual">
-      <div class="leao leao-foto">
-        <img src="assets/fred-treino.jpg" alt="Fred treinando" onerror="this.remove()">
-        <span class="leao-marca">FRED</span>
-        <span class="leao-frase">Conquiste o shape dos seus sonhos.</span>
+  <!-- ================= CHAMADA FINAL ================= -->
+  <section class="final">
+    <div class="moldura final-grid">
+      <div>
+        <h2 class="titulo-grande">Comece pelo diagnóstico</h2>
+        <p class="apoio">Poucas perguntas e você recebe o plano indicado para o seu caso. Se fizer sentido, você manda o resultado e o Fred te responde no WhatsApp.</p>
       </div>
-      <div class="balao balao-final">Eu te mostro o caminho.</div>
+      <div class="final-acoes">
+        <a href="diagnostico/" class="cta">Fazer meu diagnóstico grátis <i>→</i></a>
+        <a href="#" class="link js-whats" data-msg="geral">Prefiro falar direto no WhatsApp</a>
+      </div>
     </div>
+    <footer class="moldura rodape">
+      <span>© 2026 Fred Real Nutricionista · CRN-4 <span class="js-crn"></span></span>
+      <a href="https://www.instagram.com/fredrealnutricionista/" target="_blank" rel="noopener">Instagram @fredrealnutricionista</a>
+      <p>Os resultados variam de pessoa para pessoa e dependem de fatores individuais e da adesão ao plano. O diagnóstico é uma orientação inicial e não substitui uma avaliação nutricional individualizada.</p>
+    </footer>
   </section>
 </main>
 
-<footer class="rodape">
-  <span class="logo"><span class="logo-selo">F</span>Fred Real Nutricionista</span>
-  <span>·</span><span>CRN-4 <span class="js-crn"></span></span>
-  <p class="rodape-aviso">Os resultados variam de pessoa para pessoa e dependem de fatores individuais e da adesão ao plano. O diagnóstico é uma orientação inicial e não substitui uma avaliação nutricional individualizada.</p>
-</footer>
-
-<script src="script.js?v=202611161516"></script>
+<script src="config.js?v=1"></script>
+<script src="script.js?v=1"></script>
 </body>
 </html>

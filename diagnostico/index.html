@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Figtree:wght@400;500;600;700&family=Red+Hat+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <main class="diag">
@@ -107,6 +107,14 @@
         <h2 class="titulo-grande" id="res-titulo"></h2>
         <p class="apoio" id="res-resumo"></p>
 
+        <div class="bloco-plano">
+          <span class="plano-tag">Plano indicado para você</span>
+          <b class="plano-nome" id="res-plano-nome"></b>
+          <span class="plano-info" id="res-plano-info"></span>
+          <ul class="plano-porque" id="res-porque"></ul>
+          <a class="plano-link" href="../#planos">Comparar todos os planos</a>
+        </div>
+
         <div class="bloco">
           <h3 class="bloco-titulo">O que mais pesa no seu caso</h3>
           <ol class="pontos" id="res-pontos"></ol>
@@ -151,6 +159,7 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="../config.js?v=1"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

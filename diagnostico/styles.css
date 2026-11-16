@@ -237,3 +237,13 @@ button { font: inherit; cursor: pointer; }
   .pilha { transform: scale(.74); height: 225px; }
   .titulo-grande { font-size: 40px; }
 }
+
+/* ============ Plano indicado ============ */
+.bloco-plano { background: var(--vermelho); background-image: linear-gradient(135deg, #e10600, #9c0b06); color: #fff; border-radius: 18px; padding: 26px 24px 22px; margin: 4px 0 26px; box-shadow: 0 30px 50px -28px rgba(225,6,0,.8); }
+.plano-tag { display: inline-block; font-family: var(--mono); font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; background: rgba(0,0,0,.25); border-radius: 999px; padding: 5px 12px; }
+.plano-nome { display: block; font-family: var(--display); font-weight: 900; font-size: clamp(52px, 9vw, 72px); text-transform: uppercase; line-height: .95; margin: 12px 0 4px; }
+.plano-info { display: block; font-weight: 600; color: #ffd9d7; margin-bottom: 14px; }
+.plano-porque { list-style: none; display: grid; gap: 8px; margin-bottom: 16px; }
+.plano-porque li { position: relative; padding-left: 22px; font-size: 16px; }
+.plano-porque li::before { content: ''; position: absolute; left: 2px; top: 9px; width: 8px; height: 8px; background: #fff; transform: rotate(45deg); }
+.plano-link { color: #fff; font-weight: 700; text-underline-offset: 5px; }

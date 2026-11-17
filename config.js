@@ -7,7 +7,7 @@ const CONFIG = {
   whatsapp: '5522999505767',
 
   // Número do registro no CRN
-  crn: '00000',
+  crn: '21100853',
 
   // Mostrar preços na página e no diagnóstico? O briefing pede valores só na conversa privada,
   // por isso começa desligado. Para mostrar, troque para true.

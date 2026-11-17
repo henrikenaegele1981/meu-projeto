@@ -4,7 +4,7 @@
    ========================================================= */
 const CONFIG = {
   // WhatsApp do Fred (quem conduz a conversa), só números, com 55 + DDD
-  whatsapp: '5522981173962',
+  whatsapp: '5522999505767',
 
   // Número do registro no CRN
   crn: '00000',

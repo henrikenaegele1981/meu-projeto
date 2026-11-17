@@ -278,3 +278,6 @@ svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; 
 .marcos span { color: var(--apagado); font-size: 15px; }
 @media (max-width: 960px) { .hero-visual-foto { height: auto; max-width: 360px; } .card-foto-grande { max-width: 330px; } }
 @media (max-width: 600px) { .card-foto-grande { max-width: 280px; } .hero-assinatura { margin-top: -10px; } }
+/* título-oferta da abertura (frase mais longa) */
+.titulo-oferta { font-size: clamp(46px, 6.2vw, 82px); line-height: .92; }
+.final-assinatura { margin: -8px 0 14px; }

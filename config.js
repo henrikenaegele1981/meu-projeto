@@ -20,12 +20,12 @@ const CONFIG = {
 const PLANOS = {
   semestral: {
     nome: 'Semestral',
-    rotulo: 'Mais escolhido',
+    rotulo: 'O preferido',
     duracao: '6 meses',
     consultas: '6 consultas',
     preco: '6x R$165',
     destaque: true,
-    desc: 'A escolha da maioria: acompanhamento do começo ao resultado.',
+    desc: 'Tempo de sobra pra virar hábito, com alguém do seu lado do começo ao fim.',
     itens: ['6 consultas (inicial + 5 retornos)', 'Ajustes também entre as consultas', 'WhatsApp direto por 6 meses', 'Melhor valor por consulta'],
   },
   trimestral: {
@@ -34,7 +34,7 @@ const PLANOS = {
     duracao: '3 meses',
     consultas: '3 consultas',
     preco: '3x R$194',
-    desc: 'Para quem quer um empurrão de alguns meses e pegar o ritmo.',
+    desc: 'Pra quem quer um empurrão de alguns meses pra organizar a casa e pegar o ritmo.',
     itens: ['3 consultas (inicial + 2 retornos)', 'Ajustes também entre as consultas', 'WhatsApp direto por 3 meses'],
   },
   avulsa: {
@@ -43,7 +43,7 @@ const PLANOS = {
     duracao: '1 consulta',
     consultas: 'consulta completa',
     preco: 'R$250',
-    desc: 'Para quem quer uma orientação pontual e decidir os próximos passos depois.',
+    desc: 'Pra quem quer uma orientação pontual e prefere decidir os próximos passos com calma.',
     itens: ['Consulta de 45 a 90 min', 'Dieta montada durante a consulta', 'Retornos avulsos, se quiser'],
   },
 };

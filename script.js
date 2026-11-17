@@ -3,29 +3,29 @@
 // Texto das abas "Qual plano é pro seu objetivo"
 const OBJETIVOS = {
   emagrecer: {
-    frase: 'Perder gordura sem perder músculo, sem passar fome e sem cortar tudo o que você gosta.',
+    frase: 'Perder gordura sem perder músculo, sem passar fome e sem abrir mão de tudo o que você gosta.',
     plano: 'semestral',
-    obs: 'Emagrecer de verdade leva meses. Seis retornos dão tempo de ajustar o plano a cada fase e passar pelos fins de semana sem largar.',
+    obs: 'Emagrecer de verdade leva alguns meses. Com seis retornos, dá tempo de ajustar o plano a cada fase e atravessar os fins de semana sem largar tudo.',
   },
   massa: {
-    frase: 'Comer de acordo com o seu treino para construir músculo, e não só ganhar peso.',
+    frase: 'Comer de acordo com o seu treino pra construir músculo, e não só ganhar peso.',
     plano: 'semestral',
-    obs: 'Hipertrofia é resultado de constância. O plano muda conforme o treino evolui.',
+    obs: 'Músculo gosta de constância. O plano vai mudando conforme o seu treino evolui.',
   },
   definicao: {
-    frase: 'Lapidar o shape e render mais no treino com ajuste fino da alimentação.',
+    frase: 'Lapidar o shape e render mais no treino com um ajuste fino na alimentação.',
     plano: 'trimestral',
-    obs: 'Para quem já treina e quer uma fase focada. Se quiser seguir depois, dá para continuar.',
+    obs: 'Pra quem já treina e quer uma fase mais focada. Se quiser seguir depois, é só continuar.',
   },
   saude: {
-    frase: 'Voltar a gostar do espelho, vestir uma roupa com confiança e comer melhor sem neura.',
+    frase: 'Voltar a gostar do espelho, vestir aquela roupa com confiança e comer melhor sem neura.',
     plano: 'semestral',
-    obs: 'Autoestima se constrói com hábito, e hábito precisa de tempo e de alguém do seu lado.',
+    obs: 'Autoestima se constrói com hábito. E hábito pede tempo e alguém do seu lado.',
   },
 };
 
 const MSGS = {
-  geral: 'Oi Fred! Vi sua página e quero saber como funciona o acompanhamento.',
+  geral: 'Oi Fred! Vi sua página e queria entender como funciona o acompanhamento.',
   semestral: 'Oi Fred! Vi sua página e quero saber mais sobre o plano SEMESTRAL.',
   trimestral: 'Oi Fred! Vi sua página e quero saber mais sobre o plano TRIMESTRAL.',
   avulsa: 'Oi Fred! Vi sua página e quero saber mais sobre a CONSULTA AVULSA.',
@@ -35,6 +35,7 @@ const MSGS = {
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => document.querySelectorAll(s);
   const rotObj = { emagrecer: 'Emagrecer', massa: 'Ganhar massa', definicao: 'Definição', saude: 'Saúde e autoestima' };
+  const ctaObj = { emagrecer: 'Quero emagrecer', massa: 'Quero ganhar massa', definicao: 'Quero mais definição', saude: 'Quero me sentir melhor' };
 
   /* formatos (planos) */
   function renderFormatos(objetivo) {
@@ -66,7 +67,7 @@ const MSGS = {
     $('#ap-tempo').textContent = CONFIG.mostrarPrecos ? p.preco : p.duracao;
     $('#ap-sub').textContent = CONFIG.mostrarPrecos ? `${p.nome} · ${p.duracao}` : `de acompanhamento · ${p.consultas}`;
     $('#ap-cta').href = `diagnostico/?objetivo=${obj}`;
-    $('#ap-cta').innerHTML = `Fazer o diagnóstico para ${rotObj[obj].toLowerCase()} <i>→</i>`;
+    $('#ap-cta').innerHTML = `${ctaObj[obj]}: fazer o diagnóstico <i>→</i>`;
     renderFormatos(obj);
   }
   $$('.aba').forEach((a) => a.addEventListener('click', () => mostrarObjetivo(a.dataset.aba)));

@@ -106,38 +106,41 @@ function drawMap(t){
 }
 
 // overlays
-const LBL=[[3.6,11,'SÃO PAULO · ABRIL/2026'],[11.6,26.5,'BRASÍLIA · OUT–NOV/2026'],[28.5,35.5,'WASHINGTON · DESDE AGO/2025'],[38.5,41.5,'SÃO PAULO · 17/11/2026']];
-const NUM=[[4.2,11,'fechamento de abril','R$ 4,97','menor valor do ano · Forbes/B3'],
- [15,19.5,'em um único pregão','+8%','dólar em 26/10 · Nomad, Remessa Online'],
- [21.5,26.5,'leilões do Banco Central','US$ 1 bi','linha de dólar · nov/2026 · IstoÉ Dinheiro'],
- [29.5,35.5,'tarifa dos EUA','50%','sobre produtos brasileiros · desde 06/08/2025'],
- [38.5,41.5,'máxima do dia 17/11','R$ 5,81','maior nível desde abril/2025 · B3']];
-const CAP=[[0.3,3.4,'Em abril, um dólar custava <b>R$&nbsp;4,97</b>.'],
- [3.6,6.6,'Era o menor valor do ano.'],[6.8,10.9,'Uma queda de <b>9,4%</b> em 2026.'],
- [11.1,14.6,'Aí veio o <b>motivo 1</b>: a eleição.'],[14.8,17.2,'O mercado apostou num resultado. Veio o outro.'],[17.4,19.6,'Mais de <b>8%</b> num dia só.'],
- [19.8,22.8,'<b>Motivo 2</b>: as contas do governo.'],[23,26.6,'Pacote fiscal travado no Senado. O BC já foi a campo.'],
- [26.8,30,'E o pano de fundo fica em <b>Washington</b>.'],[30.2,35.4,'Tarifa de <b>50%</b>: menos venda, menos dólar entrando.'],
- [35.6,38.3,'Resultado?'],[38.5,41.4,'17 de novembro: <b>R$&nbsp;5,81</b>.'],
- [44.6,47.6,'Viagem de fim de ano?'],[47.8,50.2,'O mesmo dólar custa <b>quase 17% a mais</b> que em abril.'],
- [50.4,53,'Ninguém sabe a cotação de amanhã. Dá para entender o que move ela.']];
-const FULL=[41.6,44.4,'Não foi um motivo só.','E ele chega no seu bolso.'];
-const CTA=[50.6,53];
+// tempos em segundos do ÁUDIO (narração Voz Paulo, ElevenLabs)
+const WARP=[[0,0],[3.0,3.5],[12.75,11],[21.77,19.8],[30.95,26.8],[39.34,35.6],[42.62,41.6],[44.88,44.6],[50.61,50.4],[57.5,53]];
+function warp(t){for(let i=0;i<WARP.length-1;i++){const [a0,d0]=WARP[i],[a1,d1]=WARP[i+1];if(t<=a1)return d0+(d1-d0)*clamp((t-a0)/(a1-a0));}return 53;}
+const LBL=[[3.0,12.7,'SÃO PAULO · ABRIL/2026'],[12.9,30.9,'BRASÍLIA · OUT–NOV/2026'],[31.4,39.2,'WASHINGTON · DESDE AGO/2025'],[40.6,42.6,'SÃO PAULO · 17/11/2026']];
+const NUM=[[4.0,12.7,'fechamento de abril/2026','R$ 4,97','menor valor do ano · Forbes/B3'],
+ [18.0,21.75,'em um único pregão','+8%','dólar em 26/10 · Nomad, Remessa Online'],
+ [26.4,30.9,'leilões do Banco Central','US$ 1 bi','linha de dólar · nov/2026 · IstoÉ Dinheiro'],
+ [33.0,39.2,'tarifa dos EUA','50%','sobre produtos brasileiros · desde 06/08/2025'],
+ [40.6,42.6,'máxima do dia 17/11','R$ 5,81','maior nível desde abril/2025 · B3']];
+const CAP=[[0.05,8.1,'Em abril de 2026, um dólar custava <b>R$&nbsp;4,97</b>.'],
+ [8.2,9.75,'Era o menor valor do ano.'],[9.8,12.72,'Uma queda de mais de <b>9%</b> no ano.'],
+ [12.75,14.94,'Aí veio o <b>motivo 1</b>: a eleição.'],[14.96,17.98,'O mercado apostou num resultado. Veio o outro.'],[18.0,21.75,'Mais de <b>8%</b> num dia só.'],
+ [21.77,23.87,'<b>Motivo 2</b>: as contas do governo.'],[23.88,26.34,'Pacote fiscal travado no Senado.'],[26.36,30.93,'O BC já foi a campo: <b>US$&nbsp;1&nbsp;bi</b> em leilões.'],
+ [30.95,33.02,'E o pano de fundo fica em <b>Washington</b>.'],[33.04,35.95,'Tarifa de <b>50%</b> sobre produtos brasileiros.'],[35.97,39.25,'Menos venda, menos dólar entrando.'],
+ [39.34,39.93,'Resultado?'],[39.94,42.58,'17 de novembro: <b>R$&nbsp;5,81</b>.'],
+ [44.88,46.95,'Viagem de fim de ano?'],[46.97,50.58,'O mesmo dólar custa <b>quase 17% a mais</b> que em abril.'],
+ [50.61,57.5,'Ninguém sabe a cotação de amanhã. Dá para entender o que move ela.']];
+const FULL=[42.62,44.86,'Não foi um motivo só.','E ele chega no seu bolso.',43.7];
+const CTA=[54.66,57.5];
 
 const $=id=>document.getElementById(id);
 function setO(el,o,dy=0){el.style.opacity=o;el.style.transform=`translateY(${(1-o)*dy}px)`;}
 function render(t){
-  drawMap(t);
-  setO($('kicker'),clamp(t/.4)); setO($('title'),clamp(t/.5)*(t<41.6||t>44.4?1:0));
+  drawMap(warp(t));
+  setO($('kicker'),clamp(t/.4)); setO($('title'),clamp(t/.5)*(t<FULL[0]||t>FULL[1]?1:0));
   let l=LBL.find(x=>t>=x[0]&&t<=x[1]); $('label').textContent=l?l[2]:''; setO($('label'),l?fade(t,l[0],l[1]):0,20);
   let n=NUM.find(x=>t>=x[0]&&t<=x[1]); const nm=$('num');
   if(n){nm.querySelector('.pre').textContent=n[2];nm.querySelector('.v').textContent=n[3];nm.querySelector('.src').textContent=n[4];}
   setO(nm,n?fade(t,n[0],n[1]):0,30);
   let c=CAP.find(x=>t>=x[0]&&t<=x[1]); $('cap').innerHTML=c?c[2]:''; setO($('cap'),c?fade(t,c[0],c[1],.2):0,24);
   const fo=fade(t,FULL[0],FULL[1],.3); $('full').style.opacity=fo; $('f1').textContent=FULL[2];
-  $('f2').textContent=FULL[3]; $('f2').style.opacity=clamp((t-FULL[0]-1.1)/.3);
-  setO($('cta'),fade(t,CTA[0],CTA[1]+1,.3),30);
+  $('f2').textContent=FULL[3]; $('f2').style.opacity=clamp((t-FULL[4])/.25);
+  setO($('cta'),fade(t,CTA[0],CTA[1]+1,.25),30);
   // hide number block when CTA shows
 }
-window.render=render; window.DUR=53;
+window.render=render; window.DUR=57.5;
 render(0);
 </script></body></html>

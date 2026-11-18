@@ -1,7 +1,8 @@
 # Mapa do Dólar #1: De R$ 4,97 a R$ 5,81
 
 **Formato:** mapa animado, 53 s, 1080×1920, 30 fps. O texto na tela conta a história sozinho, então o vídeo funciona sem som.
-**Arquivo:** `mapa-dolar-497-581.mp4`. A faixa de áudio vai muda: coloque a locução e uma trilha do próprio Instagram.
+**Versão final narrada:** `mapa-dolar-497-581-voz-paulo.mp4` (57,5 s, "Voz Paulo" do ElevenLabs, eleven_multilingual_v2, estabilidade 0,45, similaridade 0,8, estilo 0,15). Legendas e mapa sincronizados pelos tempos de cada palavra. Áudio separado: `narracao-voz-paulo.mp3`.
+**Versão muda:** `mapa-dolar-497-581.mp4`. A faixa de áudio vai muda: coloque a locução e uma trilha do próprio Instagram.
 **Dados checados em 18/11/2026.** As fontes estão em `../pesquisa-nicho-dolar-cambio.md`. Se for postar depois de alguns dias, reconfira a cotação.
 
 ## Locução (para o Paulo gravar ou para o ElevenLabs)
@@ -9,7 +10,7 @@ Os números estão por extenso e cada linha cabe na janela de tempo da cena.
 
 | Tempo | Mapa | Fala |
 |---|---|---|
-| 0–3,5 s | Globo girando até o Brasil | Em abril, um dólar custava quatro reais e noventa e sete. |
+| 0–8 s | Globo girando até São Paulo | Em abril de dois mil e vinte e seis, um dólar custava quatro reais e noventa e sete centavos. |
 | 3,5–11 s | Zoom em São Paulo · "R$ 4,97" | Era o menor valor do ano. Uma queda de mais de nove por cento em 2026. |
 | 11–19,5 s | Rota até Brasília · "+8%" | Aí veio o motivo número um: a eleição. O mercado apostou num resultado. Veio o outro. O dólar subiu mais de oito por cento num dia só. |
 | 19,5–26,5 s | Brasília · "US$ 1 bi" | Motivo número dois: as contas do governo. O pacote fiscal está travado no Senado, e o Banco Central já foi a campo com um bilhão de dólares em leilões. |

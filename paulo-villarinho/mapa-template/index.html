@@ -1,0 +1,143 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:Inter;src:local("Inter")}
+  html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0B1622;font-family:Inter,"DejaVu Sans",sans-serif}
+  canvas{position:absolute;inset:0}
+  .abs{position:absolute}
+  #kicker{left:70px;top:262px;font-family:"DejaVu Sans Mono",monospace;font-size:26px;letter-spacing:3px;color:#E0B341}
+  #title{left:70px;top:304px;width:940px;font-weight:800;font-size:66px;line-height:1.08;color:#fff;letter-spacing:-1px}
+  #title .g{color:#E0B341}
+  #title .s{display:block;font-size:44px;font-weight:600;color:#cfe0f2;margin-top:10px;letter-spacing:-0.5px}
+  #label{left:70px;top:560px;padding:10px 18px;border:2px solid #E0B341;color:#E0B341;font-family:"DejaVu Sans Mono",monospace;font-size:26px;letter-spacing:2px;background:rgba(11,22,34,.75)}
+  #num{left:70px;top:1080px}
+  #num .v{font-family:Inter,sans-serif;font-variant-numeric:tabular-nums;font-weight:900;letter-spacing:-3px;font-size:140px;color:#E0B341;line-height:1;text-shadow:0 4px 30px rgba(0,0,0,.8)}
+  #num .pre{font-size:30px;color:#cfe0f2;font-weight:600;margin-bottom:6px}
+  #num .src{font-size:22px;color:#8aa3bd;margin-top:10px;font-family:"DejaVu Sans Mono",monospace}
+  #cap{left:70px;right:180px;top:1305px;font-size:48px;font-weight:800;color:#fff;line-height:1.15;text-shadow:0 3px 18px rgba(0,0,0,.95)}
+  #cap b{color:#E0B341}
+  #full{inset:0;background:rgba(6,12,20,.92);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 70px;box-sizing:border-box}
+  #full div{font-size:82px;font-weight:900;color:#fff;line-height:1.05;letter-spacing:-2px}
+  #full div.g{color:#E0B341}
+  #cta{left:70px;top:1150px;padding:26px 34px;background:#1FAE5B;color:#06140c;font-weight:900;font-size:56px;border-radius:14px}
+</style></head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div id="kicker" class="abs">MAPA DO DÓLAR · @OPAULOVILLARINHO</div>
+<div id="title" class="abs">De <span class="g">R$ 4,97</span> a <span class="g">R$ 5,81</span><span class="s">O que aconteceu no meio do caminho?</span></div>
+<div id="label" class="abs"></div>
+<div id="num" class="abs"><div class="pre"></div><div class="v"></div><div class="src"></div></div>
+<div id="cap" class="abs"></div>
+<div id="full" class="abs"><div id="f1"></div><div id="f2" class="g"></div></div>
+<div id="cta" class="abs">Comente MAPA</div>
+<script src="node_modules/d3/dist/d3.min.js"></script>
+<script src="node_modules/topojson-client/dist/topojson-client.min.js"></script>
+<script src="data.js"></script>
+<script src="lights.js"></script>
+<script>
+const W=1080,H=1920, CX=540, CY=980;
+const ctx=document.getElementById('c').getContext('2d');
+const countries=topojson.feature(WORLD,WORLD.objects.countries);
+const borders=topojson.mesh(WORLD,WORLD.objects.countries,(a,b)=>a!==b);
+const brazil=countries.features.find(f=>f.id==='076');
+const usa=countries.features.find(f=>f.id==='840');
+const grat=d3.geoGraticule10();
+const C={SP:[-46.63,-23.55],BSB:[-47.88,-15.79],WAS:[-77.04,38.91]};
+// city lights: deterministic random points on land
+const lights=LIGHTS.map(x=>[[x[0],x[1]],x[2]]);
+
+// camera keyframes: t, center [lon,lat], scale
+const K=[
+ [0,[-35,-5],470],[3.5,[-42,-12],620],
+ [8,C.SP,1150],[11,C.SP,1200],
+ [14,C.BSB,1050],[19,C.BSB,1100],[26,C.BSB,1150],
+ [29.5,[-62,12],600],[33,C.WAS,950],[35,C.WAS,1000],
+ [37.5,[-60,8],620],[40,C.SP,1100],[41.5,C.SP,1150],
+ [47,[-45,-10],600],[53,[-40,-8],520]];
+const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+function cam(t){
+  for(let i=0;i<K.length-1;i++){const a=K[i],b=K[i+1];
+    if(t<=b[0]){const k=ease(Math.max(0,(t-a[0])/(b[0]-a[0])));
+      return {c:d3.geoInterpolate(a[1],b[1])(k), s:Math.exp(Math.log(a[2])+(Math.log(b[2])-Math.log(a[2]))*k)};}}
+  const l=K[K.length-1];return {c:l[1],s:l[2]};
+}
+// routes: from,to,t0,t1
+const R=[[C.SP,C.BSB,11.5,14],[C.BSB,C.WAS,27,32.5],[C.WAS,C.SP,35.5,40]];
+const pins=[[C.SP,3.5,53],[C.BSB,11.5,53],[C.WAS,28,53]];
+
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+function fade(t,a,b,d=.35){return clamp((t-a)/d)*clamp((b-t)/d);}
+
+function drawMap(t){
+  const {c,s}=cam(t);
+  const proj=d3.geoOrthographic().translate([CX,CY]).scale(s).rotate([-c[0],-c[1]]).clipAngle(90).precision(.3);
+  const path=d3.geoPath(proj,ctx);
+  ctx.fillStyle='#070e17';ctx.fillRect(0,0,W,H);
+  // atmosphere glow
+  const g=ctx.createRadialGradient(CX,CY,s*0.92,CX,CY,s*1.18);
+  g.addColorStop(0,'rgba(70,140,220,.35)');g.addColorStop(1,'rgba(70,140,220,0)');
+  ctx.fillStyle=g;ctx.beginPath();ctx.arc(CX,CY,s*1.18,0,7);ctx.fill();
+  // ocean
+  ctx.beginPath();path({type:'Sphere'});ctx.fillStyle='#0B1622';ctx.fill();
+  ctx.beginPath();path(grat);ctx.strokeStyle='rgba(120,160,210,.07)';ctx.lineWidth=1;ctx.stroke();
+  // land
+  ctx.beginPath();path(countries);ctx.fillStyle='#14283d';ctx.fill();
+  ctx.beginPath();path(brazil);ctx.fillStyle='#143628';ctx.fill();
+  if(t>27){ctx.beginPath();path(usa);ctx.fillStyle=`rgba(80,40,40,${clamp((t-27)/1.5)*.7})`;ctx.fill();}
+  ctx.beginPath();path(borders);ctx.strokeStyle='rgba(140,180,220,.22)';ctx.lineWidth=1.2;ctx.stroke();
+  ctx.beginPath();path(brazil);ctx.strokeStyle='rgba(31,174,91,.8)';ctx.lineWidth=2.5;ctx.stroke();
+  // city lights
+  const center=c;
+  for(const [p,r] of lights){ if(d3.geoDistance(p,center)>1.5)continue; const q=proj(p); if(!q)continue;
+    const tw=.55+.45*Math.sin(t*2+r*40); ctx.fillStyle=`rgba(255,214,140,${(.25+.5*r)*tw})`;
+    ctx.fillRect(q[0],q[1],1.6+r*1.6,1.6+r*1.6);}
+  // routes
+  for(const [a,b,t0,t1] of R){ if(t<t0)continue; const k=ease(clamp((t-t0)/(t1-t0))); const ip=d3.geoInterpolate(a,b);
+    const pts=d3.range(0,k+1e-6,0.01).map(ip); if(k>0)pts.push(ip(k));
+    ctx.beginPath();path({type:'LineString',coordinates:pts});
+    ctx.strokeStyle='rgba(224,179,65,.35)';ctx.lineWidth=12;ctx.stroke();
+    ctx.strokeStyle='#E0B341';ctx.lineWidth=4;ctx.setLineDash([18,10]);ctx.lineDashOffset=-t*40;ctx.stroke();ctx.setLineDash([]);
+    if(k<1){const q=proj(ip(k)); if(q && d3.geoDistance(ip(k),center)<1.55){ctx.beginPath();ctx.arc(q[0],q[1],9,0,7);ctx.fillStyle='#fff';ctx.fill();}}
+  }
+  // pins
+  for(const [p,a,b] of pins){ if(t<a||t>b)continue; if(d3.geoDistance(p,center)>1.5)continue; const q=proj(p); if(!q)continue;
+    const ph=((t-a)%1.4)/1.4; ctx.beginPath();ctx.arc(q[0],q[1],10+ph*46,0,7);ctx.strokeStyle=`rgba(224,179,65,${1-ph})`;ctx.lineWidth=3;ctx.stroke();
+    ctx.beginPath();ctx.arc(q[0],q[1],11,0,7);ctx.fillStyle='#E0B341';ctx.fill();ctx.lineWidth=3;ctx.strokeStyle='#0B1622';ctx.stroke();}
+}
+
+// overlays
+const LBL=[[3.6,11,'SÃO PAULO · ABRIL/2026'],[11.6,26.5,'BRASÍLIA · OUT–NOV/2026'],[28.5,35.5,'WASHINGTON · DESDE AGO/2025'],[38.5,41.5,'SÃO PAULO · 17/11/2026']];
+const NUM=[[4.2,11,'fechamento de abril','R$ 4,97','menor valor do ano · Forbes/B3'],
+ [15,19.5,'em um único pregão','+8%','dólar em 26/10 · Nomad, Remessa Online'],
+ [21.5,26.5,'leilões do Banco Central','US$ 1 bi','linha de dólar · nov/2026 · IstoÉ Dinheiro'],
+ [29.5,35.5,'tarifa dos EUA','50%','sobre produtos brasileiros · desde 06/08/2025'],
+ [38.5,41.5,'máxima do dia 17/11','R$ 5,81','maior nível desde abril/2025 · B3']];
+const CAP=[[0.3,3.4,'Em abril, um dólar custava <b>R$&nbsp;4,97</b>.'],
+ [3.6,6.6,'Era o menor valor do ano.'],[6.8,10.9,'Uma queda de <b>9,4%</b> em 2026.'],
+ [11.1,14.6,'Aí veio o <b>motivo 1</b>: a eleição.'],[14.8,17.2,'O mercado apostou num resultado. Veio o outro.'],[17.4,19.6,'Mais de <b>8%</b> num dia só.'],
+ [19.8,22.8,'<b>Motivo 2</b>: as contas do governo.'],[23,26.6,'Pacote fiscal travado no Senado. O BC já foi a campo.'],
+ [26.8,30,'E o pano de fundo fica em <b>Washington</b>.'],[30.2,35.4,'Tarifa de <b>50%</b>: menos venda, menos dólar entrando.'],
+ [35.6,38.3,'Resultado?'],[38.5,41.4,'17 de novembro: <b>R$&nbsp;5,81</b>.'],
+ [44.6,47.6,'Viagem de fim de ano?'],[47.8,50.2,'O mesmo dólar custa <b>quase 17% a mais</b> que em abril.'],
+ [50.4,53,'Ninguém sabe a cotação de amanhã. Dá para entender o que move ela.']];
+const FULL=[41.6,44.4,'Não foi um motivo só.','E ele chega no seu bolso.'];
+const CTA=[50.6,53];
+
+const $=id=>document.getElementById(id);
+function setO(el,o,dy=0){el.style.opacity=o;el.style.transform=`translateY(${(1-o)*dy}px)`;}
+function render(t){
+  drawMap(t);
+  setO($('kicker'),clamp(t/.4)); setO($('title'),clamp(t/.5)*(t<41.6||t>44.4?1:0));
+  let l=LBL.find(x=>t>=x[0]&&t<=x[1]); $('label').textContent=l?l[2]:''; setO($('label'),l?fade(t,l[0],l[1]):0,20);
+  let n=NUM.find(x=>t>=x[0]&&t<=x[1]); const nm=$('num');
+  if(n){nm.querySelector('.pre').textContent=n[2];nm.querySelector('.v').textContent=n[3];nm.querySelector('.src').textContent=n[4];}
+  setO(nm,n?fade(t,n[0],n[1]):0,30);
+  let c=CAP.find(x=>t>=x[0]&&t<=x[1]); $('cap').innerHTML=c?c[2]:''; setO($('cap'),c?fade(t,c[0],c[1],.2):0,24);
+  const fo=fade(t,FULL[0],FULL[1],.3); $('full').style.opacity=fo; $('f1').textContent=FULL[2];
+  $('f2').textContent=FULL[3]; $('f2').style.opacity=clamp((t-FULL[0]-1.1)/.3);
+  setO($('cta'),fade(t,CTA[0],CTA[1]+1,.3),30);
+  // hide number block when CTA shows
+}
+window.render=render; window.DUR=53;
+render(0);
+</script></body></html>

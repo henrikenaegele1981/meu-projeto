@@ -128,7 +128,10 @@ const CTA=[54.66,57.5];
 
 const $=id=>document.getElementById(id);
 function setO(el,o,dy=0){el.style.opacity=o;el.style.transform=`translateY(${(1-o)*dy}px)`;}
-function render(t){
+const KEEP=[[0, 0.7, 1.27], [0.57, 2.19, 3.16], [1.54, 3.68, 4.48], [2.34, 5.18, 7.92], [5.08, 8.2, 9.54], [6.42, 9.75, 10.51], [7.18, 12.0, 19.11], [14.29, 19.41, 20.88], [15.76, 21.11, 36.79], [31.44, 38.03, 45.4], [38.81, 46.12, 56.738]];
+function toOld(t){let r=KEEP[0];for(const k of KEEP){if(t>=k[0])r=k;}return Math.min(r[1]+(t-r[0]), t-r[0]+r[1]);}
+function render(nt){
+  const t=toOld(nt);
   drawMap(warp(t));
   setO($('kicker'),clamp(t/.4)); setO($('title'),clamp(t/.5)*(t<FULL[0]||t>FULL[1]?1:0));
   let l=LBL.find(x=>t>=x[0]&&t<=x[1]); $('label').textContent=l?l[2]:''; setO($('label'),l?fade(t,l[0],l[1]):0,20);
@@ -141,6 +144,6 @@ function render(t){
   setO($('cta'),fade(t,CTA[0],CTA[1]+1,.25),30);
   // hide number block when CTA shows
 }
-window.render=render; window.DUR=57.5;
+window.render=render; window.DUR=50.33;
 render(0);
 </script></body></html>

@@ -9,7 +9,7 @@ def t(phrase):
         if toks[i:i+len(p)]==p: pos=i+1; return W[i]['start']
     raise SystemExit('não achei: '+phrase)
 A={}
-for k in ['Em abril','custava','Era o menor','uma queda','Aí veio','O mercado','O dólar subiu','Motivo número dois','O pacote','e o Banco','E o pano','Tarifa','Menos venda','Resultado','17','Não foi','E ele chega','Viagem','O mesmo','Ninguém','Comenta']:
+for k in ['Em abril','custava','Era o menor','uma queda','Aí veio','O mercado','O dólar subiu','Motivo número dois','O pacote','e o Banco','E o pano','Tarifa','Menos venda','Resultado','17','Não foi','E ele chega','Viagem','O mesmo','Ninguém','Quer entender']:
     A[k]=round(t(k),2)
 END=round(W[-1]['end']+0.9,2)
 e=lambda k,d=0.05:round(A[k]-d,2)
@@ -25,10 +25,10 @@ C=[('Em abril','Era o menor','Em abril de 2026, um dólar custava <b>R$&nbsp;4,9
  ('Motivo número dois','O pacote','<b>Motivo 2</b>: as contas do governo.'),('O pacote','e o Banco','Pacote fiscal travado no Senado.'),('e o Banco','E o pano','O BC já foi a campo: <b>US$&nbsp;1&nbsp;bi</b> em leilões.'),
  ('E o pano','Tarifa','E o pano de fundo fica em <b>Washington</b>.'),('Tarifa','Menos venda','Tarifa de <b>50%</b> sobre produtos brasileiros.'),('Menos venda','Resultado','Menos venda, menos dólar entrando.'),
  ('Resultado','17','Resultado?'),('17','Não foi','17 de novembro: <b>R$&nbsp;5,81</b>.'),
- ('Viagem','O mesmo','Viagem de fim de ano?'),('O mesmo','Ninguém','O mesmo dólar custa <b>quase 17% a mais</b> que em abril.'),('Ninguém',None,'Ninguém sabe a cotação de amanhã. Dá para entender o que move ela.')]
+ ('Viagem','O mesmo','Viagem de fim de ano?'),('O mesmo','Ninguém','O mesmo dólar custa <b>quase 17% a mais</b> que em abril.'),('Ninguém','Quer entender','Ninguém sabe a cotação de amanhã. Dá para entender o que move ela.'),('Quer entender',None,'Quer entender mais? O link está na bio.')]
 CAP=[[A[a],(e(b) if b else END),txt] for a,b,txt in C]
 FULL=[A['Não foi'],e('Viagem'),'Não foi um motivo só.','E ele chega no seu bolso.',A['E ele chega']]
-CTA=[A['Comenta'],END]
+CTA=[A['Quer entender'],END]
 r=lambda x:json.dumps(x,ensure_ascii=False)
 js=f"""// tempos em segundos do ÁUDIO final (gerado por sync.py)
 const WARP={r(WARP)};

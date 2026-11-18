@@ -1,7 +1,8 @@
 # Mapa do Dólar #1: De R$ 4,97 a R$ 5,81
 
 **Formato:** mapa animado, 53 s, 1080×1920, 30 fps. O texto na tela conta a história sozinho, então o vídeo funciona sem som.
-**Versão final narrada:** `mapa-dolar-497-581-voz-paulo.mp4` (57,5 s, "Voz Paulo" do ElevenLabs, eleven_multilingual_v2, estabilidade 0,45, similaridade 0,8, estilo 0,15). Legendas e mapa sincronizados pelos tempos de cada palavra. Áudio separado: `narracao-voz-paulo.mp3`.
+**Versão final (aprovar):** `mapa-dolar-497-581-final.mp4` (53,7 s, voz Marcelo Costa do ElevenLabs, abertura acelerada, CTA link na bio).
+**Versão anterior narrada:** `mapa-dolar-497-581-voz-paulo.mp4` (57,5 s, "Voz Paulo" do ElevenLabs, eleven_multilingual_v2, estabilidade 0,45, similaridade 0,8, estilo 0,15). Legendas e mapa sincronizados pelos tempos de cada palavra. Áudio separado: `narracao-voz-paulo.mp3`.
 **Versão muda:** `mapa-dolar-497-581.mp4`. A faixa de áudio vai muda: coloque a locução e uma trilha do próprio Instagram.
 **Dados checados em 18/11/2026.** As fontes estão em `../pesquisa-nicho-dolar-cambio.md`. Se for postar depois de alguns dias, reconfira a cotação.
 
@@ -18,7 +19,7 @@ Os números estão por extenso e cada linha cabe na janela de tempo da cena.
 | 35,5–41,5 s | Rota de volta a São Paulo · "R$ 5,81" | Resultado? Dezessete de novembro: cinco reais e oitenta e um. |
 | 41,5–44,5 s | Tela cheia | Não foi um motivo só. E ele chega no seu bolso. |
 | 44,5–50,5 s | Globo se afastando | Viagem de fim de ano? O mesmo dólar custa quase dezessete por cento a mais que em abril. |
-| 50,5–53 s | CTA "Comente MAPA" | Ninguém sabe a cotação de amanhã. Mas dá para entender o que move ela. Comenta MAPA que eu te mando o próximo. |
+| 50,5–53 s | CTA "Link na bio" | Ninguém sabe a cotação de amanhã. Mas dá para entender o que move ela. Quer entender mais? O link está na bio. |
 
 ## Legenda do post
 O dólar foi de R$ 4,97 a R$ 5,81 em sete meses. Não foi um motivo só. 🗺️
@@ -29,7 +30,7 @@ Um dado que não está no vídeo: em 16/11 o dólar subiu quase 2% num único di
 
 Ninguém sabe a cotação de amanhã, e este vídeo não é recomendação de compra. Mas entender o que move o dólar muda a forma como você planeja viagem, compra e investimento.
 
-💬 Comente MAPA e eu te mando o próximo mapa do dólar.
+🔗 Quer entender mais? O link está na bio.
 
 #dolar #cambio #economia #mercadofinanceiro #dolarhoje
 

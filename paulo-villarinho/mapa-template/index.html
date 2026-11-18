@@ -107,13 +107,13 @@ function drawMap(t){
 
 // overlays
 // tempos em segundos do ÁUDIO final (gerado por sync.py)
-const WARP=[[0, 0], [3.0, 3.5], [6.98, 11], [13.38, 19.8], [20.28, 26.8], [26.66, 35.6], [29.86, 41.6], [32.18, 44.6], [36.34, 50.4], [42.02, 53]];
+const WARP=[[0, 0], [3.0, 3.5], [9.14, 11], [17.86, 19.8], [27.06, 26.8], [34.68, 35.6], [38.72, 41.6], [41.94, 44.6], [46.98, 50.4], [53.34, 53]];
 function warp(t){for(let i=0;i<WARP.length-1;i++){const [a0,d0]=WARP[i],[a1,d1]=WARP[i+1];if(t<=a1)return d0+(d1-d0)*clamp((t-a0)/(a1-a0));}return 53;}
-const LBL=[[3.0, 6.93, "SÃO PAULO · ABRIL/2026"], [7.130000000000001, 20.23, "BRASÍLIA · OUT–NOV/2026"], [20.73, 26.51, "WASHINGTON · DESDE AGO/2025"], [27.94, 29.81, "SÃO PAULO · 17/11/2026"]];
-const NUM=[[2.0, 6.93, "fechamento de abril/2026", "R$ 4,97", "menor valor do ano · Forbes/B3"], [10.98, 13.33, "em um único pregão", "+8%", "dólar em 26/10 · Nomad, Remessa Online"], [17.2, 20.23, "leilões do Banco Central", "US$ 1 bi", "linha de dólar · nov/2026 · IstoÉ Dinheiro"], [21.98, 26.51, "tarifa dos EUA", "50%", "sobre produtos brasileiros · desde 06/08/2025"], [27.94, 29.81, "máxima do dia 17/11", "R$ 5,81", "maior nível desde abril/2025 · B3"]];
-const CAP=[[0.08, 4.17, "Em abril de 2026, um dólar custava <b>R$&nbsp;4,97</b>."], [4.22, 5.41, "Era o menor valor do ano."], [5.46, 6.93, "Uma queda de mais de <b>9%</b> no ano."], [6.98, 8.79, "Aí veio o <b>motivo 1</b>: a eleição."], [8.84, 10.93, "O mercado apostou num resultado. Veio o outro."], [10.98, 13.33, "Mais de <b>8%</b> num dia só."], [13.38, 15.21, "<b>Motivo 2</b>: as contas do governo."], [15.26, 17.15, "Pacote fiscal travado no Senado."], [17.2, 20.23, "O BC já foi a campo: <b>US$&nbsp;1&nbsp;bi</b> em leilões."], [20.28, 21.93, "E o pano de fundo fica em <b>Washington</b>."], [21.98, 24.77, "Tarifa de <b>50%</b> sobre produtos brasileiros."], [24.82, 26.61, "Menos venda, menos dólar entrando."], [26.66, 27.29, "Resultado?"], [27.34, 29.81, "17 de novembro: <b>R$&nbsp;5,81</b>."], [32.18, 33.31, "Viagem de fim de ano?"], [33.36, 36.29, "O mesmo dólar custa <b>quase 17% a mais</b> que em abril."], [36.34, 39.31, "Ninguém sabe a cotação de amanhã. Dá para entender o que move ela."], [39.36, 42.02, "Quer entender mais? O link está na bio."]];
-const FULL=[29.86, 32.13, "Não foi um motivo só.", "E ele chega no seu bolso.", 30.96];
-const CTA=[39.36, 42.02];
+const LBL=[[3.0, 9.09, "SÃO PAULO · ABRIL/2026"], [9.290000000000001, 27.01, "BRASÍLIA · OUT–NOV/2026"], [27.509999999999998, 34.53, "WASHINGTON · DESDE AGO/2025"], [36.2, 38.67, "SÃO PAULO · 17/11/2026"]];
+const NUM=[[2.28, 9.09, "fechamento de abril/2026", "R$ 4,97", "menor valor do ano · Forbes/B3"], [14.66, 17.81, "em um único pregão", "+8%", "dólar em 26/10 · Nomad, Remessa Online"], [23.0, 27.01, "leilões do Banco Central", "US$ 1 bi", "linha de dólar · nov/2026 · IstoÉ Dinheiro"], [29.08, 34.53, "tarifa dos EUA", "50%", "sobre produtos brasileiros · desde 06/08/2025"], [36.2, 38.67, "máxima do dia 17/11", "R$ 5,81", "maior nível desde abril/2025 · B3"]];
+const CAP=[[0.1, 5.17, "Em abril de 2026, um dólar custava <b>R$&nbsp;4,97</b>."], [5.22, 6.79, "Era o menor valor do ano."], [6.84, 9.09, "Uma queda de mais de <b>9%</b> no ano."], [9.14, 11.75, "Aí veio o <b>motivo 1</b>: a eleição."], [11.8, 14.61, "O mercado apostou num resultado. Veio o outro."], [14.66, 17.81, "Mais de <b>8%</b> num dia só."], [17.86, 20.59, "<b>Motivo 2</b>: as contas do governo."], [20.64, 22.95, "Pacote fiscal travado no Senado."], [23.0, 27.01, "O BC já foi a campo: <b>US$&nbsp;1&nbsp;bi</b> em leilões."], [27.06, 29.03, "E o pano de fundo fica em <b>Washington</b>."], [29.08, 32.33, "Tarifa de <b>50%</b> sobre produtos brasileiros."], [32.38, 34.63, "Menos venda, menos dólar entrando."], [34.68, 35.55, "Resultado?"], [35.6, 38.67, "17 de novembro: <b>R$&nbsp;5,81</b>."], [41.94, 43.17, "Viagem de fim de ano?"], [43.22, 46.93, "O mesmo dólar custa <b>quase 17% a mais</b> que em abril."], [46.98, 50.61, "Ninguém sabe a cotação de amanhã. Dá para entender o que move ela."], [50.66, 53.34, "Quer entender mais? O link está na bio."]];
+const FULL=[38.72, 41.89, "Não foi um motivo só.", "E ele chega no seu bolso.", 40.2];
+const CTA=[50.66, 53.34];
 
 const $=id=>document.getElementById(id);
 function setO(el,o,dy=0){el.style.opacity=o;el.style.transform=`translateY(${(1-o)*dy}px)`;}
@@ -131,6 +131,6 @@ function render(nt){
   setO($('cta'),fade(t,CTA[0],CTA[1]+1,.25),30);
   // hide number block when CTA shows
 }
-window.render=render; window.DUR=42.02;
+window.render=render; window.DUR=53.34;
 render(0);
 </script></body></html>

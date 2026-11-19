@@ -104,3 +104,42 @@ Etiquetas de fonte na tela: Banco Central · FPA · CEPEA · CNA · Balanço do 
 | "Prometeu barrar o Estatuto do Nascituro" | Só há uma paráfrase de jornal (jun/2024): "impedir qualquer projeto que represente retrocesso". O Estatuto (PL 478/2007) está na Comissão da Mulher; a relatora é Sâmia Bomfim. | **PARCIAL** (não é citação) |
 | Constituição do Paraguai protege a vida desde a concepção | Art. 4: "en general, desde la concepción". https://www.bacn.gov.py/leyes-paraguayas/9580/constitucion-nacional | **CONFERE** (o vídeo omite "en general") |
 | Legenda: "nenhuma campanha por adoção ou amparo à mãe" | Não levantado. | **N/E** |
+
+---
+
+## Vídeo: "33 países emitiram um alerta" (DfnmaxLhy6W, 11/11/2026)
+
+| Afirmação | Fonte de origem | Veredito |
+|---|---|---|
+| "33 países emitiram um alerta" | Mapa da **Newsweek** (28/10/2026) com 33 países que têm **guias de preparação**. Não é alerta conjunto e não fala em guerra nuclear. https://newsweek.com/map-shows-countries-urging-residents-to-stockpile-food-12629524 | **DIVERGE** como "alerta" (o argumento dele contra o boato continua de pé) |
+| 193 países | Estados-membros da ONU. https://www.un.org/en/about-us/member-states | **CONFERE** |
+| Nature Food: mais de 5 bilhões mortos de fome | Xia, Robock et al., *Nature Food* 3, 586–596 (15/08/2022). Cenário EUA × Rússia: **5,341 bilhões** sem alimento ao fim do 2º ano. https://www.nature.com/articles/s43016-022-00573-0 | **CONFERE** |
+| "Radiação contamina água, terra e comida por semanas" | O artigo diz que a contaminação é local; o efeito global vem da fuligem. | retórica |
+| Operação Tridente III, Brasil e Argentina, Santos (nov/2026) | 9 a 12/11, cabos submarinos. https://teletime.com.br/09/11/2026/cabos-submarinos-exercicio-de-protecao-mobiliza-marinha-governo-e-empresas/ | **CONFERE** |
+| 1ª edição no Rio (mai/2024), 2ª em Fortaleza (nov/2025) | Diário do Nordeste, 29/09/2025. Nessas duas a Argentina não participou. https://diariodonordeste.verdesmares.com.br/negocios/marinha-fara-teste-de-protecao-de-cabos-submarinos-na-praia-do-futuro-saiba-como-sera-1.3690342 | **CONFERE** |
+| Defesa Civil publica o kit "todo ano" (6/11) | O mesmo conteúdo saiu em março e abril de 2026. Publica "regularmente", mas "todo ano" não está provado. | **PARCIAL** |
+| "Não é alerta. É rotina. Fiquem tranquilos." | É **paráfrase**. Post real de 8/11: "falar de kit de emergência não é sinal de perigo, é sinal de que prevenir faz parte da rotina". Nota do MIDR de 7/11. https://agenciagov.ebc.com.br/noticias/202611/midr-esclarece-que-kit-de-emergencia-e-medida-preventiva-e-nao-tem-relacao-com-alerta-nacional | **PARCIAL** (as aspas não são literais) |
+| Ano de El Niño | NOAA/CPC (12/11/2026): El Niño forte. https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml | **CONFERE** |
+| Tempestade solar: aviso de 1 a 3 dias | NOAA/SWPC: uma CME chega em 15 h a vários dias. https://www.spaceweather.gov/phenomena/coronal-mass-ejections | **CONFERE** |
+| "Tudo começou com um único post no X" | As checagens apontam várias origens: Simpsons, teste da FEMA, post dos países (27/10) e kit da Defesa Civil. | **DIVERGE** |
+| Doutrina | 1Jo 5,19; "o diabo é um cão amarrado" (Santo Agostinho / São Cesário); Gn 18,23-32; Gn 6–9; Gn 19; Mt 16,26; Jo 16,33. | referência |
+
+---
+
+## Vídeo: Trump, Putin e Xi (DfvHw3VRCv7, 14/11/2026)
+
+| Afirmação | Fonte de origem | Veredito |
+|---|---|---|
+| Reunião em 19/11 em Shenzhen (APEC), a primeira entre os três | **Al Jazeera**, 14/11/2026, citada na legenda. https://aljazeera.com/news/2026/11/14/trump-xi-putin-trilateral-meeting-at-apec-what-to-expect | **CONFERE** |
+| New START venceu em fevereiro e Trump recusou a prorrogação | Expirou em 5/2/2026. https://www.armscontrol.org/act/2026-03/news/new-start-expires-us-urges-modernized-treaty | **CONFERE** |
+| A Casa Branca não espera acordo; o Kremlin fala em "extremamente significativo"; Ucrânia fora da pauta; "mais performático" | Al Jazeera | **CONFERE** |
+| A China chamou de "irrealista" | Frase literal: "neither fair, reasonable nor realistic". | **PARCIAL** |
+| Potsdam: EUA, Inglaterra e URSS, aliados | 17/07 a 02/08/1945. https://history.state.gov/milestones/1937-1945/potsdam-conf | **CONFERE** |
+| "Quatro dias depois caiu a bomba" | Vale só contando do **fim** da conferência (2/8 a 6/8). | **PARCIAL** |
+| Teste Trinity em 16/7/1945 | https://www.osti.gov/opennet/manhattan-project-history/Events/1945/trinity.htm | **CONFERE** |
+| 45% do gás importado pela UE era russo (2021); hoje cerca de 12% | Comissão Europeia, REPowerEU: 45% em 2021 e 12% em 2025, como fatia das **importações**. https://energy.ec.europa.eu/strategy/repowereu-phase-out-russian-energy-imports/repowereu-4-years_en | **CONFERE** |
+| "A Rússia fechou a torneira" | A Gazprom cortou o Nord Stream em 2022, mas a queda também veio de decisões da UE. | **PARCIAL** |
+| Fim do gás russo em novembro de 2027 | Regulamento (UE) 2026/261: gasoduto de longo prazo até 30/09/2027, ou no máximo 01/11/2027 de forma condicional. https://eur-lex.europa.eu/eli/reg/2026/261/oj/eng | **PARCIAL** (é o prazo máximo) |
+| Estatal chinesa dona de linhas no Brasil; quem comanda é o ONS | **State Grid**: cerca de 16 mil km. O ONS coordena a operação (Lei 9.648/1998). https://www.ons.org.br/paginas/sobre-o-ons/o-que-e-ons | **CONFERE** |
+| Zona livre de armas nucleares desde 1967 | Tratado de Tlatelolco, assinado em 1967. Em vigor pleno no Brasil só em 1994. https://www.un.org/nwfz/node/651 | **PARCIAL** |
+| Ormuz 65% abaixo do normal (legenda) | UKMTO, via gCaptain (13/11/2026). https://gcaptain.com/gulf-oil-exports-recover-as-hormuz-shipping-struggles/ | **CONFERE** |

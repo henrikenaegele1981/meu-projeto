@@ -6,7 +6,7 @@
 ---
 
 **[GANCHO]**
-Trump, Putin e Xi se reuniram ontem. Uns dizem que eles dividiram o mundo. Outros, que se uniram contra os globalistas. Eu li a declaração que os três assinaram e a transcrição do que falaram. Vou te mostrar o que procede e o que é invenção.
+Trump, Putin e Xi se reuniram nesta quinta, na China. Uns dizem que eles dividiram o mundo. Outros, que se uniram contra os globalistas. Eu li a declaração que os três assinaram e a transcrição do que falaram. Vou te mostrar o que procede e o que é invenção.
 
 > Tela: as manchetes empilhadas · etiqueta "O QUE ELES ASSINARAM"
 

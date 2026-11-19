@@ -1,57 +1,42 @@
 # Roteiro: Trump, Putin e Xi. A manchete contra o papel
 
-**Formato:** Reel, cerca de 2min30s · **Status:** rascunho para o José aprovar
-**Fio condutor:** cinco manchetes sobre o encontro, de esquerda e de direita, cada uma comparada com o que os três assinaram e disseram de verdade. Doa a quem doer.
+**Status:** rascunho para o José aprovar · cerca de 2min50s
+
+## Roteiro corrido
+
+Trump, Putin e Xi Jinping sentaram na mesma mesa, na China. E em poucas horas você já leu de tudo: que dividiram o mundo em três, que fizeram um acordo nuclear histórico, que se uniram contra os globalistas. Fica até o fim, porque eu li o papel que os três assinaram e vou te mostrar o que procede e o que é invenção.
+
+Primeiro: o que existe. Uma reunião de uma hora e vinte, em Shenzhen. Saiu um documento: a Declaração de Paz dos Chefes de Estado da China, da Rússia e dos Estados Unidos. Quatro pontos. Reformar a ONU. Mais petróleo no mercado. Um recado ao Tribunal Penal Internacional. E o nuclear. É isso. Guarda esses quatro pontos.
+
+Agora, as manchetes.
+
+"Dividiram o mundo em três." Procede? Não. Não tem uma linha sobre área de influência. A guerra da Ucrânia nem aparece no papel. A do Irã, também não. Quem divide o mundo não sai da sala sem resolver uma guerra sequer.
+
+"Acordo nuclear histórico." Histórico é o encontro, o primeiro dos três juntos. Acordo, não tem. O que eles assinaram foi, abre aspas: "uma guerra nuclear não pode ser vencida e nunca deve ser travada". Sabe de quando é essa frase? De 1985. Reagan e Gorbachev assinaram igualzinho em Genebra. Quarenta anos depois, copiaram e colaram. Nenhuma ogiva a menos.
+
+"Os três se uniram contra os globalistas." Essa circulou do nosso lado, e eu não vou passar pano. Quem falou em globalistas foi o Trump, no discurso de abertura. Abre aspas: "vou sugerir formas de proteger a soberania das nossas nações de organizações globalistas fora de controle, como o Tribunal Penal Internacional". Fala de um. No papel que os três assinaram, a palavra globalista não aparece. O que aparece é que o tribunal não deve abusar da competência e que autoridade de Estado tem imunidade.
+
+Agora repara quem ganha com isso. Nenhum dos três países é membro desse tribunal. E esse mesmo tribunal tem, desde março de 2023, um mandado de prisão contra quem? Vladimir Putin. Soberania das nações é coisa séria. Mas esse ponto protege, antes de tudo, um dos homens sentados à mesa.
+
+E o tal acordo contra guerra de dados? Não existe. Não tem uma palavra sobre isso.
+
+Sobrou o petróleo, o único ponto que chega no seu bolso. Prometeram mais produção, em benefício de todos os países. Sem número e sem prazo. Se virar realidade, o combustível baixa aqui no Paraguai e aí no Brasil. Se não virar, foi só mais uma foto.
+
+De um lado, te venderam o fim do mundo. Do outro, a vitória contra o globalismo. O papel não diz nem uma coisa nem outra. Quem informa mostra o documento. Quem manipula mostra só a manchete.
+
+Comente o que você acha disso. Mande este vídeo pra quem te mandou uma dessas manchetes e siga o meu perfil para acompanhar as notícias sem filtro e sem mentira.
 
 ---
 
-**[GANCHO]**
-Trump, Putin e Xi se reuniram nesta quinta, na China. Uns dizem que eles dividiram o mundo. Outros, que se uniram contra os globalistas. Eu li a declaração que os três assinaram e a transcrição do que falaram. Vou te mostrar o que procede e o que é invenção.
+## Ficha técnica
 
-> Tela: as manchetes empilhadas · etiqueta "O QUE ELES ASSINARAM"
-
-**[O PAPEL]**
-Primeiro, o que existe. Uma reunião de uma hora e vinte, em Shenzhen, na China. Saiu um documento: a "Declaração de Paz dos Chefes de Estado da China, Rússia e EUA". São quatro pontos: reformar a ONU, mais petróleo no mercado, um recado ao Tribunal Penal Internacional, e o nuclear. É isso. Agora as manchetes.
-
-> Tela: o documento com os 4 pontos · fonte: texto integral (Le Grand Continent) · TRT World, 19/11/2026
-
-**[MANCHETE 1: "Uma nova Yalta: dividiram o mundo em três"]**
-Não procede. Não tem uma linha sobre área de influência, território ou quem manda onde. Nem a Ucrânia aparece na declaração. Nem o Irã. Quem divide o mundo não sai da sala sem resolver nenhuma guerra.
-
-> Tela: manchete "nova Yalta" (Crónica, México, 17/11) · carimbo **NÃO PROCEDE**
-
-**[MANCHETE 2: "Acordo histórico sobre armas nucleares"]**
-Meia verdade. Histórico é o encontro: é a primeira vez que os três sentam juntos. Acordo nuclear não tem. O que eles assinaram é que "uma guerra nuclear não pode ser vencida e nunca deve ser travada". Essa frase é de 1985: Reagan e Gorbachev assinaram igual em Genebra. Prometeram "iniciar diálogo". Nenhuma ogiva a menos.
-
-> Tela: "Genebra 1985" × "Shenzhen 2026" · carimbo **MEIA VERDADE**
-
-**[MANCHETE 3: "Os três se uniram contra as organizações globalistas"]**
-Essa circulou do nosso lado, e eu também não vou passar pano. Quem falou em "globalistas" foi o Trump, no discurso de abertura. Abre aspas: "vou sugerir formas de proteger a soberania das nossas nações de organizações globalistas fora de controle, como o Tribunal Penal Internacional". Mas a palavra "globalista" não está no papel que os três assinaram. O que está lá é que o TPI "não deve abusar da sua competência", e que autoridade de Estado tem imunidade.
-
-> Tela: fala do Trump (transcrição) × texto da declaração · carimbo **FALA DE UM, NÃO DOS TRÊS**
-
-**[O DETALHE QUE NINGUÉM CONTOU]**
-E repara em quem ganha com esse ponto. Nenhum dos três países é membro do Tribunal Penal Internacional. E esse mesmo tribunal tem, desde março de 2023, um mandado de prisão contra… Vladimir Putin. Soberania das nações é coisa séria. Mas aqui o ponto 3 protege, antes de tudo, um dos homens sentados à mesa.
-
-> Tela: "TPI · mandado de prisão contra Putin · 17/03/2023" · fonte: TPI (icc-cpi.int)
-
-**[MANCHETE 4: "Fizeram um acordo para não ter guerra de dados"]**
-Não procede. Não há uma palavra sobre dados, internet ou ciberguerra, nem na declaração nem nas falas.
-
-> Tela: carimbo **NÃO EXISTE**
-
-**[MANCHETE 5: "Encontro terminou sem resultado"]**
-Procede, quase toda. O único compromisso que pode chegar ao teu bolso é o petróleo: mais produção "em benefício de todos os países". Mas não tem número, nem prazo. Se virar realidade, o combustível cai aqui e aí. Se não virar, é só mais uma foto.
-
-> Tela: carimbo **PROCEDE**
-
-**[FECHO]**
-De um lado, venderam o fim do mundo. Do outro, venderam a vitória contra o globalismo. O papel não diz nem uma coisa nem outra. Quem te informa mostra o documento. Quem te manipula mostra só a manchete.
-
-**[CTA]**
-Manda para quem te mandou uma dessas manchetes. E segue o perfil: aqui é sem filtro e sem mentira, doa a quem doer.
-
----
+**Etiquetas de tela:**
+- "Shenzhen · 19 NOV 2026"
+- "Declaração de Paz · 4 pontos" (Kremlin / Xinhua)
+- "Genebra 1985 × Shenzhen 2026"
+- Fala do Trump: transcrição da abertura
+- "TPI · mandado contra Putin · 17/03/2023"
+- Carimbos: NÃO PROCEDE · MEIA VERDADE · FALA DE UM · NÃO EXISTE
 
 ## Fontes para as etiquetas
 

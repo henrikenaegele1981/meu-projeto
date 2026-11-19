@@ -4,7 +4,7 @@
 
 ## Roteiro corrido
 
-Trump, Putin e Xi Jinping sentaram na mesma mesa, na China. E em poucas horas você já leu de tudo: que dividiram o mundo em três, que fizeram um acordo nuclear histórico, que se uniram contra os globalistas. Fica até o fim, porque eu li o papel que os três assinaram e vou te mostrar o que procede e o que é invenção.
+Pela primeira vez na história, os três homens que controlam nove em cada dez armas nucleares do planeta sentaram na mesma sala. Saíram de lá com um papel assinado. E o que te contaram sobre esse papel não é o que está escrito nele. Uns dizem que dividiram o mundo em três. Outros, que se uniram contra os globalistas. Fica até o fim, porque eu li o documento inteiro e vou te mostrar o que procede e o que é invenção.
 
 Primeiro: o que existe. Uma reunião de uma hora e vinte, em Shenzhen. Saiu um documento: a Declaração de Paz dos Chefes de Estado da China, da Rússia e dos Estados Unidos. Quatro pontos. Reformar a ONU. Mais petróleo no mercado. Um recado ao Tribunal Penal Internacional. E o nuclear. É isso. Guarda esses quatro pontos.
 
@@ -31,7 +31,8 @@ Comente o que você acha disso. Mande este vídeo pra quem te mandou uma dessas 
 ## Ficha técnica
 
 **Etiquetas de tela:**
-- "Shenzhen · 19 NOV 2026"
+- "Shenzhen · 19 NOV 2026 · 1ª vez na história"
+- "EUA + Rússia + China: cerca de 90% das ogivas do mundo" (FAS, Status of World Nuclear Forces 2025)
 - "Declaração de Paz · 4 pontos" (Kremlin / Xinhua)
 - "Genebra 1985 × Shenzhen 2026"
 - Fala do Trump: transcrição da abertura
@@ -48,6 +49,7 @@ Comente o que você acha disso. Mande este vídeo pra quem te mandou uma dessas 
 | Manchete "nova Yalta" | Crónica (MX), 17/11/2026: https://www.cronica.com.mx/mundo/2026/11/17/trump-castigado-en-las-urnas-y-putin-incapaz-de-ganar-la-guerra-xi-emerge-como-el-lider-de-la-nueva-yalta/ · Standard Media: https://www.standardmedia.co.ke/business/amp/macharia-munene/article/2001535422/spheres-of-influence-how-putin-xi-and-trump-have-divided-up-the-world · Times Brasil: https://timesbrasil.com.br/mundo/encontro-entre-trump-e-xi-jinping-deve-redefinir-areas-de-influencia-global/ |
 | Manchete "acordo histórico" | Derecha Diario: https://derechadiario.com.ar/us/argentina/trump-meeting-xi-putin-achieves-historic-agreement-oil-nuclear-weapons · CNN Brasil: https://www.cnnbrasil.com.br/internacional/comeca-reuniao-trilateral-entre-trump-putin-e-xi-jinping-na-china/ |
 | Manchete "sem resultado" | CBS News: https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/ |
+| ~90% das ogivas (EUA cerca de 5.200, Rússia cerca de 5.500, China cerca de 600, de cerca de 12.200) | Federation of American Scientists, *Status of World Nuclear Forces* 2025: https://fas.org/initiative/status-world-nuclear-forces/ (conferir a versão mais recente) |
 | Genebra 1985 | Declaração conjunta Reagan–Gorbachev, 21/11/1985: https://www.reaganlibrary.gov/archives/speech/joint-soviet-united-states-statement-summit-meeting-geneva |
 | Mandado de prisão do TPI contra Putin | TPI, 17/03/2023: https://www.icc-cpi.int/news/situation-ukraine-icc-judges-issue-arrest-warrants-against-vladimir-vladimirovich-putin-and |
 

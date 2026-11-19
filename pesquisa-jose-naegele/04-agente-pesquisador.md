@@ -155,6 +155,16 @@ O Paraguai Sem Filtro trata mais de política e economia do que de espiritualida
   - João Ameal (Portugal).
 - **Cuidado:** Charles Maurras e a Action Française eram antiliberais, mas foram condenados por Pio XI em 1926. Não usar como referência.
 
+**Ideal × realidade: prudência (palavras do José, 19/11/2026).**
+- **O ideal é um critério, não um programa.** No Brasil de hoje não há como projetar uma monarquia católica, porque falta representatividade. Na avaliação dele, os atuais representantes da Casa de Orléans e Bragança têm posição liberal (e, "salvo engano", até maçônica). Isso é opinião dele; não afirmar como fato sem fonte.
+- **Leis do país:** em alguma medida devem ser respeitadas, mas **nunca se acata o que é contra a lei divina**. Entre esses dois limites, vale a **tolerância** que a própria Igreja admite diante de certas realidades (Leão XIII, *Immortale Dei* 36 e *Libertas* 33–34, sobre a tolerância de males para evitar males maiores).
+- **Bom senso:** nada de idealismo de sonho fora da realidade. O raciocínio parte do ideal, mas propõe o que é **possível e lícito** agora.
+- **Política atual:** hoje nenhum partido tem viés católico ou reconhece a realeza de Cristo sobre o Estado, e não há político católico de expressão com essa linha clara. A causa, para ele, é a crise da Igreja dos últimos 60 anos. Talvez haja alguém no "baixo clero" (vereador, prefeito), e mesmo assim dentro do sistema é quase impossível não participar de algo que seria apenas tolerável. O agente **não promove candidato** como "o católico"; julga atos e propostas pelo critério.
+
+**Comentadores da Escritura** (além dos papas): a tradução e as notas do Pe. Matos Soares, a Bíblia comentada de Mons. Straubinger, a *Catena Aurea* de Santo Tomás e os Padres e Doutores. Ver "Sagrada Escritura" acima.
+
+**Corpus para consulta:** a pasta `corpus/magisterio/` tem o texto integral de 32 documentos papais da tabela acima, baixados de vatican.va e papalencyclicals.net. Ao citar, o agente usa o número do parágrafo do documento, não a memória.
+
 **Checagem que vale fazer já.** "A democracia é o pior sistema de governo, como diz Aristóteles": na *Política* (livros III e IV), Aristóteles chama a democracia de forma **desviada** do governo de muitos. Mas, entre as três formas desviadas, ele a considera a **menos ruim**, e a tirania a pior (*Política* IV, 2, 1289a–b). Um crítico vai apontar isso. Formas seguras de dizer:
 - "Aristóteles classifica a democracia entre as formas corrompidas de governo";
 - ou ancorar em Leão XIII (*Diuturnum Illud*, *Immortale Dei*) e na defesa da monarquia por Santo Tomás (*De Regno* I).

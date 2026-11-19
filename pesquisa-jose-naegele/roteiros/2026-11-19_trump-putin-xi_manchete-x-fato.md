@@ -4,19 +4,19 @@
 
 ## Roteiro corrido
 
-Pela primeira vez na história, os três homens que controlam nove em cada dez armas nucleares do planeta sentaram na mesma sala. Saíram de lá com um papel assinado. E o que te contaram sobre esse papel não é o que está escrito nele. Uns dizem que dividiram o mundo em três. Outros, que se uniram contra os globalistas. Fica até o fim, porque eu li o documento inteiro e vou te mostrar o que procede e o que é invenção.
+Um tribunal internacional tem um mandado de prisão contra Vladimir Putin. Nesta quinta, Trump e Xi Jinping assinaram com ele um documento dizendo que esse tribunal "não deve abusar da competência". Guarda essa informação.
 
-Primeiro: o que existe. Uma reunião de uma hora e vinte, em Shenzhen. Saiu um documento: a Declaração de Paz dos Chefes de Estado da China, da Rússia e dos Estados Unidos. Quatro pontos. Reformar a ONU. Mais petróleo no mercado. Um recado ao Tribunal Penal Internacional. E o nuclear. É isso. Guarda esses quatro pontos.
+Foi a primeira vez na história que os três sentaram na mesma sala. Os três homens que controlam nove em cada dez armas nucleares do planeta. Uma hora e vinte, em Shenzhen, na China. E saiu um papel: a Declaração de Paz dos Chefes de Estado da China, da Rússia e dos Estados Unidos. Quatro pontos. Reformar a ONU. Mais petróleo no mercado. O recado ao tribunal. E o nuclear. É isso.
 
-Agora, as manchetes.
+Só que não foi isso que te contaram.
 
 "Dividiram o mundo em três." Procede? Não. Não tem uma linha sobre área de influência. A guerra da Ucrânia nem aparece no papel. A do Irã, também não. Quem divide o mundo não sai da sala sem resolver uma guerra sequer.
 
-"Acordo nuclear histórico." Histórico é o encontro, o primeiro dos três juntos. Acordo, não tem. O que eles assinaram foi, abre aspas: "uma guerra nuclear não pode ser vencida e nunca deve ser travada". Sabe de quando é essa frase? De 1985. Reagan e Gorbachev assinaram igualzinho em Genebra. Quarenta anos depois, copiaram e colaram. Nenhuma ogiva a menos.
+"Acordo nuclear histórico." Histórico é o encontro. Acordo, não tem. O que eles assinaram foi, abre aspas: "uma guerra nuclear não pode ser vencida e nunca deve ser travada". Sabe de quando é essa frase? De 1985. Reagan e Gorbachev assinaram igualzinho em Genebra. Quarenta anos depois, copiaram e colaram. Nenhuma ogiva a menos.
 
-"Os três se uniram contra os globalistas." Essa circulou do nosso lado, e eu não vou passar pano. Quem falou em globalistas foi o Trump, no discurso de abertura. Abre aspas: "vou sugerir formas de proteger a soberania das nossas nações de organizações globalistas fora de controle, como o Tribunal Penal Internacional". Fala de um. No papel que os três assinaram, a palavra globalista não aparece. O que aparece é que o tribunal não deve abusar da competência e que autoridade de Estado tem imunidade.
+"Os três se uniram contra os globalistas." Essa circulou do nosso lado, e eu não vou passar pano. Quem falou em globalistas foi o Trump, no discurso de abertura. Abre aspas: "vou sugerir formas de proteger a soberania das nossas nações de organizações globalistas fora de controle, como o Tribunal Penal Internacional". Fala de um. No papel que os três assinaram, a palavra globalista não aparece.
 
-Agora repara quem ganha com isso. Nenhum dos três países é membro desse tribunal. E esse mesmo tribunal tem, desde março de 2023, um mandado de prisão contra quem? Vladimir Putin. Soberania das nações é coisa séria. Mas esse ponto protege, antes de tudo, um dos homens sentados à mesa.
+Agora volta naquela informação que eu te pedi pra guardar. O que está no papel é que autoridade de Estado tem imunidade e que o tribunal não deve abusar da competência. Nenhum dos três países é membro desse tribunal. E o único dos três com mandado de prisão expedido por ele, desde março de 2023, estava sentado na mesa. Soberania das nações é coisa séria. Mas esse ponto tem nome e sobrenome.
 
 E o tal acordo contra guerra de dados? Não existe. Não tem uma palavra sobre isso.
 

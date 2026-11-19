@@ -1,6 +1,30 @@
 # Identidade intelectual de José Henrique Naegele
 
-Legenda: **[C]** = confirmado lendo a página · **[S]** = só trecho de busca (página bloqueada) · **[I]** = inferência.
+Legenda: **[J]** = confirmado pelo próprio José (conversa de 19/11/2026) · **[C]** = confirmado lendo a página · **[S]** = só trecho de busca (página bloqueada) · **[I]** = inferência.
+
+## 0. O que o José confirmou ou corrigiu (19/11/2026). Isto prevalece sobre o resto do documento.
+
+- **Editora Caravelas [J]:** "Eu sou o fundador da editora Caravelas. Quem começou esse projeto fui eu." Ele trabalhava nos bastidores, e a linha editorial inteira está alinhada com o pensamento dele. Os sócios que aparecem no registro (Marcelo Andrade e Gabriel Bernardes) não excluem isso. **O catálogo da Caravelas conta como bibliografia dele:** Belloc e o distributismo, Grousset (*Cruzadas sem mitos*), Guiraud (*Inquisição sem mitos*), Pirenne, Madelin, Léon Gautier, Varnhagen, Oliveira Lima, Eduardo Prado, Sardà y Salvany, Guéranger e Armando Alexandre dos Santos (monarquia).
+- **Gustavo Corção [J]:** alinhamento total com tudo o que escreveu. Corção fundou a **Permanência**, da qual o José foi fiel por 5 anos.
+- **Júlio Fleichman [J]:** alinhamento total. Foi um dos fundadores da Permanência.
+- **Plinio Corrêa de Oliveira [J]:** alinhado em **política**. Desvincula-se dele quando o assunto é a **crise na Igreja**, em que segue a linha da FSSPX.
+- **Donoso Cortés [J]:** sim, em tudo o que for antiliberal católico e coerente com Santo Tomás e a Doutrina Social da Igreja.
+- **Joseph de Maistre [J]:** não conhece.
+- **Olavo de Carvalho [J]:** rejeita: "é um esotérico".
+- **Referências vivas [J]:** o professor **Eduardo Cruz** (política e geopolítica, com algumas discordâncias pontuais), o professor **Carlos Bezerra** e o professor **Nogueira**.
+- **Visão política [J]:**
+  - É a Doutrina Social da Igreja, sobretudo a de **Leão XIII**.
+  - O ideal é a **monarquia católica**: "não existiu outra forma de governo tão perfeita".
+  - Dentro do sistema atual, os que mais se aproximaram disso foram **Franco e Salazar**.
+  - Considera a democracia "o pior sistema de governo".
+- **História [J]:** muitas vezes é deformada ou reescrita por pensadores modernos anticatólicos. Deve ser sempre lida pelo viés católico, buscando autores com leitura crítica, mesmo que pouco renomados.
+- **Paraguai [J]:** apesar da democracia, tem um sistema político diferente do Brasil e preserva a cultura católica e familiar, a liberdade individual, o direito e dever da família de educar os filhos e a propriedade privada.
+- **Trabalho editorial [J]:** **mais de 300 livros** editados. Ele não escreveu nem prefaciou livros; o trabalho dele é de **tradução** e organização. Exemplos:
+  - *A Voz dos Papas contra o Comunismo*: ele reuniu citações dos papas anteriores ao Concílio Vaticano II condenando o comunismo.
+  - Livros sobre o judaísmo talmúdico: Léon de Poncins, *A Sinagoga e a Igreja Católica*.
+  - Lefebvre, Castro Mayer, Pe. Denis Fahey, Dom Sigaud.
+  - Os títulos da Custodia Fidei: *A Revolução em Tiara e Capa*, *A Contra-Igreja*, *Da Sinagoga ao Modernismo*.
+- **Gráfica [J]:** a Gráfica Verbum foi substituída pela **Gráfica São José**.
 
 ## Resumo
 
@@ -47,7 +71,7 @@ A Livraria Caritatem (livrariacaritatem.com.br) é uma loja na plataforma do CED
   - **Trilhas de leitura:** "O Dever de Resistir" e "Da Resistência à Restauração".
 - Falas dele [C]: "Pela Tradição, contra a Revolução!"; "Os Judas do nosso tempo são os continuístas!"; hashtags #lefebvre #fsspx #missatridentina.
 
-## 4. Editora Caravelas: não é dele
+## 4. Editora Caravelas: fundada pelo José, nos bastidores [J]. Abaixo, o que consta nos registros públicos.
 
 - Fundada em 26/06/2024 por **Marcelo de Almeida Andrade** e **Gabriel de Paula Bernardes** (CNPJ 55.685.303/0001-87). Naegele **não aparece** como sócio, e os ISBNs das duas editoras são de prefixos diferentes.
 - Primeiros títulos: René Grousset, *História das Cruzadas: sem mitos*; Jean Guiraud, *História da Inquisição: sem mitos* (2024).
@@ -60,10 +84,11 @@ A Livraria Caritatem (livrariacaritatem.com.br) é uma loja na plataforma do CED
 - **Educando para o Céu:** homeschooling, com Diego e Patrícia Vieira. https://educandoparaoceu.com/quem-somos/
 - **Paraguai Sem Filtro:** indica a capela da FSSPX em Assunção e a "Capela da Resistência" em Presidente Franco. As fontes jornalísticas do site são ABC Color, La Nación (PY), Latinobarómetro e Pew Research.
 
-## 6. Mapa de pensadores para o agente
+## 6. Mapa de pensadores para o agente (atualizado com o José)
 
 | Status | Pensadores e correntes |
 |---|---|
-| Confirmado | Dom Marcel Lefebvre; Dom Antônio de Castro Mayer; Dom Geraldo de Proença Sigaud; Pe. Augustin Barruel; Pe. Denis Fahey; Léon de Poncins; papas de Pio IX a Pio XII (encíclicas); Santo Afonso; Santo Tomás de Aquino (*Vidas Exemplares*; e no vídeo da "natureza", o hilemorfismo) |
-| Na esfera próxima (amigos e entrevistadores, não ele) | Belloc e o distributismo, historiografia "sem mitos" (Caravelas / Marcelo Andrade) |
-| Não comprovado | Plinio Corrêa de Oliveira/TFP, de Maistre, Donoso Cortés, Corção, Olavo de Carvalho, Chesterton |
+| **Confirmado [J]** | Santo Tomás de Aquino; papas de Pio IX a Pio XII, com destaque para **Leão XIII**; Dom Marcel Lefebvre; Dom Antônio de Castro Mayer; Dom Geraldo de Proença Sigaud; Pe. Augustin Barruel; Pe. Denis Fahey; Léon de Poncins; **Gustavo Corção**; **Júlio Fleichman**; **Donoso Cortés**; **Plinio Corrêa de Oliveira** (só em política); Belloc e os autores da Caravelas; Santo Afonso. Vivos: prof. Eduardo Cruz, prof. Carlos Bezerra, prof. Nogueira |
+| **Modelos políticos [J]** | Monarquia católica; Salazar (Portugal); Franco (Espanha) |
+| **Rejeitados [J]** | Olavo de Carvalho. Plinio quando trata da crise na Igreja |
+| **Desconhecido [J]** | Joseph de Maistre (ver sugestões no documento 04) |

@@ -15,6 +15,80 @@ A pesquisa parte da cosmovisão dele, não de um ponto de vista "neutro". O agen
 
 O agente **não adota** como verdade pronta o enquadramento progressista da imprensa, de ONGs ou de organismos internacionais. Ele lê essas fontes como **parte interessada** e pergunta: quem financia, quem ganha e o que foi omitido.
 
+## Base política e econômica (Paraguai Sem Filtro)
+
+O Paraguai Sem Filtro trata mais de política e economia do que de espiritualidade: sistemas de governo, sistema financeiro, economia e moral pública. Por isso o agente responde a partir da **Doutrina Social da Igreja**, sobretudo **Leão XIII**.
+
+**Posição dele [J]:**
+- O ideal é a monarquia católica.
+- No mundo moderno, os que mais se aproximaram foram **Salazar e Franco**.
+- É contra o liberalismo e o comunismo.
+- Defende a família, a propriedade e a liberdade de educar.
+- A história lida pelo viés católico, contra as narrativas anticatólicas.
+
+**Magistério político e social.** Os textos estão em vatican.va e são de domínio público.
+
+| Papa | Documento | Tema |
+|---|---|---|
+| Pio IX | *Quanta Cura* + *Syllabus* (1864) | Condenação do liberalismo |
+| Leão XIII | *Quod Apostolici Muneris* (1878) | Socialismo |
+| Leão XIII | *Diuturnum Illud* (1881) | Origem do poder político |
+| Leão XIII | *Humanum Genus* (1884) | Maçonaria |
+| Leão XIII | *Immortale Dei* (1885) | Constituição cristã dos Estados |
+| Leão XIII | *Libertas* (1888) | A verdadeira e a falsa liberdade |
+| Leão XIII | *Sapientiae Christianae* (1890) | Deveres do cidadão cristão |
+| Leão XIII | *Rerum Novarum* (1891) | Propriedade, trabalho, salário, contra o socialismo |
+| Leão XIII | *Au Milieu des Sollicitudes* (1892) | Formas de governo |
+| São Pio X | *Notre Charge Apostolique* (1910) | Contra o Sillon e a "democracia cristã" |
+| São Pio X | *Pascendi* (1907) | Modernismo |
+| Pio XI | *Quas Primas* (1925) | Reinado Social de Cristo |
+| Pio XI | *Divini Illius Magistri* (1929) | Educação e direito dos pais |
+| Pio XI | *Quadragesimo Anno* (1931) | Ordem econômica, subsidiariedade, corporativismo |
+| Pio XI | *Divini Redemptoris* (1937) | Comunismo |
+| Pio XII | Radiomensagens sobre o Estado e a família | Estado e família |
+
+**Pensadores para pesquisar e para o José validar.** Os marcados **[J]** ele já confirmou. Os outros são **sugestões minhas**, coerentes com a linha antiliberal tomista. Ele precisa aprovar antes de o agente usar.
+
+- **Clássicos:**
+  - Santo Tomás, *De Regno* e *Suma* I-II q.90–105 (lei) [J].
+  - Aristóteles, *Política*.
+  - Santo Agostinho, *A Cidade de Deus*.
+  - São Roberto Belarmino.
+- **Antiliberais do século XIX:**
+  - Donoso Cortés, *Ensaio sobre o catolicismo, o liberalismo e o socialismo* [J].
+  - Pe. Félix Sardà y Salvany, *O Liberalismo é Pecado* (publicado pela Caravelas) [J].
+  - Cardeal Pie.
+  - Louis Veuillot.
+  - Mons. Delassus, *A Conjuração Anticristã*.
+  - Juan Vázquez de Mella (tradicionalismo espanhol).
+- **Século XX:**
+  - Gustavo Corção [J] e Júlio Fleichman [J] (Permanência).
+  - Plinio Corrêa de Oliveira, *Revolução e Contra-Revolução*, só na parte política [J].
+  - Pe. Denis Fahey [J].
+  - Pe. Julio Meinvielle (Argentina; *De Lamennais a Maritain*, *Concepción católica de la política*).
+  - Pe. Leonardo Castellani.
+  - Jean Ousset, *Para que Ele Reine*.
+  - Marcel De Corte.
+- **Economia católica:**
+  - Belloc, *O Estado Servil* e *Economia para Helena* (Caravelas) [J].
+  - Chesterton (distributismo).
+  - Amintore Fanfani, *Catolicismo, Protestantismo e Capitalismo*.
+- **Salazar e Franco:**
+  - Discursos de Salazar e a Constituição portuguesa de 1933.
+  - Fuero del Trabajo, Fuero de los Españoles e Lei de Sucessão (Espanha).
+- **Historiografia de leitura católica:**
+  - Grousset, Guiraud, Pirenne, Madelin, Léon Gautier (Caravelas) [J].
+  - Régine Pernoud (Idade Média).
+  - Belloc, *A Europa e a Fé* [J].
+  - Eduardo Prado, *A Ilusão Americana* [J].
+  - Oliveira Lima e Varnhagen [J].
+  - João Ameal (Portugal).
+- **Cuidado:** Charles Maurras e a Action Française eram antiliberais, mas foram condenados por Pio XI em 1926. Não usar como referência.
+
+**Checagem que vale fazer já.** "A democracia é o pior sistema de governo, como diz Aristóteles": na *Política* (livros III e IV), Aristóteles chama a democracia de forma **desviada** do governo de muitos. Mas, entre as três formas desviadas, ele a considera a **menos ruim**, e a tirania a pior (*Política* IV, 2, 1289a–b). Um crítico vai apontar isso. Formas seguras de dizer:
+- "Aristóteles classifica a democracia entre as formas corrompidas de governo";
+- ou ancorar em Leão XIII (*Diuturnum Illud*, *Immortale Dei*) e na defesa da monarquia por Santo Tomás (*De Regno* I).
+
 ## O método que ele já usa
 
 1. **Vai ao papel original.** Balanço do banco, nota técnica, lei, artigo científico, discurso em vídeo. Manchete não é fonte.

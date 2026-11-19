@@ -36,3 +36,19 @@ Texto integral, sem edição. A língua está no fim do nome do arquivo (pt, es,
 | `magisterio/pius-xi_ubi-arcano_en.txt` | Ubi Arcano (1922): a paz de Cristo no Reino de Cristo |
 | `magisterio/pius-xii_humani-generis_pt.txt` | Humani Generis (1950): erros modernos |
 | `magisterio/pius-xii_summi-pontificatus_pt.txt` | Summi Pontificatus (1939): Estado totalitário |
+
+# Corpus: Livros clássicos (domínio público)
+
+Edições antigas digitalizadas, em texto integral. Os arquivos do archive.org vêm de **OCR bruto**, com erros de leitura, hifenização e números de página no meio do texto. Antes de citar, confira o trecho no scan original (URL na linha 1 de cada arquivo).
+
+| Arquivo | Obra | Edição |
+|---|---|---|
+| `livros/tomas-de-aquino_de-regno_la.txt` | Santo Tomás, *De Regno* (latim) | Marietti 1954 / Corpus Thomisticum |
+| `livros/tomas-de-aquino_tratado-del-gobierno-de-los-principes_es.txt` | *De regimine principum* em espanhol (livros I–IV; o *De Regno* é o livro I e o início do II, o resto é de Tolomeu de Lucca) | Madri, 1786 |
+| `livros/donoso-cortes_ensayo-catolicismo-liberalismo-socialismo_es.txt` | Donoso Cortés, *Ensayo* | Barcelona, 1851 |
+| `livros/donoso-cortes_discurso-sobre-la-dictadura_es.txt` | Donoso Cortés, *Discurso sobre la dictadura* (4/1/1849); OCR sem acentos | *Obras* t. III, 1854 |
+| `livros/sarda-y-salvany_el-liberalismo-es-pecado_es.txt` | Sardà y Salvany, *El liberalismo es pecado* | Barcelona, 1887 (7ª ed.) |
+| `livros/barruel_memoires-histoire-jacobinisme-tome1_fr.txt` | Barruel, *Mémoires… jacobinisme*, t. I | Lyon, 1818 |
+| `livros/delassus_la-conjuration-antichretienne-tome1_fr.txt` | Delassus, *La conjuration antichrétienne*, t. I | Lille, 1910 |
+| `livros/cardinal-pie_oeuvres-tome2-premiere-instruction-synodale_fr.txt` | Cardeal Pie, *Œuvres* t. II (inclui a 1ª Instrução sinodal sobre os erros do tempo presente) | Paris, 1876 |
+| `livros/belloc_the-servile-state_en.txt` | Belloc, *The Servile State* | Londres, 1912 |

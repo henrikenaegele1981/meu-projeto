@@ -117,42 +117,36 @@ O Paraguai Sem Filtro trata mais de política e economia do que de espiritualida
 | Pio XI | *Divini Redemptoris* (1937) | Comunismo |
 | Pio XII | Radiomensagens sobre o Estado e a família | Estado e família |
 
-**Pensadores para pesquisar e para o José validar.** Os marcados **[J]** ele já confirmou. Os outros são **sugestões minhas**, coerentes com a linha antiliberal tomista. Ele precisa aprovar antes de o agente usar.
+**Pensadores: validação do José (19/11/2026).** Legenda: ✅ aprovado · ❌ retirado · ⏳ ainda não avaliado.
 
 - **Clássicos:**
-  - Santo Tomás, *De Regno* e *Suma* I-II q.90–105 (lei) [J].
-  - Aristóteles, *Política*.
-  - Santo Agostinho, *A Cidade de Deus*.
-  - São Roberto Belarmino.
+  - ✅ **Santo Tomás de Aquino, 100%**, "sem tirar nem pôr uma vírgula": *De Regno*, *Suma Teológica* (lei: I-II q.90–105), *Catena Aurea*, comentários.
+  - ✅ **Aristóteles, *Política*, só pela leitura de Santo Tomás.** Aristóteles foi o maior pensador antes do cristianismo, e Santo Tomás o sintetiza dentro da realidade cristã. Aristóteles sozinho, por conta própria, não. Usar o comentário *In libros Politicorum* de Santo Tomás.
+  - ✅ **Santo Agostinho, *A Cidade de Deus*, 100%.**
+  - ✅ **São Roberto Belarmino.**
 - **Antiliberais do século XIX:**
-  - Donoso Cortés, *Ensaio sobre o catolicismo, o liberalismo e o socialismo* [J].
-  - Pe. Félix Sardà y Salvany, *O Liberalismo é Pecado* (publicado pela Caravelas) [J].
-  - Cardeal Pie.
-  - Louis Veuillot.
-  - Mons. Delassus, *A Conjuração Anticristã*.
-  - Juan Vázquez de Mella (tradicionalismo espanhol).
+  - ✅ **Donoso Cortés**, *Ensaio sobre o catolicismo, o liberalismo e o socialismo*.
+  - ✅ **Pe. Félix Sardà y Salvany, 100%**, *O Liberalismo é Pecado*.
+  - ✅ **Cardeal Pie, 100%.**
+  - ✅ **Louis Veuillot, 100%.**
+  - ✅ **Mons. Henri Delassus, 100%**, *A Conjuração Anticristã*.
+  - ❌ Juan Vázquez de Mella (tradicionalismo espanhol): retirado.
 - **Século XX:**
-  - Gustavo Corção [J] e Júlio Fleichman [J] (Permanência).
-  - Plinio Corrêa de Oliveira, *Revolução e Contra-Revolução*, só na parte política [J].
-  - Pe. Denis Fahey [J].
-  - Pe. Julio Meinvielle (Argentina; *De Lamennais a Maritain*, *Concepción católica de la política*).
-  - Pe. Leonardo Castellani.
-  - Jean Ousset, *Para que Ele Reine*.
-  - Marcel De Corte.
+  - ✅ **Gustavo Corção** e ✅ **Júlio Fleichman** (Permanência).
+  - ✅ **Plinio Corrêa de Oliveira**, só em política; não na crise da Igreja.
+  - ✅ **Pe. Denis Fahey.**
+  - ✅ **Pe. Julio Meinvielle** (Argentina).
+  - ❌ Pe. Leonardo Castellani: retirado.
+  - ⏳ Jean Ousset (*Para que Ele Reine*), Marcel De Corte.
 - **Economia católica:**
-  - Belloc, *O Estado Servil* e *Economia para Helena* (Caravelas) [J].
-  - Chesterton (distributismo).
-  - Amintore Fanfani, *Catolicismo, Protestantismo e Capitalismo*.
-- **Salazar e Franco:**
-  - Discursos de Salazar e a Constituição portuguesa de 1933.
-  - Fuero del Trabajo, Fuero de los Españoles e Lei de Sucessão (Espanha).
+  - ✅ Belloc, *O Estado Servil* e *Economia para Helena* (Caravelas).
+  - ⏳ Chesterton (distributismo), Amintore Fanfani.
+- **Salazar e Franco** ✅ como modelos: discursos de Salazar, a Constituição portuguesa de 1933, o Fuero del Trabajo e o Fuero de los Españoles.
 - **Historiografia de leitura católica:**
-  - Grousset, Guiraud, Pirenne, Madelin, Léon Gautier (Caravelas) [J].
-  - Régine Pernoud (Idade Média).
-  - Belloc, *A Europa e a Fé* [J].
-  - Eduardo Prado, *A Ilusão Americana* [J].
-  - Oliveira Lima e Varnhagen [J].
-  - João Ameal (Portugal).
+  - ✅ Grousset, Guiraud, Pirenne, Madelin, Léon Gautier, Belloc, Eduardo Prado, Oliveira Lima, Varnhagen (catálogo Caravelas).
+  - ⏳ Régine Pernoud, João Ameal.
+
+Quem não estiver com ✅ não entra como referência do agente até o José aprovar.
 - **Cuidado:** Charles Maurras e a Action Française eram antiliberais, mas foram condenados por Pio XI em 1926. Não usar como referência.
 
 **Ideal × realidade: prudência (palavras do José, 19/11/2026).**

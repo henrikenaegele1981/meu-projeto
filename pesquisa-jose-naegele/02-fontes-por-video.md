@@ -63,3 +63,23 @@ Etiquetas de fonte na tela: Banco Central · FPA · CEPEA · CNA · Balanço do 
 | "Metade do planeta viveu a data inteira" | Às 8h de Brasília, só os fusos de UTC+12 a +14 tinham fechado o dia. | exagero |
 | Bug do milênio; Camping 21/5/2011, remarcado para outubro; calendário maia 2012 | https://abcnews.go.com/blogs/business/2011/10/harold-camping-doomsday-prophet-wrong-again · https://www.jpl.nasa.gov/videos/12-21-2012-just-another-day/ | **CONFERE** |
 | Doutrina | Mt 24,36 (e Mc 13,32); lei natural (Catecismo §§1954–1960); "sentou-se no trono" (2Ts 2,4); prudência (Catecismo §1806). | referência |
+
+---
+
+## Vídeo: Erika Hilton e as residentas (DfwyJgZRpQb, 15/11/2026)
+
+> **Ponto crítico.** A frase atribuída a Erika Hilton, "a mulher moderna não menstrua, não gesta e pode, sim, ter um pênis", **não tem origem verificável**. Não há vídeo, post ou entrevista com data. O registro mais antigo é o Lavras 24 Horas de 01/04/2026, que fala em "entrevista recente" sem dizer qual. A Revista Oeste repetiu a frase sem fonte. O Olhar Direto (10/11/2026) a chama de "suposta declaração". A etiqueta do próprio vídeo diz "manchete que circula nas redes · Assembleianos de Valor", um portal gospel com cerca de 2 milhões de seguidores, que não é veículo jornalístico. A posição real dela, de que mulher não se define só pela reprodução, está documentada (resposta ao Ratinho, Metrópoles, 12/03/2026). **A frase literal, não.** Pela regra do próprio José ("fala de pessoa pública só entre aspas se for literal, com data e lugar"), essa citação não passaria.
+> https://olhardireto.com.br/noticias/paula-calil-rebate-declaracao-atribuida-a-erika-hilton-sobre-conceito-de-mulher-a-senhora-nao-nos-representa · https://www.metropoles.com/brasil/erika-hilton-diz-que-ratinho-ve-mulheres-como-maquinas-de-reproducao
+
+| Afirmação | Fonte de origem | Veredito |
+|---|---|---|
+| Erika Hilton preside a Comissão de Defesa dos Direitos da Mulher | Eleita em 11/03/2026 (Agência Brasil, 12/03). https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-03/camara-comissao-de-direitos-da-mulher-elege-primeira-presidente-trans | **CONFERE** |
+| Mais da metade da população paraguaia morreu (tela: Whigham & Potthast, 60–69%) | Whigham & Potthast, "The Paraguayan Rosetta Stone", *LARR* 34(1), 1999. O número contestado: Reber estima 7–18,5% e Kleinpenning 43–52% (*LARR* 37(3), 2002). A faixa inclui emigração, não só mortes. https://www.cambridge.org/core/journals/latin-american-research-review/article/paraguayan-rosetta-stone-new-insights-into-the-demographics-of-the-paraguayan-war-18641870/96CAE01376E54D5376172E9398F4951B | **PARCIAL** (sem consenso) |
+| Mulheres doaram os bens (Assunção, 1867) | Assembleia de 24/02/1867 e o *Libro de Oro* (Archivo Nacional). O número de doadoras é incerto. https://www.abc.com.py/nacionales/el-libro-de-oro-pronto-estara-disponible-en-la-web-1635267.html | **CONFERE** |
+| Residentas reconstruíram o país | Barbara Potthast: "residentas" são as que acompanharam o exército e a evacuação. O vídeo usa o termo de forma mais ampla. https://core.ac.uk/download/304707538.pdf | **PARCIAL** |
+| Monumento a las Residentas na entrada de Assunção (mulher, bandeira, filho, soldado caído) | Lei 739/1978, de Báez Rolón, inaugurado em 1980, no limite entre Assunção e Luque. https://www.ultimahora.com/residentas-mirada-que-apunta-al-renacer-pais | **CONFERE** |
+| Constituição do Paraguai protege a vida desde a concepção e o casamento homem–mulher | Art. 4: "en general, desde la concepción". Arts. 51 e 52: casamento entre homem e mulher. https://ministeriodejusticia.gov.py/wp-content/uploads/2024/03/1.Constitucion-Nacional.pdf | **CONFERE** |
+| MEC proíbe "ideologia de gênero" nas escolas (2017) | Resolução MEC 29.664/2017, que proíbe **materiais** sobre o tema. Foi criticada pela ONU e pela Anistia. https://www.amnesty.org/es/latest/press-release/2017/10/paraguay-derechos-humanos-en-peligro-por-resolucion-de-ministerio-de-educacion-y-ciencias/ | **CONFERE** |
+| Ranking "do movimento LGBT" põe o Paraguai em último na América do Sul | Equaldex: Paraguai 35 (último entre os 12 sul-americanos) e Brasil 74. Mas o Equaldex é um site colaborativo de dados, não um órgão "do movimento". https://www.equaldex.com/equality-index | **CONFERE** (valores) |
+| Imagens | *La Paraguaya*, de Blanes (c. 1879, MNAV). A gravura "Assunção 1867" e a foto "Residenta do 70" têm origem **N/E**. | — |
+| Doutrina | Gn 1,27; substância × acidente (Aristóteles e Santo Tomás); hilemorfismo (*Suma Teológica* I q.76 a.1; Concílio de Vienne, 1312; Catecismo §365); *agere sequitur esse*; Catecismo §2333; *Dignitas infinita* §60. | referência |

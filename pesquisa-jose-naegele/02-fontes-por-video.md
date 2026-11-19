@@ -83,3 +83,24 @@ Etiquetas de fonte na tela: Banco Central · FPA · CEPEA · CNA · Balanço do 
 | Ranking "do movimento LGBT" põe o Paraguai em último na América do Sul | Equaldex: Paraguai 35 (último entre os 12 sul-americanos) e Brasil 74. Mas o Equaldex é um site colaborativo de dados, não um órgão "do movimento". https://www.equaldex.com/equality-index | **CONFERE** (valores) |
 | Imagens | *La Paraguaya*, de Blanes (c. 1879, MNAV). A gravura "Assunção 1867" e a foto "Residenta do 70" têm origem **N/E**. | — |
 | Doutrina | Gn 1,27; substância × acidente (Aristóteles e Santo Tomás); hilemorfismo (*Suma Teológica* I q.76 a.1; Concílio de Vienne, 1312; Catecismo §365); *agere sequitur esse*; Catecismo §2333; *Dignitas infinita* §60. | referência |
+
+---
+
+## Vídeo: pintinhos × aborto (Df0lnoLRIYM, 16/11/2026)
+
+| Afirmação | Fonte de origem | Veredito |
+|---|---|---|
+| 3 deputadas assinaram carta para salvar pintinhos (out/2026) | Erika Hilton, Sâmia Bomfim e Duda Salabert, na Carta Compromisso da Mercy For Animals. https://mercyforanimals.org.br/carta-compromisso-salve-pintinhos/ A lista de signatários tem **23 deputados de 10 partidos**, inclusive PL e PSD. | **CONFERE** |
+| Etiqueta "2 PSOL, 1 PDT" | Duda Salabert foi para o PSOL em mar/2026, então as **três são do PSOL**. https://ofator.com.br/?p=60759 | **DIVERGE** |
+| Com 6 semanas o coração já bate | A atividade cardíaca começa entre os dias 21 e 23 após a fecundação, o que dá cerca de 5–6 semanas de gestação. A ACOG prefere o termo "atividade cardíaca". https://www.ehd.org/dev_article_unit4.php | **CONFERE** (idade gestacional) |
+| Imagem real EHD.org de 7 semanas | A EHD conta a idade **a partir da fecundação**: 7 semanas na EHD equivalem a cerca de 9 semanas gestacionais. O vídeo mistura as duas contagens. | **PARCIAL** |
+| Mãos, dedos, rosto poucas semanas depois | Dedos separados com cerca de 7–7,5 semanas após a fecundação. https://www.ehd.org/dev_article_unit7.php | **CONFERE**, com a mesma ressalva de contagem |
+| PSOL é autor da ADPF 442 (aborto até 12 semanas) | Ação de 2017. Pede **descriminalizar** (arts. 124 e 126 do Código Penal). Rosa Weber e Barroso votaram a favor; o julgamento está suspenso. https://portal.stf.jus.br/processos/detalhe.asp?incidente=5144865 | **CONFERE** |
+| Aspiração: "sugado e despedaçado" | O método existe. A animação é da **Live Action**, ONG pró-vida de Lila Rose com receita de US$ 15,7 mi, narrada pelo Dr. Levatino (2016). É fonte militante, não clínica. https://www.influencewatch.org/non-profit/live-action/ | **PARCIAL** (fonte militante) |
+| Erika Hilton preside a Comissão da Mulher | Desde 11/03/2026. | **CONFERE** |
+| Pediu arquivamento do PL 1904/2024 | Foi coautora do requerimento de jun/2024 e disse "esse projeto precisa ser arquivado". Na época ainda não presidia a comissão. https://www.bahianoticias.com.br/noticia/293453-erika-hilton-diz-que-pl-do-aborto-tenta-retroceder-lei-para-antes-de-1940-e-defende-arquivamento-do-projeto | **CONFERE** (fato de 2024) |
+| O PL 1904 equiparava a homicídio o aborto após 22 semanas | Texto literal: "viabilidade fetal, presumida em gestações acima de 22 semanas… homicídio simples". https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2425262 | **CONFERE** |
+| 22 semanas = mais de 5 meses | São cerca de 5,1 meses. | **CONFERE** |
+| "Prometeu barrar o Estatuto do Nascituro" | Só há uma paráfrase de jornal (jun/2024): "impedir qualquer projeto que represente retrocesso". O Estatuto (PL 478/2007) está na Comissão da Mulher; a relatora é Sâmia Bomfim. | **PARCIAL** (não é citação) |
+| Constituição do Paraguai protege a vida desde a concepção | Art. 4: "en general, desde la concepción". https://www.bacn.gov.py/leyes-paraguayas/9580/constitucion-nacional | **CONFERE** (o vídeo omite "en general") |
+| Legenda: "nenhuma campanha por adoção ou amparo à mãe" | Não levantado. | **N/E** |

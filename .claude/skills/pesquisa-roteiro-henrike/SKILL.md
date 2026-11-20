@@ -286,6 +286,8 @@ Modelos testados no caso Shenzhen:
 
 Modelo validado: Reel "Trump, Putin e Xi em Shenzhen" (nov/2026), feito a partir da referência @worldhistorynetwork3106 ("A New Yalta?"). O código do motor fica salvo no projeto, em `.claude/skills/pesquisa-roteiro-henrike/motor-mapa/`.
 
+**Antes de qualquer Reel de mapa, leia `referencia-mapa-animado.md` (nesta pasta).** É o modelo obrigatório, estudado quadro a quadro, e vale mais que o resumo abaixo.
+
 ## Visual
 - **Fundo:** mapa de satélite diurno. Use o Natural Earth `NE1_HR_LC_SR_W` (21600×10800, domínio público), cortado em 8 blocos de 6000 px, mais uma versão de 4096 px para os planos abertos.
 - **País em destaque:** magenta `#c4189a` com contorno branco. Contornos do Natural Earth `ne_50m_admin_0_countries.geojson`, pelo campo `ADM0_A3`.

@@ -2,10 +2,8 @@
 
 Documento único para o agente de roteiros. A ordem é: mapa de pautas (com os 7 roteiros recomendados, as divergências e as pendências), depois as frentes 1 (split payment), 2 (Paraguai), 3 (economia), 4 (política e STF) e 5 (ideologia e família). Cada dado traz fonte, link e data. O que está marcado [CONFIRMAR] não vai para a gravação sem conferência.
 
-
 ---
 
-<!-- ARQUIVO: 2026-11-21_SEO-360_mapa-de-pautas.md -->
 ## SEO 360: mapa de pautas para o José (21/11/2026)
 
 **Como foi feito:** coletei cerca de 17 mil sugestões do autocompletar do Google e do YouTube (Brasil, pt-BR), a partir de 58 termos-base. Depois abri 5 frentes de pesquisa a fundo. Os relatórios completos, com fonte, link e data de cada dado, estão nesta pasta:
@@ -69,7 +67,7 @@ Por isso usei dois sinais:
 
 ### BANCO DE PAUTAS (mais 22, para os próximos roteiros)
 
-### Economia e bolso (frente 3)
+#### Economia e bolso (frente 3)
 8. **Selic de 13,75% e juro real de cerca de 8,7%: "Por que o seu crediário custa tanto"** ("por que a selic é tão alta"; 70 perguntas)
 9. **Família endividada recorde:** 50,11% da renda comprometida com dívida e 28,99% com parcelas (BC, ago); 81,6% das famílias endividadas (Peic out)
 10. **Isenção do IR até R$ 5 mil:** vale desde jan/2026, mas você só sente na declaração de 2027; a compensação frustrou (R$ 28 bi viraram R$ 17,2 bi)
@@ -81,7 +79,7 @@ Por isso usei dois sinais:
 
 > Aviso das frentes: o **desemprego está em 5,2%, a mínima da série**. Não usar "desemprego recorde". A crítica que se sustenta é informalidade de 37,5%, juro e dívida.
 
-### Política e STF (frente 4)
+#### Política e STF (frente 4)
 16. **Lula reeleito com 51,79%, Congresso mais à direita:** o que muda e o que não muda [CONFIRMAR no TSE]
 17. **Dosimetria do 8/1:** lei promulgada em 08/05 e suspensa por Moraes em 09/05; julgamento de 4 a 15/12
 18. **Três CPIs, zero relatório** (INSS, Crime Organizado, Master)
@@ -89,14 +87,14 @@ Por isso usei dois sinais:
 20. **Mendonça abriu o próprio relatório. E os outros três?** [CONFIRMAR]
 21. **O Master não tem lado:** a lista de citados atravessa governo, oposição e Centrão
 
-### Família e cultura (frente 5)
+#### Família e cultura (frente 5)
 22. **O STF tirou do pai o veto à aula de gênero (ADI 7847, 8 a 2, 11/05/2026). No Paraguai, quem veta é o MEC.**
 23. **Segurança: 19,1 mortes violentas por 100 mil no Brasil × cerca de 6,1 no Paraguai.** O dado paraguaio não é oficial [CONFIRMAR], e é preciso admitir o crime na fronteira.
 24. **270 mil brasileiros no Paraguai, a 3ª maior comunidade no exterior:** é crescimento, não "êxodo"; o Comprova desmentiu a tese da fuga
 25. **ADPF 442:** saiu de pauta em out/2025, mas não morreu
 26. **Legítima defesa:** decreto brasileiro de 2023 × lei paraguaia de 2024. A importação de armas está suspensa no Paraguai desde 2023: dizer isso.
 
-### Paraguai fora do batido (frente 2)
+#### Paraguai fora do batido (frente 2)
 27. **"22.628 brasileiros em 6 meses: o Paraguai vai fechar a porta?"** (Res. DNM 407/2026)
 28. **"O 10-10-10 não é bem assim":** dividendo de 8% para residente e 15% para não residente; IRP de 8% a 10%
 29. **"Tem SUS no Paraguai?"** Saúde para o brasileiro que se muda (busca forte; pesquisar a fundo antes)
@@ -115,10 +113,8 @@ Por isso usei dois sinais:
 8. **Residência no Paraguai** (valores e Res. DNM 407/2026): conferir na tabela da Migraciones.
 9. **Todas as aspas:** conferir na página original. Foram lidas por ferramenta automática.
 
-
 ---
 
-<!-- ARQUIVO: frente1_split_payment.md -->
 ## FRENTE 1: SPLIT PAYMENT (reforma tributária)
 Pesquisa de pauta para @josehenriquenaegele · apurado em 21/11/2026
 Regra usada: documento primário primeiro (nível 1). A imprensa entra só como ponte (nível 3) ou como objeto de desconstrução (nível 4/5).
@@ -138,14 +134,14 @@ Os sinais de busca mais fortes, que pautam os ganchos:
 
 ### 1. O que é o split payment na lei
 
-### 1.1 Base legal [OK]
+#### 1.1 Base legal [OK]
 - **EC 132/2023** criou o IBS (estados e municípios) e a CBS (União), que substituem ICMS, ISS, PIS, Cofins e parte do IPI.
 - **LC 214, de 16/01/2025** (origem: PLP 68/2024), **arts. 31 a 35**: "Do Recolhimento na Liquidação Financeira (split payment)".
   - Texto: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm
 - **LC 227, de 13/01/2026** (DOU de 14/01/2026; origem: PLP 108/2024) criou o Comitê Gestor do IBS e reescreveu partes dos arts. 31 a 33.
   - Senado: https://www12.senado.leg.br/noticias/materias/2026/01/14/reforma-tributaria-lei-cria-comite-gestor-do-ibs-e-define-regras-do-imposto
 
-### 1.2 O que dizem os artigos [OK, redação vigente no Planalto]
+#### 1.2 O que dizem os artigos [OK, redação vigente no Planalto]
 - **Art. 31, caput:** os prestadores de serviço de pagamento eletrônico e as instituições operadoras de sistemas de pagamento "deverão segregar e recolher ao Comitê Gestor do IBS e à RFB, no momento da liquidação financeira da transação", o IBS e a CBS.
   - **Tradução:** o banco ou a maquininha separa o imposto no instante em que o dinheiro cai e o envia direto ao governo. A empresa recebe só o líquido.
 - **Art. 31, §3º:** vale também para participantes e arranjos "que não estão sujeitos à regulação do Banco Central do Brasil".
@@ -168,7 +164,7 @@ Os sinais de busca mais fortes, que pautam os ganchos:
   - para compras de **quem não é contribuinte do regime regular** (consumidor final, PF), o split deve entrar **simultaneamente nos principais meios de pagamento do varejo** (§§1º e 3º);
   - ato conjunto define a **implantação gradual** e "pode prever hipóteses facultativas" (§2º).
 
-### 1.3 Modalidades nos manuais oficiais [OK]
+#### 1.3 Modalidades nos manuais oficiais [OK]
 Fonte: **Manual de Operações do Split Payment, v1.0.1, set/2026** (CGIBS + RFB), https://www.cgibs.gov.br/upload/arquivos/202609/24101007-split-payment-manual-de-operacoes-v1-0-1.pdf
 
 | Modelo | Arranjos | Como funciona |
@@ -181,7 +177,7 @@ O Recolhimento pelo Adquirente (RAD) também fica fora da Fase 1.
 
 Todos os documentos técnicos estão em https://www.cgibs.gov.br/split-payment (manuais de Integração v1.1.1, Operações, Tempos, Segurança, Redes e Habilitação, e OpenAPI).
 
-### 1.4 Cronograma atual: houve adiamento?
+#### 1.4 Cronograma atual: houve adiamento?
 - **[OK] Testes:** Comunicado RFB de **30/09/2026**. Testes de integração entre os PSPs e a Plataforma Pública começaram em **15/10/2026**, em ambiente controlado.
   - Nenhuma transação é processada de forma definitiva, e não há multa nos testes.
   - Os demais PSPs se inscrevem a partir de **16/11/2026**.
@@ -227,7 +223,7 @@ Todos os documentos técnicos estão em https://www.cgibs.gov.br/split-payment (
 
 ### 3. Críticos x defensores, e os números
 
-### 3.1 Defensores (governo)
+#### 3.1 Defensores (governo)
 - **Argumento:** combater a sonegação e as empresas de fachada (o "noteiro" que emite nota, recebe e some). Segundo o governo, a arrecadação mais garantida permite uma alíquota menor.
   - Ministério da Fazenda, "Split Payment e Reforma Tributária: um salto para a modernidade fiscal" (maio/2025): https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/Maio/split-payment-e-reforma-tributaria-um-salto-para-a-modernidade-fiscal
   - Bernard Appy, mar/2025, "mínima interferência nas práticas comerciais": https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/marco/split-payment-esta-sendo-desenvolvido-para-ter-minima-interferencia-nas-praticas-comerciais-ressalta-appy
@@ -239,7 +235,7 @@ Todos os documentos técnicos estão em https://www.cgibs.gov.br/split-payment (
   - Sonegômetro do Sinprofaz, R$ 626 bi.
   - Os três últimos medem a **sonegação total**, não o efeito do split. **[CONFIRMAR / não usar como "ganho do split"]**
 
-### 3.2 Críticos
+#### 3.2 Críticos
 1. **Capital de giro.** Hoje a empresa vende, recebe e paga o imposto em média uns 40 dias depois. Com o split, o imposto sai no ato.
    - Estimativas: até **R$ 117 bi** de capital de giro retirado do caixa, **R$ 32 a 38 bi/ano** de custo financeiro e cerca de **981 mil** empresas do Lucro Real/Presumido afetadas.
    - **Fonte fraca:** a Gazeta do Povo, 10/11/2026, não nomeia o estudo nem a consultoria (https://www.gazetadopovo.com.br/economia/reforma-tributaria-ameaca-o-capital-de-giro-de-quase-um-milhao-de-empresas/). **[CONFIRMAR autoria antes de usar]**
@@ -257,7 +253,7 @@ Todos os documentos técnicos estão em https://www.cgibs.gov.br/split-payment (
 4. **Pequena empresa e Simples.** Tem menos caixa e crédito mais caro, e o percentual do modo simplificado "não guarda relação com o débito efetivo" (art. 33, §2º). Paga a mais e espera a devolução em 3 dias úteis.
 5. **Precedente da CPMF.** Tributaristas temem a informalidade e a fuga para o dinheiro vivo (Gazeta, sem nome). **[opinião, não fato]**
 
-### 3.3 Alíquota de referência (estimativas oficiais mais recentes) [OK / PONTE]
+#### 3.3 Alíquota de referência (estimativas oficiais mais recentes) [OK / PONTE]
 - **CBS 2027: 11,3%** (11,3468%), calculada pelo **TCU** em **28/10/2026**:
   - processo TC 006.529/2026-7, relator Vital do Rêgo; o número do acórdão (2933/2026) é **[CONFIRMAR]**;
   - redutor de 44,2% para compras públicas;
@@ -277,7 +273,7 @@ Todos os documentos técnicos estão em https://www.cgibs.gov.br/split-payment (
     - dizer "a referência calculada pelos próprios órgãos já passa de 26,5%".
   - "Maior IVA do mundo": a Hungria tem 27% de alíquota padrão. **[CONFIRMAR]** na tabela da OCDE ou da Comissão Europeia antes de usar.
 
-### 3.4 Quem aprovou [OK]
+#### 3.4 Quem aprovou [OK]
 - **Senado, 12/12/2024:** substitutivo do PLP 68/2024 aprovado por **49 a 19**. **Flávio Bolsonaro votou "não"**.
   - Lista nominal: https://legis.senado.leg.br/sdleg-getter/documento/download/07f4883d-9069-4308-ad2e-775dc5cc3aa3?ts=1793392489080&disposition=inline
 - **Câmara:** votação final em dez/2024. Placar e data **[CONFIRMAR]** em dadosabertos.camara.leg.br.
@@ -306,7 +302,7 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
 
 ### 5. Pix: a norma de jan/2025 e o boato de "taxar o Pix"
 
-### 5.1 Linha do tempo [OK]
+#### 5.1 Linha do tempo [OK]
 1. **IN RFB 2.219, de 17/09/2024:** ampliou a e-Financeira para fintechs e Pix.
    - Limites de informe: movimentação acima de **R$ 5 mil/mês (PF)** e **R$ 15 mil (PJ)**. **[CONFIRMAR]** os valores no texto da IN.
    - Entrou em vigor em 01/01/2025.
@@ -320,7 +316,7 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
    - Fala atribuída ao secretário Robinson Barreirinhas: a Constituição veda tributo sobre movimentação financeira. **[CONFIRMAR]** a fala literal.
    - Diario de Pernambuco, jan/2026: https://www.diariodepernambuco.com.br/economia/2026/01/11705186-receita-federal-volta-a-negar-taxacao-do-pix-e-alerta-para-golpes.html
 
-### 5.2 Como desmontar o boato (ligado ao split)
+#### 5.2 Como desmontar o boato (ligado ao split)
 - O split **não é imposto novo** nem "imposto sobre o Pix". O Pix é só o trilho: o IBS e a CBS já estão no preço, e o split muda **quem recolhe e quando**.
 - **Pix entre pessoas físicas:** fora (Manual de Operações v1.0.1).
 - **Mas não é verdade que "não muda nada":**
@@ -333,7 +329,7 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
 
 ### 6. Paraguai: o IVA e se existe algo parecido
 
-### 6.1 IVA paraguaio [OK]
+#### 6.1 IVA paraguaio [OK]
 - **Lei 6.380/2019** (Modernización y Simplificación del Sistema Tributario Nacional), regulamentada pelo **Decreto 3.107, de 19/12/2019**. Órgão: **DNIT**, que sucedeu a SET.
 - **Alíquotas:**
   - **10% geral**;
@@ -342,7 +338,7 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
   - Portal: https://www.dnit.gov.py/web/portal-institucional/iva
 - **Comparação para a tela:** 10% no Paraguai contra cerca de 28 a 30% de referência no Brasil (IBS + CBS).
 
-### 6.2 Existe split no Paraguai? Algo parecido, mas muito menor [OK, vigência a confirmar]
+#### 6.2 Existe split no Paraguai? Algo parecido, mas muito menor [OK, vigência a confirmar]
 - **Decreto 3.107/2019, art. 39:** as administradoras e processadoras de cartão de crédito "deberán retener el IVA, aplicando el cero coma noventa mil novecientos nueve por ciento (0,90909%) sobre el monto total de las operaciones".
   - Texto: https://impuestospy.com/impuestos/decreto-n-3-107-2019 (transcrição secundária; o original está na DNIT).
 - **A conta:** 0,90909% do valor equivale a **10% do IVA embutido** (IVA de 10/110 × 10%).
@@ -361,7 +357,7 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
 
 ### 7. Três ângulos de roteiro (do bolso para o sistema)
 
-### Ângulo 1: "O imposto vai sair antes do dinheiro chegar no seu caixa"
+#### Ângulo 1: "O imposto vai sair antes do dinheiro chegar no seu caixa"
 - **Público:** pequeno empresário e família que vive de comércio.
 - **Ganchos:**
   - "A partir de 2027, o banco vai pegar o imposto da sua venda antes de você ver o dinheiro. E a lei já foi aprovada."
@@ -375,7 +371,7 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
 - **Confirmado:** art. 31; Fase 1 opcional e B2B; cartão fora da Fase 1; Decreto 3.107, art. 39.
 - **[CONFIRMAR]:** R$ 117 bi (autoria do estudo); R$ 0,39 (proposta, não vigente); data de 2028 sem ato oficial.
 
-### Ângulo 2: "Não vão taxar o seu Pix. Vão fazer algo maior"
+#### Ângulo 2: "Não vão taxar o seu Pix. Vão fazer algo maior"
 - **Público:** pessoa física, que é a maior busca ("afeta pessoa física", "imposto pix é verdade", "maior que o pix").
 - **Ganchos:**
   - "Lembra quando a Receita recuou da fiscalização do Pix? Ela não desistiu. Mudou de caminho."
@@ -389,7 +385,7 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
 - **Confirmado:** IN 2.219 e 2.247; MP 1.288 caducada; manual da PF; art. 35.
 - **[CONFIRMAR]:** limites de R$ 5 mil e R$ 15 mil da IN 2.219; fala literal de Barreirinhas; data de entrada do B2C.
 
-### Ângulo 3: "IVA de 30%? E quem votou nisso"
+#### Ângulo 3: "IVA de 30%? E quem votou nisso"
 - **Público:** quem busca "quem aprovou", "flavio bolsonaro", "deu certo em outros países".
 - **Ganchos:**
   - "Prometeram 26,5%. O TCU e o Comitê Gestor já calculam 30%."
@@ -426,10 +422,8 @@ Opcional: o *VAT gap* da Polônia caiu depois de 2017, segundo o relatório *VAT
 8. Paraguai: vigência do art. 39 do Decreto 3.107/2019 na DNIT.
 9. Romênia: OUG 78/2019 no Monitorul Oficial. Polônia: limite de 15 mil PLN e anexo 15.
 
-
 ---
 
-<!-- ARQUIVO: frente2_paraguai.md -->
 ## Frente 2: Paraguai. Pauta para o José Henrique Naegele (Paraguai Sem Filtro)
 
 Pesquisa feita em 21/11/2026. Base: autocomplete Google e YouTube (`autocomplete_limpo.md`), mais fontes primárias e imprensa factual paraguaia.
@@ -480,7 +474,7 @@ Sinais laterais a explorar:
 
 ### B) Fatos atuais de 8 intenções (fonte, link e data)
 
-### B1. Legalização / residência (intenções 1, 2, 9 e 10)
+#### B1. Legalização / residência (intenções 1, 2, 9 e 10)
 
 - **Lei-base:** Lei nº 6.984/2022 de Migrações, em vigor desde 18/10/2022 ([BACN](https://www.bacn.gov.py/leyes-paraguayas/10973/ley-n-6984-de-migraciones), N1). A via Mercosul aplica junto o Acordo de Residência Mercosul (Lei 3.565/08).
 - **Temporária Mercosul** (Brasil, Argentina, Uruguai, Bolívia, Chile, Peru, Colômbia, Equador):
@@ -502,7 +496,7 @@ Sinais laterais a explorar:
 - **Via investidor (Res. 0283/2026):** dá a permanente direta com US$ 200 mil em imóvel ou em aplicação financeira mantida por 2 anos, ou US$ 70 mil em empresa com 5 empregos formais. [CONFIRMAR, porque a fonte é única: IMI Daily.]
 - **Boom de pedidos:** no 1º semestre de 2026 foram **29.765 residências concedidas** (+81% sobre as 16.456 do 1º semestre de 2025). Dessas, **22.628 foram para brasileiros (76%)**, quase o total de brasileiros do ano inteiro de 2025 (23.526). Os pedidos somaram 33.243 (+62%). Fontes: DNM via [IMI Daily](https://www.imidaily.com/intelligence/paraguay-granted-29765-residencies-in-the-first-half-of-2026-up-81/) e [Agência IP, 27/07/2026](https://www.ip.gov.py/ip/2026/07/27/residence-applications-in-paraguay-increase-62-in-the-first-half-of-2026/).
 
-### B2. Impostos (intenções 3 e 4)
+#### B2. Impostos (intenções 3 e 4)
 
 Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w/ley-n-6380-19) e [BACN](https://www.bacn.gov.py/leyes-paraguayas/9332/ley-n-6380-de-) (N1).
 
@@ -517,7 +511,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - **Desmonte do "10-10-10":** são três impostos de 10%, mas o IRP é progressivo a partir de 8%, o IVA tem faixa de 5% e o dividendo pago a não residente vai a 15%.
 - **"Residência fiscal e morar no Brasil"** é contradição: residência fiscal depende de onde se vive de fato. No Brasil, deixar de ser residente exige a Declaração de Saída Definitiva do País. [CONFIRMAR as regras atuais da Receita antes de gravar; não citei fonte nesta pesquisa.]
 
-### B3. Segurança (intenção 7)
+#### B3. Segurança (intenção 7)
 
 - **Paraguai em 2025: 6,1 homicídios por 100 mil habitantes** (391 casos, contra 477 em 2024). A fonte é o balanço da **InSight Crime**, uma ONG e **não o governo**. Está em [La Nación PY, 03/06/2026](https://www.lanacion.com.py/politica/2026/06/03/paraguay-entre-los-tres-paises-de-la-region-con-menor-tasa-de-homicidios-en-2025/).
   - O ministro do Interior citou **6,2**, mas atribuiu o número à própria InSight Crime ([Última Hora](https://www.ultimahora.com/paraguay-es-el-segundo-pais-mas-seguro-de-latinoamerica-asegura-ministro-del-interior)).
@@ -531,7 +525,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
   - O FBSP é uma ONG que compila dados das secretarias estaduais.
 - **Comparação honesta:** compare homicídio com homicídio. São **15,4 no Brasil contra cerca de 6 no Paraguai**, ou seja, o Brasil tem 2,5 vezes mais. SC e SP, porém, ficam perto do Paraguai, e a fronteira seca (Amambay, Pedro Juan Caballero) é muito pior que a média paraguaia. [CONFIRMAR a taxa de Amambay.]
 
-### B4. Economia: PIB, inflação e câmbio (intenções 4 e 13)
+#### B4. Economia: PIB, inflação e câmbio (intenções 4 e 13)
 
 - **PIB:** o BCP estimou **6,0% em 2025** e projetou 4,2% para 2026 ([BCP, IPoM dez/2025](https://www.bcp.gov.py/web/institucional/w/el-banco-central-del-paraguay-proyecta-un-crecimiento-del-pib-del-6-en-2025-y-del-4-2-en-2026-con-una-inflacion-que-convergeria-gradualmente-a-la-meta-del-3-5-en-2026), N1). No IPoM de junho/2026 a projeção subiu para **4,5%**, com inflação de 3,3% ([BCP, IPoM jun/2026](https://www.bcp.gov.py/web/institucional/w/informe-de-pol%C3%ADtica-monetaria-junio-2026/-/categories/37320)). [CONFIRMAR se houve revisão depois do caso ueno.]
 - **Inflação:** em **outubro/2026 o IPC interanual foi 1,7%**, com variação mensal de -0,1%, abaixo da meta de 3,5% e dos 4,1% de out/2025 ([Infonegocios](https://infonegocios.com.py/conosur/la-inflacion-interanual-en-octubre-cerro-en-1-7-y-se-mantiene-por-debajo-del-registro-de-2025) e [Trading Economics](https://tradingeconomics.com/paraguay/inflation-cpi/news/597758)). [CONFIRMAR no informe de inflação do BCP.]
@@ -541,7 +535,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
   - com o anúncio de renúncia de Peña, o **guarani perdeu 4,68% num dia** e foi a cerca de **G. 6.487 por dólar** em 05/11/2026 ([La República/Bloomberg](https://www.larepublica.co/globoeconomia/guarani-paraguayo-se-devalua-a-maximos-de-abril-tras-la-renuncia-de-pena-4518463)).
   - [CONFIRMAR a cotação do dia na página "referencial fluctuante" do BCP.]
 
-### B5. Política atual: ueno bank e o efeito sobre quem mora lá (intenções 14 e 15)
+#### B5. Política atual: ueno bank e o efeito sobre quem mora lá (intenções 14 e 15)
 
 - **Tamanho:** cerca de 2,9 milhões de clientes. Era o 1º banco do país em número de clientes e o 5º em depósitos (8,9% do sistema). Administrava cerca de US$ 850 milhões de órgãos do Estado, incluído o IPS ([Infobae, 06/11/2026](https://www.infobae.com/economia/2026/11/06/una-por-una-las-claves-para-entender-el-escandalo-del-ueno-bank-en-paraguay-que-derivo-en-una-fuerte-crisis-politica/)).
 - **O que o BCP achou:**
@@ -572,7 +566,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
   - A garantia pagou 93% das pessoas cobertas em cerca de uma semana.
   - Os fatos duros são outros: o dinheiro dos aposentados concentrado num banco ligado ao presidente, e o regulador vindo do próprio banco.
 
-### B6. Escola, homeschool e o direito dos pais (intenção 9)
+#### B6. Escola, homeschool e o direito dos pais (intenção 9)
 
 - **Constituição do Paraguai (1992):**
   - art. 74: direito de aprender e liberdade de ensinar;
@@ -586,7 +580,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - **Brasil, para contraste:** em 2018 o STF decidiu no RE 888.815 que o homeschool não é permitido enquanto não houver lei. O PL 3.179/2012 passou na Câmara em 2022 e está parado no Senado. [CONFIRMAR o andamento.]
 - **Pró:** a família como primeira responsável está escrita na Constituição. **Contra:** sem regra, não há caminho claro de certificação. Na prática a criança precisa ser validada em exame ou se matricular para ter diploma. [CONFIRMAR com o MEC.]
 
-### B7. Saúde (intenção 8)
+#### B7. Saúde (intenção 8)
 
 - O **MSPBS** mantém hospitais e postos públicos gratuitos.
 - O **IPS** é a previdência e a saúde de quem tem emprego formal. O expatriado sem vínculo costuma usar plano privado ([Rio Times, 2026](https://www.riotimesonline.com/healthcare-paraguay-expats-2026/), fonte secundária [CONFIRMAR]).
@@ -594,7 +588,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - O Círculo Paraguayo de Médicos fala em 120 mil pessoas sem atendimento. [CONFIRMAR.]
 - **Ligação com o ueno:** a Res. 407/2026 aceita a inscrição no IPS como prova de solvência, e o IPS foi justamente o maior depositante institucional do banco que quebrou.
 
-### B8. Energia / Itaipu (intenção 13, "Paraguai x Brasil")
+#### B8. Energia / Itaipu (intenção 13, "Paraguai x Brasil")
 
 - A revisão do **Anexo C do Tratado de Itaipu** (vencido em agosto/2023, 50 anos) **continua sem acordo final**.
   - A tarifa de US$ 19,28 por kW/mês foi acertada para 2024 a 2026 ([Última Hora](https://www.ultimahora.com/las-conversaciones-sobre-el-anexo-c-estan-oficialmente-reanudadas)).
@@ -606,7 +600,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 
 ### C) 6 pautas fora do batido (ângulo família e liberdade, com prós e contras)
 
-### 1. "A aposentadoria do vizinho estava no banco do presidente"
+#### 1. "A aposentadoria do vizinho estava no banco do presidente"
 - **Gancho:** "ueno bank jubilados" e "ueno bank ips" estão no autocomplete. O aposentado brasileiro que quer se mudar pergunta onde deixa o dinheiro da família.
 - **Dados:**
   - os depósitos do IPS no ueno multiplicaram por 30 em 31 meses, chegando a G. 2,15 trilhões;
@@ -616,7 +610,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - **Lição prática para famílias:** dividir a conta entre bancos e conferir o limite da garantia.
 - **Leitura "quem ganha":** quem lucrou com o dinheiro barato dos aposentados.
 
-### 2. "Em 4 dias o Paraguai derrubou e prendeu um presidente. E isso é bom ou ruim para quem quer morar lá?"
+#### 2. "Em 4 dias o Paraguai derrubou e prendeu um presidente. E isso é bom ou ruim para quem quer morar lá?"
 - **Gancho:** "santiago peña renuncia" e a pergunta "paraguai é de direita?". A manchete estrangeira fala em "corralito" e em "o país quebrou".
 - **Dados:**
   - intervenção em 02 ou 03/11, destituição por 44 votos em 06/11, preventiva em 07/11;
@@ -626,7 +620,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - **Contra:** instabilidade, o mesmo partido continua no poder e o rito durou horas, não dias. A defesa pediu 72 horas e teve o pedido negado por 39 a 3. Ainda **não há condenação penal**.
 - **Leitura moral (implícita):** a autoridade responde pelo bem comum.
 
-### 3. "A armadilha dos 2 anos: a residência que vence com a sua família dentro"
+#### 3. "A armadilha dos 2 anos: a residência que vence com a sua família dentro"
 - **Gancho:** "residência temporária paraguai valor" e "residencia precaria". Quase ninguém conta que a Mercosul **não se prorroga**.
 - **Dados:**
   - a temporária Mercosul vale 2 anos sem prorrogação;
@@ -637,7 +631,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - **Pró:** o processo continua barato (cerca de G. 2,2 a 2,9 milhões, uns US$ 350 a 450 [CONFIRMAR a conversão]) e há categoria própria para dependentes e aposentados.
 - **Contra:** quem vive de renda informal no Brasil ou passa longas temporadas fora corre o risco de perder o caminho para a permanente.
 
-### 4. "No Paraguai, a Constituição diz que educar é tarefa da família antes do Estado"
+#### 4. "No Paraguai, a Constituição diz que educar é tarefa da família antes do Estado"
 - **Gancho:** "morar no paraguai com filhos" e "escola católica no paraguai". O tema de homeschooling também é forte na frente Brasil.
 - **Dados:**
   - art. 75 da Constituição PY ("recae en particular en la familia");
@@ -647,7 +641,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - **Contra:** **o homeschool não é regulado no Paraguai.** É tolerado, mas não garantido, e falta caminho de certificação. A pauta deve dizer isso e não vender que "lá é legalizado".
 - **Fontes:** o José pode usar *Divini Illius Magistri* (direito dos pais) no fecho.
 
-### 5. "22.628 brasileiros em 6 meses: o Paraguai vai fechar a porta?"
+#### 5. "22.628 brasileiros em 6 meses: o Paraguai vai fechar a porta?"
 - **Gancho:** "fila para morar no paraguai", "quantos brasileiros pediram residência" e "brasileiros invadem paraguai".
 - **Dados:**
   - 76% das residências concedidas no 1º semestre de 2026 foram para brasileiros, +81% no total;
@@ -656,7 +650,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 - **Contra:** pressão sobre o aluguel nas cidades de brasileiros, risco de atrito com os locais e uma tendência de exigências crescentes.
 - **Ângulo família:** mudar com filhos exige planejamento de 2 anos, não uma decisão de impulso.
 
-### 6. "Paraguai é mais seguro? O número que o ministro usa não é do ministério"
+#### 6. "Paraguai é mais seguro? O número que o ministro usa não é do ministério"
 - **Gancho:** "morar no paraguai é seguro" e "segurança paraguai vs brasil".
 - **Dados:**
   - Paraguai com cerca de 6,1 homicídios por 100 mil em 2025 (InSight Crime, citada pelo próprio ministro);
@@ -670,7 +664,7 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 
 ---
 
-### Pendências antes de gravar
+#### Pendências antes de gravar
 1. A tabela oficial de taxas da DNM depois de 01/07/2026 e o texto da Res. 407/2026.
 2. O comunicado do BCP e o número da lei de emergência do FGD; o saldo acima da cobertura.
 3. Um dado oficial de homicídios de 2025 no MDI ou na Fiscalía, e a taxa de Amambay.
@@ -678,10 +672,8 @@ Fonte: Lei 6.380/2019, [DNIT](https://www.dnit.gov.py/web/portal-institucional/w
 5. A cotação do dólar e do real no BCP no dia da gravação.
 6. A situação do Anexo C de Itaipu depois da troca de governo.
 
-
 ---
 
-<!-- ARQUIVO: frente3_economia.md -->
 ## Frente 3: Economia do Brasil e impostos (pauta do José Henrique Naegele)
 
 Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md` (Google e YouTube). A ordem das fontes segue `04-agente-pesquisador.md`: o nível 1 (BCB, IBGE, Tesouro, Lei e release) é a base, e a imprensa só serve de ponte. **[CONFIRMAR]** marca o dado de fonte única ou que ainda não conferi no documento primário.
@@ -694,33 +686,33 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 
 ### A) As 12 buscas e dúvidas mais fortes, agrupadas por intenção
 
-### 1. "Quanto vou pagar / quanto fica no meu bolso" (IR e isenção)
+#### 1. "Quanto vou pagar / quanto fica no meu bolso" (IR e isenção)
 1. **"Até quanto é isento o imposto de renda 2026?"** Autocompletes: *imposto de renda 2026 até quanto é isento; imposto de renda 2026 a partir de quanto; imposto de renda 2026 acima de 5 mil; imposto de renda 2026 aliquota; imposto de renda 2026 calculadora; imposto de renda 2026 a receber*. Seção "imposto de renda 2026": 232 sugestões no Google e 204 no YouTube.
 2. **"Imposto sobre dividendos: quem paga?"** Autocompletes: *imposto dividendos; imposto jcp; imposto jcp 2026; banco do brasil dividendos 2026; banco do brasil anuncia dividendos*.
 
-### 2. "O governo vai me taxar?" (medo de imposto novo)
+#### 2. "O governo vai me taxar?" (medo de imposto novo)
 3. **"Vai ter imposto no Pix?"** Autocompletes: *imposto sobre pix 2026; imposto sobre pix 2027; pix com imposto 2027; pix vai ser cobrado imposto; imposto pix é verdade; imposto pix fato ou fake; lei pix imposto; monitoramento pix imposto de renda; imposto pix split payment*.
 4. **"A Receita está vigiando meu Pix?"** Autocompletes: *receita federal controla pix; receita federal cruza; fiscalização pix receita federal como vai funcionar; receita federal bloqueia chave pix; receita federal bloqueou meu pix; receita federal alerta sobre pix*. Contraponto: *pix recebido da receita federal hoje; por que a receita federal fez um pix para mim*, que é a restituição em lote.
 5. **"Que impostos o Lula criou?"** Autocompletes: *imposto criados no governo lula; imposto lula; imposto haddad; imposto governo lula; imposto novo; imposto novo 2027; imposto a partir de 2027; imposto para 2027; imposto janeiro 2027; imposto herança 2027; imposto blusinhas; imposto bets; imposto iof*.
 6. **"O IVA do Brasil vai ser o maior do mundo?"** Autocompletes: *iva do brasil vai ser o maior do mundo; iva do brasil é o maior do mundo; imposto iva brasil maior do mundo; iva brasil 2027; iva brasil quando começa; iva brasil aumento; brasil maior iva*. Relacionados: *imposto mais caro do mundo; imposto não é roubo*.
 
-### 3. "Quanto custa viver" (preço, juros e câmbio)
+#### 3. "Quanto custa viver" (preço, juros e câmbio)
 7. **"Como está o dólar hoje e por que subiu?"** Autocompletes: *dolar hoje dispara; dolar subindo hoje; alta dolar hoje; dolar vai subir ou cair; dolar hoje mais iof; dolar hoje ja com iof; dolar hoje do paraguai; dolar hoje guarani; dolar hoje lojas paraguai; dolar hoje foz do iguaçu*. São 242 sugestões no Google, e os ganchos para a fronteira são explícitos.
 8. **"Por que a Selic é tão alta?"** Autocompletes: *por que a taxa selic no brasil é tão alta; por que a selic está alta; por que a selic alta é ruim; selic alta é bom ou ruim; lula selic; previsão selic 2026; copom selic hoje*.
 9. **"Inflação com Lula"** Autocompletes: *inflação com lula; inflação dos alimentos no governo lula; inflação dos alimentos no governo bolsonaro; inflação brasil hoje; como está a inflação no brasil hoje*.
 
-### 4. "O Brasil está quebrando?" (crise, dívida e emprego)
+#### 4. "O Brasil está quebrando?" (crise, dívida e emprego)
 10. **"A dívida pública com Lula é a maior da história?"** Autocompletes: *divida publica governo lula; dívida pública lula; divida publica maior da historia; divida publica maior que o pib; divida publica hoje pib; como ficou a dívida pública no governo bolsonaro; divida publica e taxa de juros; divida publica brasileira a soberania na corda bamba*.
 11. **"Crise no Brasil 2026/2027 e desemprego"** Autocompletes: *crise no brasil 2026; crise no brasil 2027; crise financeira no brasil em 2026; crise fiscal brasil; crise no brasil empresas fechando; crise brasil paraguai; crise diplomatica brasil paraguai; desemprego aumentou no governo lula; desemprego caiu no governo lula; desemprego bate recorde; economia brasileira 2027*.
 
-### 5. "Meu dinheiro está seguro?" (dívida da família, bancos e agro)
+#### 5. "Meu dinheiro está seguro?" (dívida da família, bancos e agro)
 12. **"Endividamento das famílias bate recorde, o agro deu calote no BB e o FGC cobre quanto"** Autocompletes: *endividamento das famílias bate recorde no brasil; endividamento das familias sobe; banco do brasil calote agro; calote do agro no banco do brasil; banco do brasil agro inadimplencia; banco do brasil agro recuperação judicial; banco do brasil prejuizo agro; banco do brasil crise; fgc garante 250 mil por cpf ou por banco; fgc limite 1 milhão; fgc ja pagou todos do banco master; fgc rombo master*.
 
 ---
 
 ### B) Fatos atuais: dado, fonte, link e data
 
-### Juros e Copom
+#### Juros e Copom
 | Dado | Valor | Fonte (nível) | Data |
 |---|---|---|---|
 | Selic meta | **13,75% a.a.** | BCB, SGS série 432 ([API](https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/3?formato=json)) (1) | vigente em 21/11/2026 |
@@ -732,7 +724,7 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | Juro real ex-post (cálculo próprio) | 13,75% de Selic contra 4,63% de IPCA em 12 meses dá **cerca de 8,7% reais** ((1,1375/1,0463)−1) | cálculo sobre o BCB e o IBGE | nov/2026 |
 | Próxima reunião do Copom | 08 e 09/12/2026 **[CONFIRMAR no calendário do BCB]** | | |
 
-### Inflação
+#### Inflação
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | IPCA em 12 meses | **4,63%** (out/2026), acima do teto de 4,5% | BCB, SGS 13522 ([API](https://api.bcb.gov.br/dados/serie/bcdata.sgs.13522/dados/ultimos/3?formato=json)); IBGE ([caderno de out/2026](https://ftp.ibge.gov.br/Precos_Indices_de_Precos_ao_Consumidor/INPC/Fasciculo_Indicadores_IBGE/ipca-inpc_202610caderno.pdf)) (1) | divulgado em 12/11/2026 |
@@ -740,13 +732,13 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | INPC em 12 meses (renda menor) | 4,49% | IBGE (1) | 12/11/2026 |
 | Próximo IPCA | 11/12/2026 | IBGE | |
 
-### Câmbio
+#### Câmbio
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Dólar PTAX (venda) | **R$ 5,8889** em 19/11; R$ 5,8102 em 18/11; R$ 5,7851 em 17/11 | BCB, SGS 1 ([API](https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados/ultimos/3?formato=json)) (1) | 19/11/2026 (20/11 foi feriado da Consciência Negra) |
 | Contexto | Maior fechamento desde abr/2025, depois de uma série de altas, e a de 18/11 foi de +1,46% | [Brasil 61](https://brasil61.com/n/dolar-fecha-em-alta-de-1-45-e-chega-a-r-5-87-bras2617492) e [SBT News](https://sbtnews.sbt.com.br/noticia/economia/dolar-sobe-1-46-e-fecha-no-maior-valor-em-19-meses) (3) | 18/11/2026 |
 
-### Contas públicas
+#### Contas públicas
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Dívida Bruta do Governo Geral | **82,95% do PIB** (set/26), cerca de R$ 11,1 tri; maior nível desde 2021 | BCB, SGS 13762 ([API](https://api.bcb.gov.br/dados/serie/bcdata.sgs.13762/dados/ultimos/3?formato=json)) (1); [Jornal do Comércio](https://www.jornaldocomercio.com/economia/2026/10/1268730-divida-bruta-do-brasil-se-mantem-em-829-do-pib-em-setembro-maior-nivel-desde-2021-mostra-bc.html) (3) | 29/10/2026 |
@@ -754,13 +746,13 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | Primário do setor público consolidado | Déficit de R$ 5,5 bi em set; **déficit de R$ 94,3 bi de jan a set (0,93% do PIB)** | BCB (1), via [Folha PE](https://www.folhape.com.br/economia/divida-publica-fica-em-829-do-pib-e-deficit-soma-r-55-bilhoes/521414/) (3) | 29/10/2026 |
 | Primário do Governo Central | Superávit de R$ 4,8 bi em set; **déficit de R$ 90,2 bi de jan a set**; R$ 49,5 bi em 12 meses (0,38% do PIB); previsão do governo para 2026 de −R$ 67,3 bi já descontadas as exclusões da meta **[CONFIRMAR no RTN]** | Tesouro (1), via [Jornal do Comércio](https://www.jornaldocomercio.com/economia/2026/10/1268689-governo-central-tem-superavit-primario-de-rs-4839-bi-em-setembro.html) (3) | 29/10/2026 |
 
-### Emprego
+#### Emprego
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Desocupação (PNAD) | **5,2%** no trimestre jul–set/26, menor da série para o período (2012); 5,6 mi desocupados; 103,6 mi ocupados (recorde); **informalidade de 37,5%** | IBGE/PNAD (1), via [Agência Gov](https://agenciagov.ebc.com.br/noticias/202610/taxa-de-desemprego-tem-queda-e-alcanca-menor-resultado-para-setembro-em-14-anos) (3) | 30/10/2026; próxima em 27/11 |
 | Leitura honesta | O desemprego **está baixo**, e a narrativa do "desemprego recorde com Lula" não se sustenta. A crítica que fica de pé é a informalidade, mais o juro e a dívida que comprometem a renda de quem está empregado | | |
 
-### Endividamento das famílias
+#### Endividamento das famílias
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Peic/CNC: famílias com dívida | **81,6%** (out/26), +2,1 p.p. em 12 meses | CNC/Peic (2), via [Paraíba Business](https://paraibabusiness.com.br/endividamento-recua-a-816-e-inadimplencia-cai-a-293-em-outubro-diz-cnc/) (3) | divulgado em 05/11/2026 |
@@ -769,7 +761,7 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | BC: comprometimento da renda com o serviço da dívida | **28,99%** (ago/26), recorde (a série começa em 2005; algumas reportagens dizem 2011, ver nota no BCB) | BCB, SGS 29034 (1) | ago/2026 |
 | BC: inadimplência da pessoa física | Total de 5,99% (set/26); recursos livres PF: **8,09%** | BCB, SGS 21084 e 21112 (1) **[CONFIRMAR o rótulo exato das séries no SGS]** | set/2026 |
 
-### Imposto de Renda: isenção até R$ 5 mil
+#### Imposto de Renda: isenção até R$ 5 mil
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Lei | **Lei 15.270, de 26/11/2025** (sancionada e publicada) | [Câmara, texto original](https://www2.camara.leg.br/legin/fed/lei/2025/lei-15270-26-novembro-2025-798354-publicacaooriginal-177117-pl.html); [Senado](https://legis.senado.leg.br/norma/41758136/publicacao/41762089) (1) | 26/11/2025 |
@@ -778,21 +770,21 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | Renúncia estimada | Cerca de R$ 28 bi por ano (Receita) | [Agência Brasil](https://agenciabrasil.ebc.com.br/economia/noticia/2026-07/receita-preve-arrecadar-r-172-bilhoes-com-ir-sobre-dividendos) (3) | jul/2026 |
 | A compensação frustrou | A Receita **reduziu de R$ 28 bi para R$ 17,2 bi** a previsão de arrecadação com dividendos em 2026, uma frustração de R$ 10,8 bi. Até julho entraram R$ 3,145 bi | Receita (1), via [Agência Brasil, 24/07/2026](https://agenciabrasil.ebc.com.br/economia/noticia/2026-07/receita-preve-arrecadar-r-172-bilhoes-com-ir-sobre-dividendos) e [DGABC](https://www.dgabc.com.br/Noticia/4343349/receita-arrecadacao-com-ir-de-lucros-e-dividendos-ate-julho-e-de-rs-3-145-bi) (3) | jul/2026 |
 
-### Carga tributária e arrecadação
+#### Carga tributária e arrecadação
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Carga tributária bruta de 2025 | **32,40% do PIB**, recorde da série (2010+, metodologia revisada); 2024: 32,22%. União: 21,60% | Tesouro, Boletim de Estimativa da CTB 2025 (1), via [Folha PE](https://www.folhape.com.br/economia/carga-tributaria-do-brasil-sobe-para-324-do-pib-em-2025-maior-valor/479905/) (3). O dado definitivo da Receita sai no fim de 2026 | 10/04/2026 |
 | Arrecadação federal | R$ 239,4 bi em set/26 (recorde para o mês); **R$ 2,38 tri de jan a set, alta real de 6,97%** | Receita (1), via [Gazeta do Povo](https://www.gazetadopovo.com.br/economia/arrecadacao-governo-lula-239-bi-bate-novo-recorde-setembro/) (3) **[CONFIRMAR no relatório da RFB]** | out/2026 |
 | Comparação regional | Brasil teve a **maior carga da América Latina e Caribe em 2023: 32,0%**, contra média de 21,3% na região e 33,9% na OCDE | [OCDE, Estadísticas Tributarias ALC 2025](https://www.oecd.org/es/publications/estadisticas-tributarias-en-america-latina-y-el-caribe-2025_f0bee3b4-es/full-report/executive-summary_f1c3feaa) (1) | mai/2025 |
 
-### IOF
+#### IOF
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Alta de 2025 | Decretos 12.466 e 12.467/2025, depois **12.499/2025**: câmbio (cartão internacional, espécie, remessa) unificado em **3,5%**; crédito PJ subiu; VGBL passou a pagar | [Decreto 12.466 (Câmara)](https://www2.camara.leg.br/legin/fed/decret/2025/decreto-12466-22-maio-2025-797486-normaatualizada-pe.doc) (1) | mai–jun/2025 |
 | Congresso x STF | O Congresso derrubou os decretos, e Moraes (ADC 96, liminar de jul/2025) **restabeleceu o 12.499, exceto o "risco sacado"** | [B3 Bora Investir](https://borainvestir.b3.com.br/noticias/como-fica-o-iof-para-compra-de-dolar-emprestimos-e-vgbl-apos-decisao-de-moraes/) (3) | jul/2025 |
 | Situação em 2026 | Guia de set/2026 ainda aponta 3,5% no cartão internacional **[CONFIRMAR o mérito da ADC 96 e se houve decreto novo em 2026]**. O IOF ajudou a puxar a carga recorde de 2025 (Tesouro) | [ArqFinance](https://arqfinance.com/articles/aliquota-iof-compras-exterior-cartao) (3) | set/2026 |
 
-### Pix: imposto, fiscalização e boato
+#### Pix: imposto, fiscalização e boato
 | Dado | Valor | Fonte |
 |---|---|---|
 | Não existe imposto sobre o Pix | A Receita nega e a lei não prevê. A Receita diz que a Constituição não autoriza tributar a mera movimentação financeira | [Receita, FAQ da e-Financeira (gov.br)](https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/e-financeira/perguntas-e-respostas-e-financeira-pdf-final-1.pdf/@@download/file) (1); [Band](https://www.band.com.br/economia/receita-federal-volta-a-negar-taxacao-do-pix-e-alerta-para-golpes) (3) |
@@ -800,7 +792,7 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | O "Pix da Receita" | É a restituição do IRPF paga em lote (*pix receita federal lote 2025*), não cobrança | Receita |
 | Gancho do split payment | Pela reforma tributária (LC 214/2025), o recolhimento automático do IBS e da CBS na liquidação do pagamento, inclusive via Pix, vale **para empresas**, não para transferência entre pessoas. A implementação é gradual a partir de 2027 **[CONFIRMAR o cronograma]** | LC 214/2025 (1) |
 
-### Reforma tributária (IVA dual: CBS e IBS)
+#### Reforma tributária (IVA dual: CBS e IBS)
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Teto legal | Soma das alíquotas de referência de IBS e CBS limitada a **26,5%** (LC 214/2025), com gatilho para rever benefícios | LC 214/2025 (1) | |
@@ -809,12 +801,12 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | Arrecadação prevista | R$ 636 bi com a CBS em 2027 (PLOA 2027) | [Agência Brasil](https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/governo-preve-arrecadar-r-636-bi-com-nova-cbs-em-2027) (3) | ago/2026 |
 | "Maior IVA do mundo" | A Hungria tem IVA padrão de 27%. Com 26,5% a 28%, o Brasil fica **entre os maiores, empatado ou acima da Hungria**. Dizer só "o maior do mundo" depende da alíquota que o Senado fixar **[CONFIRMAR antes de afirmar]** | | |
 
-### Outros impostos novos e aumentos recentes
+#### Outros impostos novos e aumentos recentes
 - **CSLL de fintechs e bets, e corte de benefícios fiscais:** a MP 1.303/2025 caducou. O conteúdo voltou no PL 5.473/2025, aprovado no Senado por 62 a 6 e citado como **LC 224**, com efeitos a partir de abr/2026. Os percentuais divergem entre as fontes: CSLL de fintechs de 15% para 17,5% até 2027 e 20% em 2028? IRRF sobre JCP de 15% para 17,5%? **[CONFIRMAR o texto da LC 224 no Planalto]**. Pontes: [InfoMoney](https://www.infomoney.com.br/politica/senado-resgata-mp-caducada-e-aprova-tributo-maior-para-fintechs-e-jcp-veja-mudancas/), [Migalhas](https://www.migalhas.com.br/quentes/446662/senado-aprova-corte-de-incentivos-fiscais-e-taxacao-de-bets-e-fintechs).
 - **"Taxa das blusinhas"** (imposto de importação de 20% até US$ 50, Lei 14.902/2024), mais o IOF de 2025 e o IR mínimo dos altos rendimentos: entram na lista "impostos criados ou aumentados no governo Lula". O roteiro deve separar o que é **imposto novo**, o que é **aumento de alíquota** e o que é **fim de isenção**.
 - **Imposto sobre herança (ITCMD progressivo) em 2027:** aparece nas buscas, mas não levantei o dado. **[CONFIRMAR]**: tratar em pesquisa separada.
 
-### Crise de crédito no agro e Banco do Brasil
+#### Crise de crédito no agro e Banco do Brasil
 | Dado | Valor | Fonte | Data |
 |---|---|---|---|
 | Lucro do BB no 3T26 | **R$ 1,27 bi ajustado (−66,5% sobre o 3T25; −67,5% sobre o 2T26)**; contábil de R$ 1,216 bi; 9M26: R$ 8,6 bi (−42,4%) | Release do BB no 3T26 (1, em ri.bb.com.br **[baixar o PDF]**), via [Seu Dinheiro](https://seudinheiro.com/2026/empresas/banco-do-brasil-bbas3-lucro-rentabilidade-roe-no-3t26-inadimplencia-ainda-desafia-recuperacao-do-banco-miql/) e [Times Brasil](https://timesbrasil.com.br/empresas-e-negocios/bancos-fintechs/bb-tem-queda-de-665-no-lucro-e-reduz-previsao-para-2026/) (3) | 11/11/2026 |
@@ -824,7 +816,7 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 | Recuperação judicial no agro | 2025 fechou com **quase 2 mil pedidos (recorde da série)**; 3T25: 628; 1T26: 474 (+21,9%); **2T26: 448 (−20,7%)**. O dado do 3T26 ainda não foi encontrado | [Serasa Experian](https://www.serasaexperian.com.br/sala-de-imprensa/agronegocios/recuperacao-judicial-agro-tem-alta-de-22-por-cento-e-acumula-474-pedidos-do-recurso-no-primeiro-trimestre-de-2026-mostram-dados-ineditos-da-serasa-experian/) (2); [Canal Rural, 2T26](https://canalrural.com.br/videos/pedidos-de-recuperacao-judicial-no-agronegocio-caem-20-no-2o-trimestre-de-2026) (3) | 2026 |
 | Leitura | O padrão continua sendo **queda de lucro, não "rombo"**, e o agro está **abaixo** da PF e do cartão em inadimplência. Pelo próprio banco, o problema se concentra em médios e grandes produtores de soja, milho e pecuária no Centro-Oeste. Quem ganha com a narrativa "culpa do agro": o BB (gestão) e quem defende renegociação (FPA) | | |
 
-### FGC e Banco Master (o tema também está em outra frente)
+#### FGC e Banco Master (o tema também está em outra frente)
 - O FGC estimou **R$ 40,6 bi** líquidos de garantias. Até 18/02/2026 já tinha pago **R$ 37,2 bi (92%)** a cerca de 800 mil credores. É o **maior acionamento da história do FGC**. O limite é de **R$ 250 mil por CPF/CNPJ por conglomerado**, com teto de R$ 1 milhão a cada 4 anos. O Will Bank somou mais R$ 6,3 bi. Pontes: [Folha PE](https://www.folhape.com.br/economia/fgc-ja-pagou-r-372-bilhoes-em-garantias-a-credores-do-master-92-do/468313/) e [Times Brasil](https://timesbrasil.com.br/brasil/fgc-ja-pagou-r-37-bilhoes-a-credores-do-banco-master-e-avanca-para-quitar-92-das-garantias/). O balanço final está no site do FGC **[CONFIRMAR]**.
 
 ---
@@ -877,7 +869,7 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 - Paraguai: **ueno bank interveio em 02 ou 03/11/2026**. O FGD cobre **75 salários mínimos (~G. 228 milhões)** e começou adiantando até 40 SM. O BCP diz que **cerca de 97% dos depositantes recuperam tudo** e que 93% já tinham recebido parte até 10/11 ([Meganoticias/AFP, 10/11/2026](https://www.meganoticias.cl/mundo/536062-banco-central-paraguay-devuelve-ahorros-clientes-ueno-bank-10-11-2026.html); [Finanzas Digital](https://finanzasdigital.com/bcp-inicia-devolucion-de-depositos-ueno-bank/)) **[CONFIRMAR no comunicado do BCP]**. Peña renunciou.
 - **É a pauta mais forte e a mais arriscada.** Ela só funciona se mostrar os dois países com o mesmo rigor. A pergunta que conecta os dois casos: quem fiscalizou, quem tinha relação política com o banco e quem paga o fundo garantidor (no fim, o cliente, via spread).
 
-### Comparações rápidas Brasil x Paraguai (conferir antes de pôr na tela)
+#### Comparações rápidas Brasil x Paraguai (conferir antes de pôr na tela)
 | Indicador | Brasil | Paraguai |
 |---|---|---|
 | Juro básico | 13,75% (BCB, 04/11/26) | 5,50% (BCP, 23/10/26) [CONFIRMAR] |
@@ -891,10 +883,8 @@ Pesquisa feita em 21/11/2026. Os sinais de busca vêm de `autocomplete_limpo.md`
 
 Fonte do câmbio paraguaio: [BCP, referencial fluctuante](https://www.bcp.gov.py/webapps/web/cotizacion/referencial-fluctuante), consultado em 21/11/2026.
 
-
 ---
 
-<!-- ARQUIVO: frente4_politica.md -->
 ## Frente 4: Política, STF, Congresso, Eleições (pesquisa de 21/11/2026)
 
 Para José Henrique Naegele (@josehenriquenaegele). Este arquivo complementa `pesquisa-jose-naegele/apuracoes/2026-11-20_master-stf.md` e não repete o que já está lá, só atualiza o que mudou depois de 20/11.
@@ -932,7 +922,7 @@ Fonte: `autocomplete_limpo.md`, com sugestões do Google [G] e do YouTube [Y].
 
 ### B) Situação atual, com fonte, link e data
 
-### B1. Eleições de outubro de 2026 (confirmado)
+#### B1. Eleições de outubro de 2026 (confirmado)
 
 **Presidente:** Lula (PT) foi reeleito no 2º turno, em **25/10/2026**:
 - Lula: **64.256.232 votos (51,79%)**;
@@ -983,7 +973,7 @@ O PT ficou com 4 governos (BA, CE, PI, RN) e o PL com 6 (PR, RJ, RS, RO, RR, SC)
 
 > **Ângulo:** o Executivo fica com o PT e o Congresso fica com a direita mais forte desde a redemocratização. Alcolumbre prometeu a CPMI do Master "na próxima legislatura" (ver B5). Em 2027 dá para cobrar.
 
-### B2. Bolsonaro
+#### B2. Bolsonaro
 
 - **Pena:** 27 anos e 3 meses (AP 2668, trama golpista), em regime fechado.
 - **Onde está:** em prisão domiciliar humanitária desde março de 2026, por decisão de Moraes, que a considerou "razoável, adequada e proporcional". Qualquer visita depende de aval prévio de Moraes.
@@ -997,7 +987,7 @@ O PT ficou com 4 governos (BA, CE, PI, RN) e o PL com 6 (PR, RJ, RS, RO, RR, SC)
   - **Eduardo Bolsonaro:** condenado pela 1ª Turma, por 4 a 0, em 16/06/2026, a **4 anos e 2 meses** em regime semiaberto, por coação no curso do processo. O recurso foi rejeitado. STF: https://noticias.stf.jus.br/postsnoticias/stf-condena-eduardo-bolsonaro-a-4-anos-e-2-meses-de-reclusao-por-tentar-interferir-no-processo-sobre-tentativa-de-golpe/
   - **Flávio Bolsonaro:** no domingo do 2º turno, 25/10, Moraes mandou que ele entregasse os passaportes em 24h e o proibiu de deixar o país, num processo sigiloso sobre suspeita de lavagem de dinheiro e evasão de divisas. Como os passaportes não foram entregues, a PF os cancelou em 27/10. ConJur, 27/10: https://conjur.com.br/2026-out-27/moraes-manda-flavio-entregar-passaporte-e-o-proibe-de-deixar-o-pais/
 
-### B3. Anistia e dosimetria do 8 de janeiro
+#### B3. Anistia e dosimetria do 8 de janeiro
 
 - Não houve anistia. O que foi aprovado é a **Lei da Dosimetria (Lei 15.402/2026)**, que reduz penas:
   - o Congresso derrubou o veto de Lula;
@@ -1011,7 +1001,7 @@ O PT ficou com 4 governos (BA, CE, PI, RN) e o PL com 6 (PR, RJ, RS, RO, RR, SC)
   - "455 condenados podem ter penas reduzidas" **[CONFIRMAR]**: só aparece em veículos regionais.
 - Em junho, a PGR se manifestou **contra** a suspensão da lei **[CONFIRMAR]**.
 
-### B4. Regulação das redes e Marco Civil (art. 19)
+#### B4. Regulação das redes e Marco Civil (art. 19)
 
 - **26/06/2025:** o STF declarou o art. 19 parcialmente inconstitucional, por 8 a 3 (Temas 987 e 533).
 - **17/06/2026:** os embargos foram julgados e a tese ficou **definitiva**:
@@ -1023,7 +1013,7 @@ O PT ficou com 4 governos (BA, CE, PI, RN) e o PL com 6 (PR, RJ, RS, RO, RR, SC)
 - Fontes: Teletime, 17/06/2026: https://teletime.com.br/17/06/2026/stf-conteudos-marco-civil-internet/ · ConJur, 17/06/2026: https://conjur.com.br/2026-jun-17/stf-amplia-responsabilidade-das-plataformas-digitais-e-redefine-aplicacao-do-marco-civil-da-internet/ · ConJur, 24/08/2026 (ajuste da tese): https://conjur.com.br/2026-ago-24/stf-ajusta-tese-sobre-responsabilidade-das-plataformas-por-conteudo-de-terceiros/
 - **Ângulo:** foi o STF, não o Congresso, que reescreveu a regra das redes. Não foi encontrado nenhum projeto de lei aprovado depois disso.
 
-### B5. Caso Master: o que mudou depois de 20/11
+#### B5. Caso Master: o que mudou depois de 20/11
 
 A base está na apuração de 20/11. O que é novo:
 
@@ -1063,7 +1053,7 @@ A base está na apuração de 20/11. O que é novo:
   - Outras fontes (Movimento Econômico, 12/02) dizem que o gabinete admitiu que ele é sócio da Maridt. **Continua [CONFIRMAR].**
   - SBT, 12/02/2026: https://sbtnews.sbt.com.br/noticia/justica/pf-encontra-indicio-de-que-toffoli-recebeu-dinheiro-de-empresa-de-resort-e-pede-ao-stf-para-investigar
 
-### B6. CPIs: o placar de 2026
+#### B6. CPIs: o placar de 2026
 
 | Comissão | Desfecho | Fonte |
 |---|---|---|
@@ -1072,7 +1062,7 @@ A base está na apuração de 20/11. O que é novo:
 | CPMI do Master | **Não foi instalada.** As assinaturas existem desde 03/02/2026. | SBT News, 12/11 (acima) |
 | Câmara | Não foi encontrada nenhuma CPI em funcionamento em nov/2026 **[CONFIRMAR]** no portal da Câmara | — |
 
-### B7. Decisões recentes do STF que mais geraram reação
+#### B7. Decisões recentes do STF que mais geraram reação
 
 1. **Van Hattem (20/11):** Dino votou para receber a denúncia da PGR por calúnia e injúria contra o delegado Fábio Shor. Disse que os fatos "não permitem, ao menos nesta fase processual, reconhecer de plano a incidência da proteção constitucional" (a imunidade). Zanin pediu destaque e o caso foi para sessão presencial. Gazeta do Povo, 20/11: https://www.gazetadopovo.com.br/republica/zanin-paralisa-julgamento-sobre-van-hattem-e-denuncia-sera-analisada-em-sessao-presencial/ (que ele foi eleito senador é **[CONFIRMAR]**).
 2. **Lei da Dosimetria:** 6 meses suspensa por decisão de um ministro (B3).
@@ -1083,7 +1073,7 @@ A base está na apuração de 20/11. O que é novo:
    - Em 10/12/2025, recuou só na exclusividade da PGR; "os demais trechos da liminar" seguem, e o referendo foi para sessão presencial. STF: https://noticias.stf.jus.br/postsnoticias/stf-suspende-parcialmente-decisao-sobre-lei-do-impeachment/
    - Que o quórum de 2/3 do Senado continua valendo é **[CONFIRMAR]** (Migalhas/CNN). Não há notícia de referendo em 2026.
 
-### B8. Moraes e a Lei Magnitsky
+#### B8. Moraes e a Lei Magnitsky
 
 - **Sanção:** Moraes foi sancionado em 30/07/2025, e Viviane em 22/09/2025.
 - **Retirada:** os dois foram **retirados da lista SDN em 12/12/2025**. Migalhas: https://www.migalhas.com.br/quentes/446354/eua-revogam-sancoes-da-lei-magnitsky-contra-moraes-e-esposa
@@ -1096,7 +1086,7 @@ A base está na apuração de 20/11. O que é novo:
 
 ### C) As 8 pautas
 
-### 1. "O procurador que vai decidir sobre 4 ministros está nas mensagens de Vorcaro"
+#### 1. "O procurador que vai decidir sobre 4 ministros está nas mensagens de Vorcaro"
 - **Gancho:** o prazo de 15 dias da PGR vence por volta de 04/12.
 - **Fato documental:**
   - a PGR confirmou a autenticidade da foto de Gonet com Vorcaro em Londres, em abril de 2024;
@@ -1107,7 +1097,7 @@ A base está na apuração de 20/11. O que é novo:
 - **Regra de cuidado:** Gonet nega proximidade; dizer "aparece nas mensagens", nunca "envolvido".
 - **Paraguai:** pelo art. 225 da Constituição, o **Fiscal General del Estado** pode sofrer *juicio político* "por mal desempeño de sus funciones [...] o por delitos comunes". A acusação é da Câmara de Deputados e o julgamento é do Senado, por 2/3. No Brasil, o PGR responde por crime de responsabilidade perante o Senado (CF, art. 52, II), e o pedido de investigação contra ele foi barrado dentro do próprio MPF.
 
-### 2. "Dos 4 ministros, só 1 abriu o próprio relatório"
+#### 2. "Dos 4 ministros, só 1 abriu o próprio relatório"
 - **Gancho:** em 20/11, Mendonça renunciou ao sigilo e Fachin publicou a PET 17.146.
 - **Fato documental:**
   - o ofício de Mendonça ("renuncio expressamente ao sigilo");
@@ -1116,7 +1106,7 @@ A base está na apuração de 20/11. O que é novo:
 - **Regra de cuidado:** não insinuar culpa de quem não abriu. É escolha legal. Mostre o contraste e deixe o público julgar.
 - **Paraguai:** pelo art. 26, a lei não pode restringir a difusão de informação, "sin censura alguna". Não é equivalente direto; use só como pano de fundo.
 
-### 3. "Três CPIs, zero relatório"
+#### 3. "Três CPIs, zero relatório"
 - **Gancho:** em 12/11, Alcolumbre segurou a CPMI do Master pela 2ª vez.
 - **Fato documental:**
   - CPMI do INSS: relatório rejeitado por 19 a 12;
@@ -1128,7 +1118,7 @@ A base está na apuração de 20/11. O que é novo:
   - **Honestidade:** a oposição paraguaia apelidou a CBI de "comisión garrote", controlada pelos colorados contra os rivais de Cartes (Última Hora). As datas da UH estão inconsistentes **[CONFIRMAR]**.
   - O art. 195 também diz que magistrados "en materia jurisdiccional, no podrán ser investigados".
 
-### 4. "Nenhum ministro do STF caiu, nunca. No Paraguai, três"
+#### 4. "Nenhum ministro do STF caiu, nunca. No Paraguai, três"
 - **Gancho:** "alexandre de moraes pode sofrer impeachment" no autocomplete, mais os 4 relatórios na PGR.
 - **Fato documental:**
   - nota da Assessoria do Senado: nunca foi aprovado um pedido de impeachment de ministro do STF. https://www12.senado.leg.br/assessoria-de-imprensa/notas/como-tramita-um-pedido-de-impeachment-contra-ministro-do-stf (isso resolve o [CONFIRMAR #15] da apuração de 20/11);
@@ -1141,7 +1131,7 @@ A base está na apuração de 20/11. O que é novo:
   - as fontes estão na apuração de 20/11.
   - **Honestidade:** a Corte IDH condenou o Paraguai pelas destituições de 2003, "de forma arbitraria". O roteiro tem de dizer isso.
 
-### 5. "O Congresso aprovou, derrubou o veto, e a lei dormiu 6 meses na gaveta de um ministro"
+#### 5. "O Congresso aprovou, derrubou o veto, e a lei dormiu 6 meses na gaveta de um ministro"
 - **Gancho:** o julgamento da Lei da Dosimetria vai de 4 a 15/12.
 - **Fato documental:**
   - Lei 15.402, promulgada em 08/05 e suspensa por Moraes em 09/05;
@@ -1150,7 +1140,7 @@ A base está na apuração de 20/11. O que é novo:
 - **Regra de cuidado:** não é anistia; é redução de pena. Corrigir quem chama de anistia.
 - **Paraguai:** o art. 202 dá ao Congresso a atribuição de "conceder amnistías". No Brasil é igual (CF, art. 48, VIII), mas aqui nem a dosimetria saiu do papel.
 
-### 6. "O Master não tem lado: Lula, Flávio, PT da Bahia e Centrão"
+#### 6. "O Master não tem lado: Lula, Flávio, PT da Bahia e Centrão"
 - **Gancho:** os autocompletes "lula recebeu vorcaro fora da agenda" e "quanto vorcaro deu para o filme do bolsonaro".
 - **Fato documental:**
   - **Lula:** recebeu Vorcaro no Planalto em 04/12/2024, fora da agenda, com Galípolo presente. Metrópoles revelou, UOL confirmou, e Rui Costa defendeu o encontro. SBT: https://sbtnews.sbt.com.br/noticia/politica/saiba-como-foi-o-encontro-fora-da-agenda-de-lula-com-vorcaro-no-fim-de-2024-1
@@ -1159,7 +1149,7 @@ A base está na apuração de 20/11. O que é novo:
 - **Ângulo José:** o escândalo atravessa todo o sistema. Por isso ninguém lá dentro quer CPI.
 - **Paraguai:** sem paralelo direto. Opcional: o caso Cartes, sancionado e depois retirado da lista (B8).
 
-### 7. "Lula reeleito com 51,79%, e o Congresso mais à direita da história"
+#### 7. "Lula reeleito com 51,79%, e o Congresso mais à direita da história"
 - **Gancho:** quase 1 mês da eleição, com a diplomação e a posse à vista.
 - **Fato documental:**
   - TSE: 64,26 mi × 59,83 mi;
@@ -1168,7 +1158,7 @@ A base está na apuração de 20/11. O que é novo:
 - **Sistema que se protege:** o presidente do TSE que proclamou Lula, Nunes Marques, é um dos 4 ministros com relatório na PGR. **Só fato**, sem insinuar nada sobre a apuração.
 - **Paraguai:** pelo art. 229, presidente e vice "durarán cinco años improrrogables [...] No podrán ser reelectos en ningún caso". No Brasil, Lula vai para o **4º mandato**.
 
-### 8. "Imunidade de quem? Deputado vira réu por discurso, ministro fica no sigilo"
+#### 8. "Imunidade de quem? Deputado vira réu por discurso, ministro fica no sigilo"
 - **Gancho:** o voto de Dino contra Van Hattem em 20/11. É o mesmo deputado que recorreu contra Alcolumbre pela CPMI do Master.
 - **Fato documental:**
   - denúncia da PGR por calúnia e injúria contra o delegado Fábio Shor;
@@ -1202,10 +1192,8 @@ A base está na apuração de 20/11. O que é novo:
 14. Designação de Cartes como "significativamente corrupto"; datas da CBI paraguaia (Última Hora).
 15. Pedidos de impeachment contra Moraes: as contagens vão de 41 a 66 conforme a fonte.
 
-
 ---
 
-<!-- ARQUIVO: frente5_ideologia.md -->
 ## Frente 5: temas ideológicos e culturais + "como anda o Brasil"
 Pesquisa para José Henrique Naegele (@josehenriquenaegele), feita em 21/11/2026.
 Base de busca: `autocomplete_limpo.md` (seções citadas entre aspas). Legenda: **[CONFIRMAR]** = fonte única, fonte secundária ou dado que não abri no documento primário.
@@ -1237,14 +1225,14 @@ Volume de autocompletes por seção (as duas coletas somadas): homeschooling 228
 
 ### B) Fatos atuais (fonte, link, data)
 
-### B1. ADPF 442 (descriminalização do aborto até a 12ª semana)
+#### B1. ADPF 442 (descriminalização do aborto até a 12ª semana)
 - **Quem propôs e o que pede:** PSOL, com apoio da Anis, em 2017. Questiona os arts. 124 e 126 do Código Penal. Não mexe nos três casos já previstos (estupro, risco de vida, anencefalia). Fonte: [Gazeta do Povo](https://www.gazetadopovo.com.br/vida-e-cidadania/aborto-adpf-442-entenda-a-acao-barroso-descriminalizacao-stf/).
 - **Placar:** 2 votos a favor da descriminalização, de Rosa Weber (set/2023, como relatora) e de Luís Roberto Barroso (out/2025, antes de se aposentar). Fontes: [Migalhas, 17/10/2025](https://www.migalhas.com.br/quentes/442603/apos-voto-de-barroso-dino-indica-que-aborto-seja-retirado-de-pauta); [Migalhas: Barroso decide votar antes de sair](https://www.migalhas.com.br/quentes/442580/barroso-decide-votar-sobre-aborto-antes-de-deixar-o-stf).
 - **Última movimentação:** em **17/10/2025**, Gilmar Mendes pediu destaque na sessão virtual extraordinária, e o relator Flávio Dino (que herdou a cadeira de Rosa Weber e, portanto, **não vota**) indicou a retirada de pauta. Desde então, **sem data para voltar**. Não achei pauta nem voto novo em 2026. Fonte: [Migalhas, 17/10/2025](https://www.migalhas.com.br/quentes/442603/apos-voto-de-barroso-dino-indica-que-aborto-seja-retirado-de-pauta). **[CONFIRMAR no portal do STF, que estava fora do ar]**
 - **A vaga de Barroso:** Jorge Messias disse na sabatina da CCJ (29/04/2026) que é "totalmente contra o aborto". A CCJ aprovou por 16 a 11, mas o **plenário do Senado rejeitou por 42 a 34**, no mesmo dia. Foi a primeira rejeição de um indicado ao STF desde 1894. Fontes: [Rádio Senado, 29/04/2026](https://www12.senado.leg.br/radio/1/noticia/2026/04/29/ccj-aprova-indicacao-de-jorge-messias-ao-stf); [CNN Brasil: Senado rejeita Messias](https://www.cnnbrasil.com.br/politica/senado-rejeita-messias-e-impoe-derrota-historica-do-governo-lula/); [IstoÉ Dinheiro, 29/04/2026](https://istoedinheiro.com.br/senado-rejeita-indicacao-de-messias-para-o-stf). **[CONFIRMAR: o "desde 1894" é memória, não li na matéria. A frase "totalmente contra o aborto" precisa do vídeo da TV Senado com a minutagem.]** Como o voto de Barroso já foi dado, quem ocupar a vaga também não vota na ADPF 442.
 - **Paraguai:** a Constituição, art. 4, diz que a vida é protegida "en general, desde la concepción". Fonte: [BACN, Constitución Nacional](https://www.bacn.gov.py/leyes-paraguayas/9580/constitucion-nacional).
 
-### B2. Homeschooling
+#### B2. Homeschooling
 - **STF, RE 888815 (Tema 822):** julgado em **12/09/2018** (acórdão no DJe de 21/03/2019). O relator foi Barroso, e o voto vencedor foi de Alexandre de Moraes. O STF decidiu que **a Constituição não proíbe o ensino domiciliar, mas sem lei federal ele não é um direito exigível**. Fontes: [STF, Tema 822](https://portal.stf.jus.br/jurisprudenciarepercussao/tema.asp?num=822); [notícia do STF](https://noticias.stf.jus.br/postsnoticias/stf-nega-recurso-que-pedia-reconhecimento-de-direito-a-ensino-domiciliar/).
 - **Leis estaduais:** o STF manteve inconstitucional a lei de SC que autorizava o ensino domiciliar, porque só a União pode legislar. Fonte: [STF](https://noticias.stf.jus.br/postsnoticias/stf-mantem-inconstitucionalidade-de-lei-de-sc-que-autorizava-ensino-domiciliar/). **[CONFIRMAR a data]**
 - **PL 1338/2022:** de Lincoln Portela, aprovado na Câmara em **19/05/2022**. No Senado, está na Comissão de Educação, com parecer **favorável** da Professora Dorinha (out/2025), pronto para pauta e **sem data**. Houve audiência na CDH em **11/06/2026**. Magno Malta e outros 24 senadores pediram urgência (jun/jul 2026). Fontes: [Senado, PL 1338/2022](https://www25.senado.leg.br/web/atividade/materias/-/materia/153194); [TV Senado, jun/2026](https://www12.senado.leg.br/tv/programas/argumento/2026/06/projeto-sobre-ensino-domiciliar-recebe-pedido-de-urgencia-no-senado-girao-defende-regulamentacao); [Rádio Senado, 02/07/2026](https://www12.senado.leg.br/radio/1/noticia/2026/07/02/oposicao-quer-urgencia-para-votar-ensino-domiciliar). **[CONFIRMAR: o Distrito News diz que Alcolumbre rejeitou a urgência no fim de jun/2026, e a Rádio Senado tratou o pedido como ainda em negociação. Não achei movimentação de nov/2026.]**
@@ -1254,7 +1242,7 @@ Volume de autocompletes por seção (as duas coletas somadas): homeschooling 228
   - **O que pesa contra:** o **art. 76 diz que "la educación escolar básica es obligatoria"**. Não achei lei nem resolução do MEC que regulamente o homeschool no Paraguai, e uma coluna da Última Hora (ago/2026) reclama que o MEC impede os pais de dirigir a educação dos filhos ([UH, 09/08/2026](https://www.ultimahora.com/derechos-de-los-padres-en-educacion)).
   - **Conclusão:** **não afirmar que "o homeschool é protegido por lei no Paraguai"**. O que se sustenta é: "a Constituição põe a família antes do Estado na educação, e no Paraguai não há registro de pais presos por educar em casa" **[CONFIRMAR esta segunda parte: não achei caso, mas a ausência de caso não prova nada]**. Conferir na Lei 1264/1998 (Ley General de Educación).
 
-### B3. Armas: Brasil x Paraguai
+#### B3. Armas: Brasil x Paraguai
 - **Brasil, Decreto 11.615/2023 (vigente):**
   - **Regras para o cidadão comum:** restringiu a posse e o porte. Para defesa pessoal, o limite é de 2 armas e de 50 munições por ano por arma; o porte depende de "efetiva necessidade", a critério da PF; e acabou o porte de trânsito municiado para CACs. Fontes: [texto do decreto, Câmara](https://www2.camara.leg.br/legin/fed/decret/2023/decreto-11615-21-julho-2023-794460-publicacaooriginal-168524-pe.html); [Instituto Igarapé (parte interessada, pró-controle)](https://igarape.org.br/nota-publica-decreto-11-615/). **[CONFIRMAR os números de armas e munições no texto do decreto]**
   - **CACs:** desde **01/07/2025**, o controle dos CACs passou do Exército para a Polícia Federal. Fonte: [Agência Gov, mai/2025](https://agenciagov.ebc.com.br/noticias/202505/exercito-prepara-passagem-do-controle-sobre-cac-para-policia-federal).
@@ -1268,7 +1256,7 @@ Volume de autocompletes por seção (as duas coletas somadas): homeschooling 228
   - **Mudanças em discussão (2026):** há proposta para flexibilizar e digitalizar os trâmites ([Hoy, 26/08/2026](https://www.hoy.com.py/nacionales/2026/08/26/buscan-flexibilizar-y-digitalizar-los-tramites-de-la-ley-de-armas)). **[CONFIRMAR o status]**
   - **Cuidado:** a UH diz que 41% das armas importadas em 2022–2023 foram para o mercado negro ([UH, 15/07/2026](https://www.ultimahora.com/el-41-de-las-armas-importadas-en-paraguay-estan-en-el-mercado-negro)). O dado será usado contra o argumento.
 
-### B4. Ideologia de gênero nas escolas: STF x MEC do Paraguai
+#### B4. Ideologia de gênero nas escolas: STF x MEC do Paraguai
 - **STF, ADPF 457 (Novo Gama/GO):** em **27/04/2020**, por unanimidade, derrubou a Lei municipal 1.516/2015, que proibia material com "ideologia de gênero". Os fundamentos foram a competência da União, a igualdade e a proibição de censura. Fonte: [STF](https://noticias.stf.jus.br/postsnoticias/lei-municipal-que-proibe-ensino-sobre-questoes-de-genero-e-inconstitucional/).
 - **STF, ADI 7019 (RO):** em **10/02/2023**, derrubou a lei que proibia a linguagem neutra. Depois caíram as do Amazonas (Dino, 2024) e a de Betim/MG (ADPF 1153, mai/2026). Fontes: [STF, Rondônia](https://noticias.stf.jus.br/?p=57426); [STF, Amazonas](https://noticias.stf.jus.br/?p=91760).
 - **STF, ADI 7847 (ES), o mais forte para "direito dos pais":** na sessão virtual encerrada em **11/05/2026**, o STF derrubou por **8 a 2** a **Lei estadual 12.479/2025**, que permitia aos pais **vetar a participação dos filhos** em aulas sobre gênero e sexualidade. A relatora foi Cármen Lúcia. André Mendonça divergiu. Fontes: [STF](https://noticias.stf.jus.br/postsnoticias/stf-invalida-lei-do-es-que-permitia-a-pais-vetar-filhos-em-aulas-sobre-genero-e-sexualidade/); [Agência Brasil, mai/2026](https://agenciabrasil.ebc.com.br/justica/noticia/2026-05/stf-maioria-e-contra-lei-que-permite-pais-vetarem-aulas-sobre-genero). **[CONFIRMAR o placar: só 9 votos aparecem, e o segundo voto divergente não está identificado]**. O mesmo entendimento foi aplicado à lei do Maranhão (Lei 12.410/2024), com maioria formada até a vista de Nunes Marques ([STF](https://noticias.stf.jus.br/postsnoticias/stf-invalida-lei-do-maranhao-que-permitia-aos-pais-vetar-participacao-dos-filhos-em-aulas-sobre-genero-e-sexualidade/)). **[CONFIRMAR o resultado final]**
@@ -1276,7 +1264,7 @@ Volume de autocompletes por seção (as duas coletas somadas): homeschooling 228
 - **Novidade, Paraguai, Res. MEC 1803/2025:** segundo a Última Hora, ela "suprime la palabra género en todos los materiales educativos", como ampliação da 29.664. Fonte: [Última Hora, "La palabra género", ago/2026](https://www.ultimahora.com/la-palabra-genero). **[CONFIRMAR: fonte única, e a UH é hostil. Achar o texto da resolução no MEC PY.]**
 - **Contraste-chave:** no Brasil, o STF diz que **nem o pai nem o município** podem barrar o tema; no Paraguai, **o próprio Ministério da Educação** o barra.
 
-### B5. Violência: homicídios por 100 mil
+#### B5. Violência: homicídios por 100 mil
 | | Brasil | Paraguai |
 |---|---|---|
 | 2025, dado mais recente | **MVI 19,1/100 mil** (40.775 mortes); **homicídio doloso 15,4/100 mil** (32,9 mil). Fonte: [20º Anuário FBSP, 23/07/2026, via JB](https://www.jb.com.br/brasil/2026/07/1060384-brasil-tem-menor-taxa-de-mortes-violentas-intencionais-desde-2012.html) e [InfoMoney](https://www.infomoney.com.br/?p=3422340) | **6,1/100 mil** (391 homicídios, contra 477 em 2024), com base na Polícia Nacional e no INE. Fonte: [InSight Crime, mar/2026](https://insightcrime.org/es/noticias/balance-insight-crime-homicidios-2025/), via [La Nación PY, 03/06/2026](https://www.lanacion.com.py/politica/2026/06/03/paraguay-entre-los-tres-paises-de-la-region-con-menor-tasa-de-homicidios-en-2025/) |
@@ -1286,13 +1274,13 @@ Volume de autocompletes por seção (as duas coletas somadas): homeschooling 228
 - **Paraguai: falta o dado oficial.** **[CONFIRMAR: não achei o número oficial de 2025 publicado pelo Ministerio del Interior. O que existe é a InSight Crime, que usa a Polícia Nacional.]** Também há crime organizado na fronteira: em jul/2026, Peña militarizou Itapúa, Misiones e Ñeembucú pelo Decreto 1.767 ([UH, 17/07/2026](https://www.ultimahora.com/pena-amplia-cobertura-militar-en-itapua-misiones-y-neembucu-ante-expansion-del-crimen-organizado)). Não esconder isso.
 - **Metodologia:** a MVI do FBSP inclui latrocínio, lesão seguida de morte e mortes por intervenção policial. A taxa da InSight Crime para o Paraguai é de homicídios.
 
-### B6. Emigração de brasileiros (Itamaraty)
+#### B6. Emigração de brasileiros (Itamaraty)
 - **Total no exterior:** cerca de **5,29 milhões** em 2025, recorde, com 110 mil a mais que em 2024.
 - **No Paraguai:** cerca de **270 mil** em 2025, a **3ª maior comunidade**, atrás de EUA e Portugal. Eram 263,2 mil em 2023. Ciudad del Este tem cerca de 105 mil.
 - **Fontes:** Relatório Consular Anual do Itamaraty, citado por [InvestNews](https://investnews.com.br/economia/brasileiros-no-paraguai/), [Portal BeNews](https://portalbenews.com.br/total-de-brasileiros-no-exterior-volta-a-crescer-e-atinge-53-milhoes-novo-recorde/) e [Diário de Pernambuco (dado de 2023)](https://www.diariodepernambuco.com.br/noticia/brasil/2024/07/numero-de-brasileiros-no-exterior-sobe-e-atinge-4-9-milhoes-em-2023.html). **[CONFIRMAR no gov.br/mre: não abri o relatório original.]**
 - **Ressalva do próprio Itamaraty:** é **estimativa**, porque a matrícula consular é voluntária. Há também um **desmentido do Comprova**: "não há evidências de fuga em massa para o Paraguai" ([SBT News/Comprova](https://sbtnews.sbt.com.br/noticia/comprova/nao-ha-evidencias-de-que-brasileiros-estariam-fugindo-em-massa-para-o-paraguai)). Usar o número sem exagero: é crescimento constante, não "êxodo".
 
-### B7. Liberdade de expressão (casos recentes)
+#### B7. Liberdade de expressão (casos recentes)
 - **Marco Civil, art. 19:** em **26/06/2025**, o STF declarou o artigo parcialmente inconstitucional, e as plataformas passam a responder por conteúdo de terceiros mesmo sem ordem judicial em vários casos. Nos crimes contra a honra continua sendo exigida ordem judicial. Placar: 8 a 3. Fontes: [STF](https://noticias.stf.jus.br/?p=98258); [Agência Brasil, jun/2025](https://agenciabrasil.ebc.com.br/justica/noticia/2025-06/stf-decide-que-redes-devem-ser-responsabilizadas-por-conteudos-ilegais).
   - **Embargos (jun/2026):** decisão unânime. O novo regime vale para fatos posteriores a jun/2025, as plataformas têm 60 dias para se adaptar e conteúdo idêntico a um já julgado ofensivo deve ser removido sem nova ordem. Fontes: [Folha PE](https://www.folhape.com.br/politica/stf-aprova-ajustes-em-tese-sobre-marco-civil-da-internet-e-define/494742/); [Informativo STF](https://www.stf.jus.br/arquivo/informativo/documento/informativo1222.htm). **[CONFIRMAR a data exata dos embargos]**
 - **RE 662055 (fev/2026):** campanhas sociais em defesa de direitos fundamentais estão protegidas, e só há responsabilização civil com má-fé comprovada. Fonte: [STF](https://noticias.stf.jus.br/postsnoticias/campanhas-sociais-em-defesa-de-direitos-fundamentais-estao-protegidas-pela-liberdade-de-expressao-decide-stf/).

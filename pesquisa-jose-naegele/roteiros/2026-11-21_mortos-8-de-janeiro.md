@@ -25,7 +25,7 @@ Não precisa dizer que alguém matou alguém. Basta ler os autos. Quem segura um
 
 Houve vandalismo naquele dia? Houve. Está filmado, e quem quebrou tem que pagar. Mas pagar na medida. O Robinho pegou nove anos por estupro coletivo. A Débora, do batom, pegou quatorze.
 
-Aqui no Paraguai, quem ajudou a incendiar o Congresso em dois mil e dezessete pegou três anos. Aí no Brasil, a pena virou sentença de morte para quem não aguentou esperar.
+Aqui no Paraguai, quem ajudou a incendiar o Congresso em dois mil e dezessete pegou três anos. Aí no Brasil, para alguns, a espera virou sentença de morte.
 
 Entre quatro e quinze de dezembro, o Supremo decide se vale a lei que reduz essas penas. O relator é o mesmo.
 

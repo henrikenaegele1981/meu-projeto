@@ -39,7 +39,8 @@ Seis frentes de pesquisa, cerca de 28 mil palavras, mais 3 planilhas.
 | **01/09/2023** | **A PGR (gestão Aras) dá parecer pela soltura**: "não mais se justifica a segregação cautelar" | F2, F4 |
 | **20/11/2023** | **Morre na Papuda, 80 dias depois, sem decisão de Moraes.** Mal súbito no banho de sol, óbito às 10h58. O laudo do IML não foi divulgado | F2 |
 | 22–24/11/2023 | Moraes solta 8 réus que estavam na mesma situação | F2, F4 |
-| 21/11/2023 | Nikolas, no plenário: "foi morto pela negligência jurídica". Foi um discurso depois da morte, não um pedido a Moraes antes dela | F2 |
+| 21/11/2023 | Nikolas, no plenário: "foi morto pela negligência jurídica". Foi um discurso depois da morte | F2 |
+| 08/09/2026 (revelado) | **Nikolas conta no "Pânico Jovem Pan" que conversou pessoalmente com Moraes duas vezes.** Numa delas, intercedeu por "uma mãe atípica de Minas Gerais em situação de extrema vulnerabilidade, que foi presa nas manifestações de 8 de Janeiro". Falas literais: "Depois dos 10 minutos que eu conversei com ele a respeito disso…"; "Você não é Deus, você não é semideus, você não é um anjo, você é igual eu." **A matéria não diz quando foram as conversas, nem o nome ou a idade da mulher, nem o resultado. Não cita o Clezão.** Fonte: Região Noroeste/Guiame, 09/09/2026: https://regiaonoroeste.com/video-nikolas-ferreira-revela-que-pregou-a-alexandre-de-moraes-para-onde-vai-sua-alma/ (a Gospel Mais publicou a mesma notícia, mas o site bloqueou a leitura). [CONFIRMAR no vídeo do programa: data das conversas, quem era a mulher (o Henrike lembra de "uma velhinha"; a matéria fala em "mãe atípica") e o que Moraes decidiu] | Pânico JP |
 | mai/2024 | Toffoli arquiva a queixa-crime contra Moraes | F2, F4 |
 | hoje | A apuração da morte (Pet 12.057) segue em sigilo, sem acesso da família | F2 |
 
@@ -139,6 +140,7 @@ Seis frentes de pesquisa, cerca de 28 mil palavras, mais 3 planilhas.
 
 ## 10. ⚠️ CONFIRMAR antes de gravar
 1. O laudo do IML do Clezão e a íntegra do parecer da PGR.
+10. A conversa de Nikolas com Moraes (Pânico Jovem Pan, 08/09/2026): data, nome e idade da mulher, e o resultado. Assistir ao trecho original.
 2. A causa da morte de Arnaldo Back e a data exata (11 ou 12/11).
 3. O balanço do STF de 19/11/2026: 1.535 responsabilizados e 200 presos.
 4. A lista de 8 mortos da Asfav.

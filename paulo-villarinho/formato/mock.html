@@ -1,0 +1,50 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1080px;height:1920px;background:#F3EEE3;font-family:Inter,sans-serif;overflow:hidden}
+canvas{position:absolute;inset:0}
+.k{position:absolute;left:70px;top:262px;font:600 26px "DejaVu Sans Mono",monospace;letter-spacing:3px;color:#1B6E45}
+.t{position:absolute;left:70px;top:302px;width:940px;font-weight:900;font-size:64px;line-height:1.05;color:#14202B;letter-spacing:-1.5px}
+.board{position:absolute;left:70px;top:470px;display:flex;gap:8px;align-items:center}
+.board .lbl{font:700 26px "DejaVu Sans Mono",monospace;color:#14202B;margin-right:14px}
+.f{width:74px;height:104px;background:#15191E;border-radius:8px;color:#F5C542;font:800 76px Inter;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 6px 0 #0006}
+.f:after{content:"";position:absolute;left:0;right:0;top:51px;height:2px;background:#000}
+.f.s{width:40px;background:none;box-shadow:none;color:#14202B}.f.s:after{display:none}
+.src{position:absolute;left:70px;top:588px;font:20px "DejaVu Sans Mono",monospace;color:#6b6457}
+.cap{position:absolute;left:70px;right:180px;top:1330px;font-weight:800;font-size:46px;color:#14202B;line-height:1.15}
+.cap b{background:#F5C542;padding:0 6px}
+.tag{position:absolute;font:700 22px "DejaVu Sans Mono",monospace;color:#fff;background:#C0392B;padding:6px 10px;border-radius:4px}
+</style></head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div class="k">MAPA DO DÓLAR · @OPAULOVILLARINHO</div>
+<div class="t">Cada pico do dólar tem um endereço.</div>
+<div class="board"><span class="lbl">USD/BRL</span><div class="f">5</div><div class="f s">,</div><div class="f">8</div><div class="f">8</div><div class="f">8</div><div class="f">9</div></div>
+<div class="src">DÓLAR COMERCIAL · BCB/SGS 1 · 19/11/2026</div>
+<div class="tag" style="left:745px;top:655px">26/10 · ELEIÇÃO</div>
+<div class="cap">O gráfico subiu aqui… e o motivo tinha <b>endereço</b>: Brasília.</div>
+<script src="node_modules/d3/dist/d3.min.js"></script><script src="node_modules/topojson-client/dist/topojson-client.min.js"></script><script src="data.js"></script><script src="ptax.js"></script>
+<script>
+const ctx=document.getElementById('c').getContext('2d');
+// paper texture
+for(let i=0;i<9000;i++){ctx.fillStyle=`rgba(120,100,70,${Math.random()*.05})`;ctx.fillRect(Math.random()*1080,Math.random()*1920,2,2);}
+// chart
+const D=PTAX.map(d=>({t:d3.timeParse('%d/%m/%Y')(d.data),v:+d.valor}));
+const x=d3.scaleTime().domain(d3.extent(D,d=>d.t)).range([70,1010]);
+const y=d3.scaleLinear().domain([4.8,6.0]).range([1000,640]);
+ctx.strokeStyle='rgba(20,32,43,.12)';ctx.lineWidth=1;
+for(const v of [5.0,5.4,5.8]){ctx.beginPath();ctx.moveTo(70,y(v));ctx.lineTo(1010,y(v));ctx.stroke();ctx.fillStyle='#6b6457';ctx.font='20px DejaVu Sans Mono';ctx.fillText('R$ '+v.toFixed(2).replace('.',','),70,y(v)-6);}
+ctx.beginPath();D.forEach((d,i)=>i?ctx.lineTo(x(d.t),y(d.v)):ctx.moveTo(x(d.t),y(d.v)));ctx.strokeStyle='#1B6E45';ctx.lineWidth=6;ctx.lineJoin='round';ctx.stroke();
+const ev=D.find(d=>d3.timeFormat('%d/%m')(d.t)==='26/10')||D[D.length-20];
+ctx.beginPath();ctx.arc(x(ev.t),y(ev.v),14,0,7);ctx.fillStyle='#C0392B';ctx.fill();
+// map (light paper)
+const w=topojson.feature(WORLD,WORLD.objects.countries);
+const br=w.features.find(f=>f.id==='076');
+const proj=d3.geoMercator().center([-52,-14]).scale(1050).translate([560,1180]);
+const path=d3.geoPath(proj,ctx);
+ctx.save();ctx.beginPath();ctx.rect(40,1040,1000,300);ctx.clip();
+ctx.beginPath();path(w);ctx.fillStyle='#E4DCCB';ctx.fill();ctx.strokeStyle='#B9AE97';ctx.lineWidth=1.2;ctx.stroke();
+ctx.beginPath();path(br);ctx.fillStyle='#CFE3D4';ctx.fill();ctx.strokeStyle='#1B6E45';ctx.lineWidth=3;ctx.stroke();ctx.restore();
+const bsb=proj([-47.88,-15.79]);
+// string from chart to pin
+ctx.beginPath();ctx.moveTo(x(ev.t),y(ev.v));ctx.bezierCurveTo(x(ev.t),1050,bsb[0]+120,1050,bsb[0],bsb[1]);ctx.strokeStyle='#C0392B';ctx.lineWidth=3;ctx.setLineDash([10,8]);ctx.stroke();ctx.setLineDash([]);
+ctx.beginPath();ctx.arc(bsb[0],bsb[1],16,0,7);ctx.fillStyle='#C0392B';ctx.fill();ctx.lineWidth=4;ctx.strokeStyle='#fff';ctx.stroke();
+ctx.font='700 26px DejaVu Sans Mono';ctx.fillStyle='#14202B';ctx.fillText('BRASÍLIA',bsb[0]+26,bsb[1]+8);
+</script></body></html>

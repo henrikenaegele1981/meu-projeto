@@ -75,7 +75,16 @@ Referência de formato do cliente: reel Df2S46eHCEC [COMPLETAR com transcrição
 ### Texto para locução (ElevenLabs ou voz dele)
 Números e datas por extenso, frases curtas, uma ideia por frase, pausa marcada com quebra de linha.
 
-### Visual
+### Formato proposto: "Gráfico-Mapa" (aguardando aprovação do Henrike)
+Ver `paulo-villarinho/formato/formato-mapa-paulo.md`.
+- O painel split-flap gira até a cotação do dia.
+- A linha real do dólar (BCB/SGS 1) se desenha na tela.
+- Cada pico puxa um barbante vermelho até o lugar que causou o movimento, num mapa claro de papel.
+- Frase-assinatura: "Todo pico do dólar tem um endereço."
+- **Não usar** o globo noturno (estilo do José), os cards com emoji nem o HUD (estilo do Henrike).
+- **Voz:** em ritmo natural, sem cortar pausas. Se a voz soltar vícios, gerar outra tomada em vez de cortar.
+
+### Visual (versão do vídeo 1, globo noturno: só como teste)
 - Fundo: globo noturno ou mapa escuro; rota animada entre os pontos; pins pulsando.
 - **Paleta sugerida:** verde-dólar (#1FAE5B) e dourado (#E0B341) sobre azul-noite (#0B1622); vermelho só para queda/perigo. [Trocar pela identidade do Paulo quando houver.]
 - Kicker fixo no topo: "MAPA DO DÓLAR · VILLAR ACADEMY".

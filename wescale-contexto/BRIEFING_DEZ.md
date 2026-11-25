@@ -24,7 +24,7 @@ Fazer os posts das 4 contas de **01/12 a 18/12/2026**, com entrega até **doming
 - **Lifestyle:** segue como já está.
 
 ## NADIM
-- **História de Founder (formato Twitter):** está indo muito bem. Agora vamos **alternar um founder gringo grande com um brasileiro** (ex.: Jeff Bezos, depois Jorge Fragulis).
+- **História de Founder (formato Twitter):** está indo muito bem. Agora vamos alternar founder brasileiro e gringo, **com predominância de brasileiros**. Em dezembro: 01/12 brasileiro, 08/12 gringo, 15/12 brasileiro (ex. de gringo: Jeff Bezos; de brasileiro: Jorge Fragulis).
   - **Objetivo com os brasileiros: collab.** O co-post coloca o Nadim na bolha do outro e dá autoridade.
   - Para o brasileiro querer fazer o co-post: pesquisar tudo sobre ele e trazer as histórias **menos divulgadas e mais interessantes**, numa engenharia reversa bem fechada. Não expor o que ele não conta por conta própria.
 - **Lições:** puxar histórias dos podcasts (transcrições em `wescale-contexto/transcricoes/`).

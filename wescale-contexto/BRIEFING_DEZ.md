@@ -1,6 +1,6 @@
-# Briefing — roteiros We Scale até 18/01/2027 (passado pelo Henrike em 25/11/2026)
+# Briefing — roteiros We Scale de 01/12 a 18/12/2026 (passado pelo Henrike em 25/11/2026)
 
-Os quatro perfis têm conteúdo programado até **18 de janeiro**. Vamos preencher as planilhas uma a uma.
+Fazer os posts das 4 contas de **01/12 a 18/12/2026**, com entrega até **domingo, 29/11**. São 36 posts: Nadim 8, Fred 8, Léo 10, We Scale 10. Começamos pelo Nadim (Case de Founder).
 
 ## Planilhas (versões atualizadas)
 - **Nadim:** https://docs.google.com/spreadsheets/d/14ALEjpPqxXzit-jNIuLB4toIBW1-kXIv0fP2PN9p3Qw/edit?gid=1197109519 (o ID tem "I" maiúsculo, não "l")
@@ -11,7 +11,7 @@ Os quatro perfis têm conteúdo programado até **18 de janeiro**. Vamos preench
 ## FRED
 - **Carrossel de fundo preto:** é o carrossel que ele já vem postando no Instagram, com tom filosófico e religioso e pegada aristotélica. Olhar o @freddeoliveira antes de escrever. O Breno vai mandar a base do Fred.
 - **Notícias:** o Breno vai mandar fontes de business. Por enquanto: The Business (revista do The News), Exame, InfoMoney e NeoFeed (o Henrike gosta muito deste).
-  - **A notícia não pode ser "timing push".** Ela tem que segurar até janeiro: o fato precisa ser forte e o fundamento por trás dele tem que se sustentar. Pode ser uma mudança de comportamento do consumidor ou um insight de negócio que vale mais do que a própria notícia.
+  - **A notícia não pode ser "timing push".** Ela tem que segurar semanas: o fato precisa ser forte e o fundamento por trás dele tem que se sustentar. Pode ser uma mudança de comportamento do consumidor ou um insight de negócio que vale mais do que a própria notícia.
   - Exemplo do que **não** serve: "o CEO da NVIDIA foi mandado embora".
   - Exemplo do que serve: o post da Canva.
 - **Lifestyle:** religião, leitura e filosofia. Autores citados: Santo Agostinho, São Josemaría Escrivá e Sertillanges (*A Vida Intelectual*).

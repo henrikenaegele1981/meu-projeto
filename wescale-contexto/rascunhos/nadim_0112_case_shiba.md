@@ -1,137 +1,119 @@
-# Nadim · 01/12 · CASE DE FUNDADOR · Robinson Shiba (China in Box) · v2 (10 cards)
+POST · Nadim Farid (@nadimfarid) · 01/12 (terça) · 08h
+CASE DE FUNDADOR · Carrossel estilo Twitter, fundo preto · Robinson Shiba (China in Box)
 
-Molde: carrossel do Georgios Frangulis (24/11). Arte pronta em `C:\MeuEstudio\meu-projeto-meu-estudio\wescale\nadim\0112-shiba\render\` (card01.png a card10.png).
-Regra desta versão: o protagonista é o Shiba. O Nadim aparece só numa frase, no card 9.
+ATENÇÃO: as artes já estão prontas nesta pasta, na ordem (01.png a 10.png), em 1080×1350 (4:5). As fotos originais de cada card estão na subpasta "fotos". Este documento traz o texto de cada card, a foto usada, a legenda e as fontes.
 
-## GANCHO DO CARD 1 — opções
+REFERÊNCIA DE FORMATO: https://www.instagram.com/p/DfLIysjn9Qr/ (mesmo molde do carrossel do Georgios Frangulis, 24/11)
 
-**Contraintuitivo**
-1. ⭐ Os clientes ligavam perguntando se aquela loja de comida chinesa era uma franquia americana. O dono dizia que sim. Ele nem sabia o que era franquia. *(em uso)*
-2. Ele vendeu mais de 70 franquias antes de saber o que era um indicador.
-3. O primeiro telefonema da China in Box não foi um pedido de yakissoba. Foi alguém querendo comprar um box de banheiro.
-
-**Curiosidade**
-4. Um estudante foi assaltado nos Estados Unidos. Do prejuízo saiu uma rede com mais de 150 restaurantes.
-5. Por que a China in Box nunca teve dragão nem lanterna vermelha na marca?
-
-**Número**
-6. 35 franquias vendidas numa única feira por alguém que tinha acabado de descobrir o que era franquia.
-7. 70 lojas em três anos. E nenhum indicador.
-
-**Contraste**
-8. O pai vendeu o apartamento por um terço do preço. O filho transformou o dinheiro na maior rede de comida chinesa do país.
-9. Ele abria loja atrás de loja. Quem carregava os problemas era a esposa.
-
-**Opinião forte**
-10. O franqueado mais perigoso não é o que reclama. É o que para de reclamar.
-11. Ele achava que crescer era abrir loja. A conta chegou em 1997.
-
-**Emoção**
-12. Ele perdeu a fala em 2019. Hoje usa um aparelho com o timbre da própria voz para ensinar o que aprendeu sobre franquia.
-
----
-
-## CARROSSEL
-
-CASE DE FUNDADOR | Carrossel estilo Twitter — Robinson Shiba (China in Box)
-Formato tweet do Nadim Farid @nadimfarid, fundo preto.
+━━━━━━━━━━ CARDS ━━━━━━━━━━
 
 CARD 1
-
-**Os clientes ligavam perguntando se aquela loja de comida chinesa era uma franquia americana.**
-O dono dizia que sim, e que ele era o representante no Brasil.
-**Ele nem sabia o que era franquia. Pouco tempo depois, vendeu 35 numa única feira.**
-
-(Foto dupla: fachada da China in Box à esquerda (Eduardo P / Wikimedia, CC BY-SA 3.0) × Shiba de braços cruzados à direita (reprodução / WebDocs).)
+Texto (vai na arte):
+Esse dentista de Maringá foi assaltado nos Estados Unidos e perdeu todo o dinheiro que o pai tinha dado.
+Do prejuízo, saiu a maior rede de comida chinesa do Brasil. E, anos depois, ele virou tubarão do Shark Tank.
+Mas a parte que quase ninguém conhece vem depois das primeiras 70 lojas.  (em negrito)
+Foto: DUAS FOTOS lado a lado. Esquerda: gg_gq_esq.jpg, Shiba no Shark Tank Brasil. Reprodução / GQ (matéria de 16/05/2021). Direita: cib_loja_express.jpg, Loja China in Box Express (foto enviada pelo Henrike).
 
 CARD 2
+Texto (vai na arte):
+O nome dele é Robinson Shiba. A viagem era para durar dois meses: ele estava no terceiro ano de odontologia e foi com um amigo aprender inglês.
 
-O nome dele é Robinson Shiba, fundador da China in Box. No terceiro ano de odontologia, foi aos Estados Unidos aprender inglês. Pouco depois de chegar, foi assaltado e perdeu todo o dinheiro que o pai tinha dado.
-Em vez de voltar, arrumou emprego num restaurante chinês, lavando prato e fazendo entrega. E viu todo mundo comendo numa caixinha de papel.
-**No Brasil, a única comida que chegava em casa era pizza.**
+Depois do assalto, a mãe pediu que ele voltasse. O pai disse o contrário: “É a sua chance. Eu acredito em você.”
 
-(Foto: caixinhas de comida chinesa americanas. Smithsonian APA Center / Wikimedia, CC0.)
+Ele ficou um ano lavando prato e fazendo entrega num restaurante chinês. E reparou numa coisa: todo mundo comia numa caixinha de papel, em casa ou no trabalho.
+No Brasil, a única comida que chegava em casa era pizza.  (em negrito)
+Foto: cm_caixinhas_vintage.jpg, Caixinhas de comida chinesa americanas. Smithsonian Asian Pacific American Center / Wikimedia Commons, CC0.
 
 CARD 3
+Texto (vai na arte):
+Ele voltou decidido a trazer a caixinha para o Brasil. Mas, em 1990, o Plano Collor confiscou a poupança da família, e a ideia foi para a gaveta.
 
-Ele voltou com a ideia pronta, mas o Plano Collor confiscou a poupança da família. Já formado, montou três consultórios na periferia. A caixinha não saía da cabeça.
-Até que o pai vendeu o próprio apartamento por um terço do que valia: "Moleque, tudo o que eu tenho está aqui. Eu acredito em você."
-**Em 1992, a primeira China in Box abriu. O primeiro telefonema foi de alguém querendo comprar um box de banheiro.**
+Ele se formou e montou três consultórios na periferia. Dava dinheiro, mas não era o que ele queria.
 
-(Foto com número: nota de cruzeiro da era Collor + "1/3 do valor: foi por quanto o pai vendeu o apartamento". Gabriel D. R. Botelho / Wikimedia, CC BY-SA 4.0.)
+Até que o pai vendeu o próprio apartamento por um terço do que valia: “Moleque, tudo o que eu tenho está aqui. Eu acredito em você.”
+O Shiba vendeu dois consultórios e, em outubro de 1992, abriu a primeira China in Box.  (em negrito)
+Foto: cm_cruzados.jpg, Cédula de cruzeiro da era Collor. Gabriel D. R. Botelho / Wikimedia Commons, CC BY-SA 4.0.
 
 CARD 4
+Texto (vai na arte):
+O primeiro telefonema foi de um senhor querendo saber o preço de um box de banheiro. Ninguém sabia o que era comida chinesa na caixinha.
 
-Na marca, ele fez o contrário de todo restaurante chinês: nada de dragão nem lanterna vermelha, porque havia muito preconceito com a higiene desses lugares.
-E apostou no que quase ninguém enxergava: as mulheres estavam entrando no mercado de trabalho e não queriam mais cozinhar todo dia. Folheto com foto, entregador de mochila e biscoito da sorte.
-**Em pouco tempo, os clientes começaram a perguntar se aquilo era franquia.**
-
-(Foto: biscoito da sorte aberto. Lorax / Wikimedia, CC BY-SA 3.0.)
+Então ele caprichou no que dava para controlar. Tirou da marca o dragão e a lanterna vermelha, porque havia preconceito com a higiene dos restaurantes chineses. E apostou numa mudança que pouca gente via: as mulheres estavam indo trabalhar fora e não queriam cozinhar todo dia.
+Funcionou. Em 1994, já eram seis lojas, e os clientes começaram a ligar com outra pergunta.  (em negrito)
+Foto: cm_biscoito.jpg, Biscoito da sorte aberto. Lorax / Wikimedia Commons, CC BY-SA 3.0.
 
 CARD 5
+Texto (vai na arte):
+“Isso aqui é franquia americana?” Ele dizia que sim, e que era o representante no Brasil. Só depois foi descobrir o que era uma franquia.
 
-Ele dizia que sim, que era americana. Depois foi descobrir o que era franquia e, em 1994, levou a marca para a primeira feira.
-Era o começo do Plano Real, e muito executivo demitido com boa indenização queria um negócio próprio. Ele vendeu 35 franquias naquele ano e mais 35 no seguinte.
-**Só que, para ele, crescer era abrir loja. Era a única coisa que sabia fazer.**
-
-(Foto com número: Shiba no palco da Endeavor + "70 lojas em três anos, de 1992 a 1995". Reprodução / Endeavor Brasil.)
+Gostou do que viu e, em 1994, levou a marca para a primeira feira. Era o começo do Plano Real, e muito executivo demitido com boa indenização queria um negócio próprio. Ele vendeu 35 franquias naquele ano e mais 35 no seguinte.
+Em três anos, eram mais de 70 lojas. E ele achava que tinha descoberto o segredo: abrir loja.  (em negrito)
+Foto: gg_trendfoods_caixinha.jpg, Shiba com a caixinha da China in Box e hashis. Reprodução / Veja (2017).
 
 CARD 6
+Texto (vai na arte):
+Só que crescer abrindo loja esconde os problemas. Cada unidade nova aumentava o faturamento da rede, e ninguém olhava para as que estavam piorando.
 
-Em 1997, vieram as crises da Ásia e da Rússia, e as vendas caíram. Um franqueado perguntou quais eram os indicadores da rede.
-Ele não sabia o que era um indicador.
-Os custos fugiram do controle, cada franqueado fazia do seu jeito e a rede perdeu o padrão. Nas palavras dele: "Era o caos."
-**Quem abriu os olhos dele estava dentro de casa.**
+Em 1997, vieram as crises da Ásia e da Rússia, e as vendas caíram. Foi aí que um franqueado fez uma pergunta simples: quais eram os indicadores da rede?
 
-(Sem foto: card só de texto, letra maior.)
+O Shiba não sabia o que era um indicador.
+
+Sem número para olhar, os custos fugiram do controle, cada franqueado passou a fazer do seu jeito e a rede perdeu o padrão. Nas palavras dele: “Era o caos.”
+E quem abriu os olhos dele estava dentro de casa.  (em negrito)
+Foto: SEM FOTO. Card só de texto, com a letra do tamanho da capa, centralizado na altura.
 
 CARD 7
+Texto (vai na arte):
+A esposa, Márcia, era controller de banco. A irmã, publicitária. As duas falaram sem rodeio: “Você abre loja, abre loja, e quem carrega os problemas somos nós.”
 
-A esposa, Márcia, era controller de banco. A irmã, publicitária. As duas disseram: "Você abre loja, abre loja, e quem carrega os problemas somos nós."
-Ele admitiu que não sabia e foi aprender indicador, organograma e processo. Deixou o financeiro com a Márcia e ficou com o que fazia melhor: cuidar de gente.
-**E foi cuidando de gente que ele descobriu qual era o franqueado mais perigoso da rede.**
-
-(Foto: Shiba numa entrevista de rádio. Reprodução / Papo de Negócio.)
+Ele ouviu. Admitiu que não sabia e foi aprender o que faltava: indicador, organograma, processo. Passou o financeiro para a Márcia e ficou com o que fazia melhor, que era estar perto das pessoas.
+E foi visitando loja e atendendo franqueado que ele descobriu quem era o franqueado mais perigoso da rede.  (em negrito)
+Foto: pegn_premio.jpg, Prêmio Melhores Franquias do Brasil 2019, em que a China in Box foi eleita Franquia do Ano. Reprodução / PEGN. CONFIRMAR se a mulher no palco é a Márcia Shiba.
 
 CARD 8
+Texto (vai na arte):
+Não era o que reclamava de tudo. Esse dá trabalho, mas você sabe o que ele quer.
 
-Não era o briguento. Era o que tinha sido apaixonado pelo negócio e, aos poucos, parava de ir às reuniões, parava de mandar relatório, até a loja perder o padrão. Sem pedir ajuda.
-Quando ia investigar, quase sempre achava um pedido de ajuda que ninguém tinha atendido. "Quase sempre tem um capítulo que a franqueadora poderia ter escrito."
-**Segundo a advogada da rede, foram mais de 20 anos praticamente sem briga na Justiça com franqueado.**
+O perigoso era o que tinha chegado apaixonado e, aos poucos, ia se apagando. Parava de ir às reuniões, parava de mandar relatório, a loja perdia o padrão. E ele nunca pedia ajuda.
 
-(Sem foto: card só de texto, letra maior.)
+Quando o Shiba ia investigar, quase sempre encontrava um pedido que ninguém tinha atendido ou uma promessa que não tinha sido cumprida. “Quase sempre tem um capítulo que a franqueadora poderia ter escrito.”
+
+Então ele passou a ouvir antes do problema: pesquisa com os franqueados, conselho de franqueados e encontros regionais.
+Segundo a advogada da rede, foram mais de 20 anos praticamente sem briga na Justiça com franqueado.  (em negrito)
+Foto: SEM FOTO. Card só de texto, com a letra do tamanho da capa, centralizado na altura.
 
 CARD 9
+Texto (vai na arte):
+A rede seguiu crescendo, e ele virou investidor do Shark Tank Brasil. Em 2019, um acidente de moto tirou dele a fala e boa parte dos movimentos. Dois anos depois, a empresa foi vendida para o Grupo Trigo, dono do Spoleto.
 
-Em 2019, um acidente de moto tirou dele a fala e boa parte dos movimentos. Hoje ele se comunica com um aparelho que devolve o timbre da própria voz. E, quando voltou a um podcast de franquias, foi para falar do que sempre falou: como cuidar de franqueado.
-**De tudo o que ele construiu, essa é a lição que eu mais levo para os meus negócios: quem para de reclamar já está indo embora.**
-
-(Foto: Shiba com o público na primeira palestra depois do acidente, CBFa 2025. Reprodução / Colibri Interfaces.)
+Hoje ele se comunica com um aparelho que devolve o timbre da própria voz. E, quando voltou a um podcast de franquias, foi para falar do que sempre falou: como cuidar de franqueado.
+De tudo o que ele construiu, é essa lição que eu mais levo para os meus negócios.  (em negrito)
+Foto: cr_cbfa_grupo.jpg, Shiba com o público na primeira palestra depois do acidente (CBFa 2025). Reprodução / Colibri Interfaces.
 
 CARD 10
+Texto (vai na arte):
+O que eu tiro da história do Shiba:
 
-Se eu pudesse tirar duas atitudes da história do Shiba:
-1. Antes de abrir a próxima unidade, saiba qual número mostra que a última está saudável.
-2. Crie um jeito de ouvir quem está na ponta antes que essa pessoa pare de falar.
-**Se você quer crescer sem perder o controle do que já abriu, clique no link da bio e participe do próximo Scale Partners.**
+1. Abrir loja não é crescer. Antes da próxima unidade, saiba qual número mostra que a última está saudável. Se você não sabe, a expansão está escondendo o problema.
 
-(Sem foto: card de fechamento, só texto.)
+2. Silêncio não quer dizer que está tudo bem. O franqueado, o gerente ou o cliente que para de reclamar já está indo embora. Crie um jeito de ouvir antes disso.
 
----
+3. Peça ajuda a quem sabe o que você não sabe. A rede só virou quando ele admitiu que não entendia de número e entregou o financeiro para quem entendia.
+Se você quer crescer sem perder o controle do que já abriu, clique no link da bio e participe do próximo Scale Partners.  (em negrito)
+Foto: SEM FOTO. Card só de texto, com a letra do tamanho da capa, centralizado na altura.
+━━━━━━━━━━ LEGENDA ━━━━━━━━━━
 
-## LEGENDA
+O fundador da China in Box vendeu 70 franquias antes de saber o que era um indicador. E foi isso que quase desmontou a rede.
 
-O fundador da China in Box vendeu mais de 70 franquias antes de saber o que era um indicador.
+Tem uma conta que pouca gente faz: toda loja nova esconde os problemas das antigas. Enquanto a rede abre unidade, o faturamento total sobe e ninguém repara na loja que está caindo. Quando o crescimento para, a conta chega de uma vez.
 
-Tem uma conta que pouca gente faz: toda loja nova esconde os problemas das antigas. Enquanto a rede abre unidade, o faturamento total sobe e ninguém olha para a loja que está caindo. Quando o crescimento para, a conta chega de uma vez.
+Foi o que o Robinson Shiba viveu em 1997. E o que mais me chama atenção não é o tamanho do problema, é a resposta dele. Ele podia ter culpado a crise, o mercado ou os franqueados. Em vez disso, admitiu em voz alta que não sabia, ouviu quem sabia e mudou a forma de tocar a rede.
 
-O Robinson Shiba descobriu isso em 1997. As vendas caíram, um franqueado perguntou quais eram os indicadores, e ele percebeu que só sabia abrir loja. Em vez de esconder, admitiu que não sabia, foi aprender e deixou o financeiro com quem entendia: a esposa, Márcia.
+A segunda lição escondida nessa história é mais difícil de enxergar. O franqueado que mais tirava o sono do Shiba não era o que brigava. Era o que ia se apagando em silêncio. E, quase sempre, por trás dele tinha um pedido de ajuda que ninguém atendeu.
 
-Mas a segunda lição escondida nessa história é a mais difícil de enxergar. O franqueado que mais tirava o sono do Shiba não era o que brigava. Era o que foi se apagando em silêncio. E quase sempre, por trás dele, tinha um pedido de ajuda que ninguém atendeu.
+Isso vale para franqueado, para gerente e para cliente. Quem reclama ainda acredita que vale a pena falar com você.
 
-Isso vale para franqueado, para colaborador e para cliente. Quem reclama ainda acredita que vale a pena falar com você.
-
-Faça esse exercício esta semana: liste as três pessoas da sua operação que mais sumiram nos últimos três meses, seja um gerente, um franqueado ou um cliente antigo. Ligue para cada uma e pergunte o que mudou.
+Faça esse exercício esta semana: liste as três pessoas da sua operação que mais sumiram nos últimos três meses. Pode ser um gerente, um franqueado ou um cliente antigo. Ligue para cada uma e pergunte o que mudou.
 
 Obrigado, @robinsonshiba, por tudo o que você construiu e continua ensinando ao franchising brasileiro.
 
@@ -139,25 +121,23 @@ Se faz sentido para o seu negócio, comenta "ESCALA" que meu time te chama.
 
 E na sua empresa, quem parou de falar com você?
 
----
+━━━━━━━━━━ IDEIA (orientação interna, NÃO é publicado) ━━━━━━━━━━
 
-## IDEIA
+Case de fundador brasileiro, alvo de collab: Robinson Shiba (@robinsonshiba, 318 mil seguidores). Ele fundou a China in Box em 1992 com o dinheiro do apartamento que o pai vendeu por um terço do preço. Os clientes achavam que era franquia americana, e ele dizia que sim antes de saber o que era franquia. Vendeu 70 franquias entre 1994 e 1995, perdeu o controle na crise de 1997 porque "só sabia abrir loja" e reconstruiu a rede com indicadores e escuta dos franqueados. O Shiba é o protagonista. O Nadim aparece só numa frase, no fim do card 9. Fecha com 3 lições e CTA Scale Partners / "ESCALA".
 
-REFERÊNCIA DE FORMATO: https://www.instagram.com/p/DfLIysjn9Qr/ (mesmo molde do carrossel do Georgios Frangulis, 24/11)
+COLLAB: convidar @robinsonshiba para o co-post. Antes de publicar, mandar para ele e para a Márcia e pedir aprovação do card 9 (acidente).
 
-Case de fundador (brasileiro, alvo de collab): Robinson Shiba (@robinsonshiba, 318 mil seguidores). Fundou a China in Box em 1992 com o dinheiro do apartamento que o pai vendeu por um terço do preço. Os clientes achavam que era franquia americana, e ele dizia que sim antes de saber o que era franquia. Vendeu 70 franquias entre 1994 e 1995, perdeu o controle na crise de 1997 porque "só sabia abrir loja" e reconstruiu a rede com indicadores e escuta dos franqueados. Lição: abrir loja não é crescer, e o franqueado perigoso é o silencioso. O Nadim aparece só numa frase (card 9). Fecha com 2 atitudes e CTA Scale Partners / "ESCALA".
-
-COLLAB: convidar @robinsonshiba para o co-post. Vale mandar o carrossel antes para ele e para a Márcia e pedir a aprovação do card 9 (acidente).
-
-FONTES (transcrições em wescale-contexto/transcricoes/founders/):
-- Exame, "Papo com Presidente" (2012): https://www.youtube.com/watch?v=JrU9fLdG5jw
-- Endeavor Day1 (2012): https://www.youtube.com/watch?v=POAfq1FyFBM
-- Franchising sem Filtro, ep. 33 (01/07/2026): https://www.youtube.com/watch?v=4UqSCjokE3s
-- Palestra CBFa 2025 (18/12/2025): https://www.youtube.com/watch?v=0OI88XA6v0o
-- Brazil Journal (29/10/2021), venda ao Grupo Trigo: https://braziljournal.com/grupo-trigo-compra-dona-do-china-in-box/
+FONTES (transcrições no repositório, em wescale-contexto/transcricoes/founders/):
+- Exame, "Papo com Presidente" (2012): assalto nos EUA, Plano Collor, apartamento por 1/3, três consultórios, abertura em 08/10/1992, "box de banheiro", 35 franquias em 1994 e 35 em 1995. https://www.youtube.com/watch?v=JrU9fLdG5jw
+- Endeavor Day1 (2012): o pai dizendo "eu acredito em você", marca sem dragão por preconceito com a higiene, mulheres no mercado de trabalho, Plano Real e executivos demitidos virando franqueados, mais de 70 lojas no fim de 1995, crise de 1997, "quais são os indicadores?", a fala da esposa e da irmã. https://www.youtube.com/watch?v=POAfq1FyFBM
+- Franchising sem Filtro, ep. 33 (01/07/2026): o franqueado silencioso, "quase sempre tem um capítulo que a franqueadora poderia ter escrito", pesquisa, conselho e encontros regionais, mais de 20 anos sem conflito judicial (fala da advogada). https://www.youtube.com/watch?v=4UqSCjokE3s
+- Palestra no CBFa 2025 (18/12/2025): acidente de 2019 e o aparelho que devolve o timbre da voz. https://www.youtube.com/watch?v=0OI88XA6v0o
+- InfoMoney: investidor do Shark Tank Brasil de 2016 a 2019. https://www.infomoney.com.br/?p=3122936
+- Brazil Journal (29/10/2021): venda da Trend Foods ao Grupo Trigo, dono do Spoleto. https://braziljournal.com/grupo-trigo-compra-dona-do-china-in-box/
+- PEGN (07/2019): China in Box eleita Franquia do Ano; Márcia Shiba como diretora financeira. https://revistapegn.globo.com/Publicidade/China-In-Box/noticia/2019/07/china-box-e-eleita-franquia-do-ano.html
 
 CONFIRMAR:
-- Com o Nadim: a frase do card 9 ("a lição que eu mais levo para os meus negócios") é opinião atribuída a ele; ele aprova?
+- Com o Nadim: a frase do card 9 ("é essa lição que eu mais levo para os meus negócios") é opinião atribuída a ele. Ele aprova?
 - Com o Shiba e a Márcia: a menção ao acidente no card 9.
-- Ano exato em que os clientes começaram a perguntar se era franquia: entre 1993 e 1994, com seis lojas abertas.
-- Fotos das entrevistas (cards 1, 5, 7 e 9) são reprodução de vídeo; trocar por fotos cedidas pela equipe do Shiba se a collab sair.
+- Card 7: a mulher no palco da foto é a Márcia Shiba? (a matéria da PEGN cita a Márcia, mas não diz quem está na imagem).
+- Fotos de reprodução (cards 1, 5, 7 e 9): se a collab sair, trocar por fotos cedidas pela equipe do Shiba.

@@ -25,7 +25,7 @@ Fontes estudadas (nov/2026): "Plano Social | Fred" (Canva, 17 páginas), planilh
 - 2019/2020: primeira coisa que fez foi um **projeto de cultura** na Oral Unic (missão, valores). Ficou com a área de Gente, depois incorporou a Educação Corporativa (Unic), Tecnologia e, por um tempo, Expansão. Saiu da NF para ficar só na Oral Unic.
 - Cerca de 2 anos antes do podcast, ele e o Nadim **trocaram de posição**: o Fred virou CEO da Oral Unic e o Nadim foi para o conselho/We Scale.
 - **We Scale** (holding e prédio): 3 verticais — (1) gestão de portfólio com controle (Oral Unic, NF, Lisô); (2) sociedade sem controle, desenvolvendo os empreendedores (ex.: marca de maquiagem com 30 operações no Nordeste, escola de idiomas com 30, saladeria com cerca de 20); (3) educação (Scale Partner/evento ao vivo e programa de 12 meses com mentoria dos diretores).
-- **Pessoal:** noivo, mora com a noiva, sem filhos; "tio babão"; família e fé muito presentes ("família, trabalho e Deus"). Treina todo dia. Lifestyle visto no plano: kitesurf, livros; o calendário prevê card de jiu-jítsu.
+- **Pessoal:** noivo, mora com a noiva, sem filhos; "tio babão"; família e fé muito presentes ("família, trabalho e Deus"). Treina todo dia. Lifestyle: treino, leitura e família. **O Fred NÃO pratica kitesurf** (quem pratica é o Tallis Gomes, que aparece só como referência de formato). Começou o jiu-jítsu há pouco e não quer muito post sobre isso ainda.
 
 > **Regra:** não invente fato, número nem fala. Se as fontes divergirem num detalhe, use a versão aprovada na planilha ou deixe de fora. Não sinalize inconsistências nem questões familiares. Não use temas de saúde/terapia mesmo que ele cite em público.
 
@@ -84,12 +84,12 @@ Fontes estudadas (nov/2026): "Plano Social | Fred" (Canva, 17 páginas), planilh
 
 **Método AIDA (o que o G4 aplica)**, junto com os níveis de consciência: Atenção em 3s → Interesse ("isso é para mim") → Desejo (transformação, ensinar) → Ação.
 
-**Formatos sugeridos no plano:** Cases (ex.: Reels "R$ 1 bilhão") · **Notícias** (Reels selfie comentando notícia de negócio; referência: "Na onda das canetas, Coca Zero está virando 'uma empresa à parte'") · **Lições** (Reels de conversa) · **Lifestyle e proximidade** (kitesurf, "4 livros obrigatórios para quem tem um negócio") · **Framework/metodologia** (ex.: caderno "Um bom setor de compras tem esses 5 processos").
+**Formatos sugeridos no plano:** Cases (ex.: Reels "R$ 1 bilhão") · **Notícias** (Reels selfie comentando notícia de negócio; referência: "Na onda das canetas, Coca Zero está virando 'uma empresa à parte'") · **Lições** (Reels de conversa) · **Lifestyle e proximidade** (ex.: "4 livros obrigatórios para quem tem um negócio") · **Framework/metodologia** (ex.: caderno "Um bom setor de compras tem esses 5 processos").
 
 **Quadros do Calendário Nov/26:**
 1. **NOTÍCIA** — Reels às 15h (ex.: F1/Liberty Media).
 2. **LIÇÕES** — carrossel (ex.: "Tensão é quem você pensa que deveria ser...").
-3. **LIFESTYLE** — carrossel de livros ou card único (ex.: jiu-jítsu).
+3. **LIFESTYLE** — carrossel de livros ou card único (treino, leitura, família). Jiu-jítsu: evitar por enquanto.
 
 **Fluxo:** planejamento do mês → roteiros da semana seguinte para aprovação → todos os roteiros do mês. Colunas: FORMATO · ROTEIRO/TEXTO CARD · LEGENDA · IDEIA · COMENTÁRIOS FREDERICO · STATUS · PARA QUEM · DATA DE ENTREGA DESIGNER.
 
@@ -121,7 +121,7 @@ Modelos aprovados: Bill Walsh/49ers, Nike, "Consistência é o preço de quem es
 
 ### C) LIFESTYLE — carrossel de livros ou card único
 - Carrossel de livros: capa → por que ler → a ideia que ele aplica na Oral Unic. Use livros que ele já citou.
-- Card único (treino, jiu-jítsu, kitesurf, família, leitura): frase-tese no card; legenda curta e reflexiva (disciplina, presença, "faço o melhor que posso nas condições que tenho").
+- Card único (treino, família, leitura; nunca kitesurf; jiu-jítsu só se o Henrike pedir): frase-tese no card; legenda curta e reflexiva (disciplina, presença, "faço o melhor que posso nas condições que tenho").
 
 ### D) LIÇÃO EM REELS (conversa) — roteiro de captação
 Igual ao método do Nadim: tema · tese · 6 perguntas com objetivo · direção editorial · 3 hipóteses de gancho (marcadas como HIPÓTESES) · resultado buscado. As perguntas carregam o contexto dentro delas, de forma curta.
